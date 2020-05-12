@@ -1,0 +1,20 @@
+{
+  "pkgName" : "tv-prostudies",
+  "studyMigrations" : [
+    {
+      "rules" : [
+        {
+          "action" : "resetToDefVal",
+          "defVal" : "Close",
+          "inputId" : "source",
+          "inputType" : "text",
+          "inputTypeFrom" : "source",
+          "type" : "inputChangedType"
+        }
+      ],
+      "studyId" : "BarSetRenko@tv-prostudies"
+    }
+  ],
+  "versFrom" : "35",
+  "versTo" : "36"
+}
