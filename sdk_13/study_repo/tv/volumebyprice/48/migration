@@ -1,0 +1,6 @@
+{
+  "pkgName" : "tv-volumebyprice",
+  "studyMigrations" : [ ],
+  "versFrom" : "47",
+  "versTo" : "48"
+}
