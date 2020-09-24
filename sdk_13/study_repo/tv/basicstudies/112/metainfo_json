@@ -1,0 +1,6083 @@
+[
+  {
+    "_metainfoVersion" : 51,
+    "defaults" : {
+      "styles" : {
+        "AccumulationDistribution" : {
+          "color" : "#999915",
+          "linestyle" : 0,
+          "linewidth" : 1,
+          "plottype" : 0,
+          "trackPrice" : false,
+          "transparency" : 0,
+          "visible" : true
+        }
+      }
+    },
+    "description" : "Accumulation\/Distribution",
+    "format" : {
+      "type" : "volume"
+    },
+    "id" : "ACCD@tv-basicstudies-112",
+    "is_hidden_study" : true,
+    "is_price_study" : false,
+    "plots" : [
+      {
+        "id" : "AccumulationDistribution",
+        "type" : "line"
+      }
+    ],
+    "shortDescription" : "Accum\/Dist",
+    "styles" : {
+      "AccumulationDistribution" : {
+        "histogramBase" : 0.0,
+        "title" : "Accumulation\/Distribution"
+      }
+    }
+  },
+  {
+    "_metainfoVersion" : 51,
+    "defaults" : {
+      "inputs" : {
+        "length" : 14
+      },
+      "styles" : {
+        "AroonDown" : {
+          "color" : "#0094ff",
+          "linestyle" : 0,
+          "linewidth" : 1,
+          "plottype" : 0,
+          "trackPrice" : false,
+          "transparency" : 0,
+          "visible" : true
+        },
+        "AroonUp" : {
+          "color" : "#ff6a00",
+          "linestyle" : 0,
+          "linewidth" : 1,
+          "plottype" : 0,
+          "trackPrice" : false,
+          "transparency" : 0,
+          "visible" : true
+        }
+      }
+    },
+    "description" : "Aroon",
+    "format" : {
+      "type" : "percent",
+      "precision" : 2
+    },
+    "id" : "AROON@tv-basicstudies-112",
+    "inputs" : [
+      {
+        "defval" : 14,
+        "id" : "length",
+        "max" : 2000,
+        "min" : 1,
+        "name" : "Length",
+        "type" : "integer"
+      }
+    ],
+    "is_hidden_study" : true,
+    "is_price_study" : false,
+    "plots" : [
+      {
+        "id" : "AroonUp",
+        "type" : "line"
+      },
+      {
+        "id" : "AroonDown",
+        "type" : "line"
+      }
+    ],
+    "shortDescription" : "Aroon",
+    "styles" : {
+      "AroonDown" : {
+        "histogramBase" : 0.0,
+        "title" : "Aroon Down"
+      },
+      "AroonUp" : {
+        "histogramBase" : 0.0,
+        "title" : "Aroon Up"
+      }
+    }
+  },
+  {
+    "_metainfoVersion" : 51,
+    "defaults" : {
+      "inputs" : {
+        "length" : 14,
+        "smoothing" : "RMA"
+      },
+      "styles" : {
+        "ATR" : {
+          "color" : "#991515",
+          "linestyle" : 0,
+          "linewidth" : 1,
+          "plottype" : 0,
+          "trackPrice" : false,
+          "transparency" : 0,
+          "visible" : true
+        }
+      }
+    },
+    "description" : "Average True Range",
+    "format" : {
+      "type" : "inherit"
+    },
+    "id" : "ATR@tv-basicstudies-112",
+    "inputs" : [
+      {
+        "defval" : 14,
+        "id" : "length",
+        "max" : 2000,
+        "min" : 1,
+        "name" : "Length",
+        "type" : "integer"
+      },
+      {
+        "defval" : "RMA",
+        "id" : "smoothing",
+        "name" : "Smoothing",
+        "options" : [
+          "RMA",
+          "SMA",
+          "EMA",
+          "WMA"
+        ],
+        "type" : "text"
+      }
+    ],
+    "is_hidden_study" : true,
+    "is_price_study" : false,
+    "plots" : [
+      {
+        "id" : "ATR",
+        "type" : "line"
+      }
+    ],
+    "shortDescription" : "ATR",
+    "styles" : {
+      "ATR" : {
+        "histogramBase" : 0.0,
+        "title" : "ATR"
+      }
+    }
+  },
+  {
+    "_metainfoVersion" : 51,
+    "defaults" : {
+      "inputs" : {
+        "source" : "hlc3",
+        "start_time" : 0
+      },
+      "styles" : {
+        "VWAP" : {
+          "color" : "#1e88e5",
+          "linestyle" : 0,
+          "linewidth" : 1,
+          "plottype" : 0,
+          "trackPrice" : false,
+          "transparency" : 0,
+          "visible" : true
+        }
+      }
+    },
+    "description" : "Anchored VWAP",
+    "format" : {
+      "type" : "inherit"
+    },
+    "id" : "AnchoredVWAP@tv-basicstudies-112",
+    "inputs" : [
+      {
+        "defval" : 0,
+        "id" : "start_time",
+        "isHidden" : true,
+        "max" : 253370764800,
+        "min" : -253370764800,
+        "name" : "Start time",
+        "type" : "time"
+      },
+      {
+        "defval" : "hlc3",
+        "id" : "source",
+        "name" : "Source",
+        "options" : [
+          "open",
+          "high",
+          "low",
+          "close",
+          "hl2",
+          "hlc3",
+          "ohlc4"
+        ],
+        "type" : "source"
+      }
+    ],
+    "is_hidden_study" : true,
+    "is_price_study" : true,
+    "plots" : [
+      {
+        "id" : "VWAP",
+        "type" : "line"
+      }
+    ],
+    "shortDescription" : "Anchored VWAP",
+    "styles" : {
+      "VWAP" : {
+        "histogramBase" : 0.0,
+        "title" : "VWAP"
+      }
+    }
+  },
+  {
+    "_metainfoVersion" : 51,
+    "defaults" : {
+      "palettes" : {
+        "pal" : {
+          "colors" : {
+            "0" : {
+              "color" : "#007f0e",
+              "style" : 0,
+              "width" : 1
+            },
+            "1" : {
+              "color" : "#872323",
+              "style" : 0,
+              "width" : 1
+            }
+          }
+        }
+      },
+      "styles" : {
+        "ao" : {
+          "color" : "#ff006e",
+          "linestyle" : 0,
+          "linewidth" : 1,
+          "plottype" : 1,
+          "trackPrice" : false,
+          "transparency" : 0,
+          "visible" : true
+        }
+      }
+    },
+    "description" : "Awesome Oscillator",
+    "format" : {
+      "type" : "inherit"
+    },
+    "id" : "AwesomeOscillator@tv-basicstudies-112",
+    "is_hidden_study" : true,
+    "is_price_study" : false,
+    "palettes" : {
+      "pal" : {
+        "colors" : {
+          "0" : {
+            "name" : "Growing"
+          },
+          "1" : {
+            "name" : "Falling"
+          }
+        }
+      }
+    },
+    "plots" : [
+      {
+        "id" : "ao",
+        "type" : "line"
+      },
+      {
+        "id" : "ao_pal",
+        "palette" : "pal",
+        "target" : "ao",
+        "type" : "colorer"
+      }
+    ],
+    "shortDescription" : "AO",
+    "styles" : {
+      "ao" : {
+        "histogramBase" : 0.0,
+        "title" : "OA"
+      }
+    }
+  },
+  {
+    "_metainfoVersion" : 51,
+    "area" : [
+      {
+        "name" : "Upper",
+        "visible" : true
+      },
+      {
+        "name" : "Lower",
+        "visible" : true
+      }
+    ],
+    "defaults" : {
+      "areaBackground" : {
+        "backgroundColor" : "#138484",
+        "fillBackground" : true,
+        "transparency" : 95
+      },
+      "inputs" : {
+        "length" : 20,
+        "source" : "close",
+        "stdDev" : 2.0
+      },
+      "offset" : {
+        "val" : 0.0
+      },
+      "styles" : {
+        "Basis" : {
+          "color" : "#872323",
+          "linestyle" : 0,
+          "linewidth" : 1,
+          "plottype" : 0,
+          "trackPrice" : false,
+          "transparency" : 0,
+          "visible" : true
+        },
+        "Lower" : {
+          "color" : "#138484",
+          "linestyle" : 0,
+          "linewidth" : 1,
+          "plottype" : 0,
+          "trackPrice" : false,
+          "transparency" : 0,
+          "visible" : true
+        },
+        "Upper" : {
+          "color" : "#138484",
+          "linestyle" : 0,
+          "linewidth" : 1,
+          "plottype" : 0,
+          "trackPrice" : false,
+          "transparency" : 0,
+          "visible" : true
+        }
+      }
+    },
+    "description" : "Bollinger Bands",
+    "format" : {
+      "type" : "inherit"
+    },
+    "id" : "BB@tv-basicstudies-112",
+    "inputs" : [
+      {
+        "defval" : 20,
+        "id" : "length",
+        "max" : 10000,
+        "min" : 1,
+        "name" : "Length",
+        "type" : "integer"
+      },
+      {
+        "defval" : "close",
+        "id" : "source",
+        "name" : "Source",
+        "options" : [
+          "open",
+          "high",
+          "low",
+          "close",
+          "hl2",
+          "hlc3",
+          "ohlc4"
+        ],
+        "type" : "source"
+      },
+      {
+        "defval" : 2.0,
+        "id" : "stdDev",
+        "max" : 50.0,
+        "min" : 0.001,
+        "name" : "StdDev",
+        "type" : "float"
+      }
+    ],
+    "is_hidden_study" : true,
+    "is_price_study" : true,
+    "offset" : {
+      "max" : 500.0,
+      "min" : -500.0,
+      "title" : "Offset"
+    },
+    "plots" : [
+      {
+        "id" : "Basis",
+        "type" : "line"
+      },
+      {
+        "id" : "Upper",
+        "type" : "line"
+      },
+      {
+        "id" : "Lower",
+        "type" : "line"
+      }
+    ],
+    "shortDescription" : "BB",
+    "styles" : {
+      "Basis" : {
+        "histogramBase" : 0.0,
+        "title" : "Basis"
+      },
+      "Lower" : {
+        "histogramBase" : 0.0,
+        "title" : "Lower"
+      },
+      "Upper" : {
+        "histogramBase" : 0.0,
+        "title" : "Upper"
+      }
+    }
+  },
+  {
+    "_metainfoVersion" : 51,
+    "defaults" : {
+      "inputs" : {
+        "currtime" : "now",
+        "from" : "0",
+        "recalculating" : true,
+        "restrictions" : "",
+        "rollrules" : "",
+        "to" : "now"
+      }
+    },
+    "description" : "Unnamed Study",
+    "format" : {
+      "type" : "inherit"
+    },
+    "id" : "BarSetCC@tv-basicstudies-112",
+    "inputs" : [
+      {
+        "defval" : "",
+        "id" : "rollrules",
+        "name" : "Rollrules",
+        "type" : "text"
+      },
+      {
+        "defval" : "0",
+        "id" : "from",
+        "name" : "From",
+        "type" : "text"
+      },
+      {
+        "defval" : "now",
+        "id" : "to",
+        "name" : "To",
+        "type" : "text"
+      },
+      {
+        "defval" : "now",
+        "id" : "currtime",
+        "name" : "Currtime",
+        "type" : "text"
+      },
+      {
+        "defval" : "",
+        "id" : "restrictions",
+        "name" : "Restrictions",
+        "type" : "text"
+      },
+      {
+        "defval" : true,
+        "id" : "recalculating",
+        "name" : "Recalculating",
+        "type" : "bool"
+      }
+    ],
+    "is_hidden_study" : true,
+    "is_price_study" : false,
+    "plots" : [
+      {
+        "id" : "open",
+        "type" : "line"
+      },
+      {
+        "id" : "high",
+        "type" : "line"
+      },
+      {
+        "id" : "low",
+        "type" : "line"
+      },
+      {
+        "id" : "close",
+        "type" : "line"
+      },
+      {
+        "id" : "volume",
+        "type" : "line"
+      }
+    ],
+    "shortDescription" : "Unnamed Study"
+  },
+  {
+    "_metainfoVersion" : 51,
+    "defaults" : {
+      "inputs" : {
+        "rollrules" : ""
+      }
+    },
+    "description" : "Dates calculator for continuous",
+    "format" : {
+      "type" : "inherit"
+    },
+    "graphics" : {
+      "lollypop" : {
+        "rollDate" : {
+          "name" : "Roll date"
+        }
+      }
+    },
+    "id" : "BarSetCCRollDatesCalculator@tv-basicstudies-112",
+    "inputs" : [
+      {
+        "defval" : "",
+        "id" : "rollrules",
+        "name" : "Rollrules",
+        "type" : "text"
+      }
+    ],
+    "is_hidden_study" : true,
+    "is_price_study" : false,
+    "shortDescription" : "RollDatesCalculator"
+  },
+  {
+    "_metainfoVersion" : 51,
+    "description" : "Unnamed Study",
+    "format" : {
+      "type" : "inherit"
+    },
+    "id" : "BarSetHeikenAshi@tv-basicstudies-112",
+    "is_hidden_study" : true,
+    "is_price_study" : false,
+    "plots" : [
+      {
+        "id" : "open",
+        "type" : "line"
+      },
+      {
+        "id" : "high",
+        "type" : "line"
+      },
+      {
+        "id" : "low",
+        "type" : "line"
+      },
+      {
+        "id" : "close",
+        "type" : "line"
+      },
+      {
+        "id" : "volume",
+        "type" : "line"
+      }
+    ],
+    "shortDescription" : "Unnamed Study"
+  },
+  {
+    "_metainfoVersion" : 51,
+    "defaults" : {
+      "inputs" : {
+        "phantomBars" : false,
+        "range" : 10
+      }
+    },
+    "description" : "Unnamed Study",
+    "format" : {
+      "type" : "inherit"
+    },
+    "id" : "BarSetRange@tv-basicstudies-112",
+    "inputs" : [
+      {
+        "defval" : 10,
+        "id" : "range",
+        "isHidden" : true,
+        "max" : 2147483647,
+        "min" : 1,
+        "name" : "Range",
+        "type" : "integer"
+      },
+      {
+        "defval" : false,
+        "id" : "phantomBars",
+        "name" : "Phantom Bars",
+        "type" : "bool"
+      }
+    ],
+    "is_hidden_study" : true,
+    "is_price_study" : false,
+    "plots" : [
+      {
+        "id" : "open",
+        "type" : "line"
+      },
+      {
+        "id" : "high",
+        "type" : "line"
+      },
+      {
+        "id" : "low",
+        "type" : "line"
+      },
+      {
+        "id" : "close",
+        "type" : "line"
+      },
+      {
+        "id" : "volume",
+        "type" : "line"
+      }
+    ],
+    "shortDescription" : "Unnamed Study"
+  },
+  {
+    "_metainfoVersion" : 51,
+    "defaults" : {
+      "inputs" : {
+        "expr" : "",
+        "session" : "0000-0000",
+        "tickers" : "",
+        "tz" : "UTC"
+      }
+    },
+    "description" : "Unnamed Study",
+    "format" : {
+      "type" : "inherit"
+    },
+    "id" : "BarSetSpread@tv-basicstudies-112",
+    "inputs" : [
+      {
+        "defval" : "",
+        "id" : "tickers",
+        "name" : "Tickers",
+        "type" : "text"
+      },
+      {
+        "defval" : "",
+        "id" : "expr",
+        "name" : "Expr",
+        "type" : "text"
+      },
+      {
+        "defval" : "UTC",
+        "id" : "tz",
+        "name" : "Tz",
+        "type" : "text"
+      },
+      {
+        "defval" : "0000-0000",
+        "id" : "session",
+        "name" : "Session",
+        "type" : "text"
+      }
+    ],
+    "is_hidden_study" : true,
+    "is_price_study" : false,
+    "plots" : [
+      {
+        "id" : "open",
+        "type" : "line"
+      },
+      {
+        "id" : "high",
+        "type" : "line"
+      },
+      {
+        "id" : "low",
+        "type" : "line"
+      },
+      {
+        "id" : "close",
+        "type" : "line"
+      },
+      {
+        "id" : "volume",
+        "type" : "line"
+      }
+    ],
+    "shortDescription" : "Unnamed Study"
+  },
+  {
+    "_metainfoVersion" : 51,
+    "bands" : [
+      {
+        "name" : "Overbought"
+      },
+      {
+        "name" : "Oversold"
+      }
+    ],
+    "defaults" : {
+      "bands" : [
+        {
+          "color" : "#606060",
+          "linestyle" : 2,
+          "linewidth" : 1,
+          "value" : 1.0,
+          "visible" : true
+        },
+        {
+          "color" : "#606060",
+          "linestyle" : 2,
+          "linewidth" : 1,
+          "value" : 0.0,
+          "visible" : true
+        }
+      ],
+      "bandsBackground" : {
+        "backgroundColor" : "#138484",
+        "fillBackground" : true,
+        "transparency" : 90
+      },
+      "inputs" : {
+        "length" : 20,
+        "source" : "close",
+        "stdDev" : 2.0
+      },
+      "styles" : {
+        "BollingerBandsR" : {
+          "color" : "#138484",
+          "linestyle" : 0,
+          "linewidth" : 1,
+          "plottype" : 0,
+          "trackPrice" : false,
+          "transparency" : 0,
+          "visible" : true
+        }
+      }
+    },
+    "description" : "Bollinger Bands %B",
+    "format" : {
+      "type" : "price",
+      "precision" : 2
+    },
+    "id" : "BollingerBandsR@tv-basicstudies-112",
+    "inputs" : [
+      {
+        "defval" : 20,
+        "id" : "length",
+        "max" : 10000,
+        "min" : 1,
+        "name" : "Length",
+        "type" : "integer"
+      },
+      {
+        "defval" : "close",
+        "id" : "source",
+        "name" : "Source",
+        "options" : [
+          "open",
+          "high",
+          "low",
+          "close",
+          "hl2",
+          "hlc3",
+          "ohlc4"
+        ],
+        "type" : "source"
+      },
+      {
+        "defval" : 2.0,
+        "id" : "stdDev",
+        "max" : 50.0,
+        "min" : 0.001,
+        "name" : "StdDev",
+        "type" : "float"
+      }
+    ],
+    "is_hidden_study" : true,
+    "is_price_study" : false,
+    "plots" : [
+      {
+        "id" : "BollingerBandsR",
+        "type" : "line"
+      }
+    ],
+    "shortDescription" : "BB %B",
+    "styles" : {
+      "BollingerBandsR" : {
+        "histogramBase" : 0.0,
+        "title" : "Bollinger Bands %B"
+      }
+    }
+  },
+  {
+    "_metainfoVersion" : 51,
+    "defaults" : {
+      "inputs" : {
+        "length" : 20,
+        "source" : "close",
+        "stdDev" : 2.0
+      },
+      "styles" : {
+        "BollingerBandsWidth" : {
+          "color" : "#138484",
+          "linestyle" : 0,
+          "linewidth" : 1,
+          "plottype" : 0,
+          "trackPrice" : false,
+          "transparency" : 0,
+          "visible" : true
+        }
+      }
+    },
+    "description" : "Bollinger Bands Width",
+    "format" : {
+      "type" : "price",
+      "precision" : 2
+    },
+    "id" : "BollingerBandsWidth@tv-basicstudies-112",
+    "inputs" : [
+      {
+        "defval" : 20,
+        "id" : "length",
+        "max" : 10000,
+        "min" : 1,
+        "name" : "Length",
+        "type" : "integer"
+      },
+      {
+        "defval" : "close",
+        "id" : "source",
+        "name" : "Source",
+        "options" : [
+          "open",
+          "high",
+          "low",
+          "close",
+          "hl2",
+          "hlc3",
+          "ohlc4"
+        ],
+        "type" : "source"
+      },
+      {
+        "defval" : 2.0,
+        "id" : "stdDev",
+        "max" : 50.0,
+        "min" : 0.001,
+        "name" : "StdDev",
+        "type" : "float"
+      }
+    ],
+    "is_hidden_study" : true,
+    "is_price_study" : false,
+    "plots" : [
+      {
+        "id" : "BollingerBandsWidth",
+        "type" : "line"
+      }
+    ],
+    "shortDescription" : "BBW",
+    "styles" : {
+      "BollingerBandsWidth" : {
+        "histogramBase" : 0.0,
+        "title" : "Bollinger Bands Width"
+      }
+    }
+  },
+  {
+    "_metainfoVersion" : 51,
+    "defaults" : {
+      "graphics" : {
+        "horizlines" : {
+          "01_oneHourPivots" : {
+            "color" : "#0000ff",
+            "style" : 0,
+            "visible" : true,
+            "width" : 2
+          },
+          "02_fourHourPivots" : {
+            "color" : "#008000",
+            "style" : 0,
+            "visible" : true,
+            "width" : 2
+          },
+          "03_eightHourPivots" : {
+            "color" : "#ff0000",
+            "style" : 0,
+            "visible" : true,
+            "width" : 2
+          }
+        }
+      },
+      "inputs" : {
+        "lookBack" : 5,
+        "periodOne" : 60,
+        "periodThree" : 480,
+        "periodTwo" : 240
+      }
+    },
+    "description" : "Rob Booker - Intraday Pivot Points",
+    "format" : {
+      "type" : "inherit"
+    },
+    "graphics" : {
+      "horizlines" : {
+        "01_oneHourPivots" : {
+          "name" : "One hour Pivots",
+          "showPrice" : false
+        },
+        "02_fourHourPivots" : {
+          "name" : "Four hour Pivots",
+          "showPrice" : false
+        },
+        "03_eightHourPivots" : {
+          "name" : "Eight hour Pivots",
+          "showPrice" : false
+        }
+      }
+    },
+    "id" : "BookerIntradayPivots@tv-basicstudies-112",
+    "inputs" : [
+      {
+        "defval" : 5,
+        "id" : "lookBack",
+        "max" : 30,
+        "min" : 1,
+        "name" : "Look Back",
+        "type" : "integer"
+      },
+      {
+        "defval" : 60,
+        "id" : "periodOne",
+        "max" : 1440,
+        "min" : 1,
+        "name" : "Period One",
+        "type" : "integer"
+      },
+      {
+        "defval" : 240,
+        "id" : "periodTwo",
+        "max" : 1440,
+        "min" : 1,
+        "name" : "Period Two",
+        "type" : "integer"
+      },
+      {
+        "defval" : 480,
+        "id" : "periodThree",
+        "max" : 1440,
+        "min" : 1,
+        "name" : "Period Three",
+        "type" : "integer"
+      }
+    ],
+    "is_price_study" : true,
+    "shortDescription" : "RB_IPP"
+  },
+  {
+    "_metainfoVersion" : 51,
+    "defaults" : {
+      "graphics" : {
+        "lines" : {
+          "lines" : {
+            "color" : "#ff0000",
+            "style" : 0,
+            "visible" : true,
+            "width" : 1
+          }
+        }
+      },
+      "inputs" : {
+        "barsBack" : 150,
+        "momentumPeriod" : 20,
+        "rsiPeriod" : 21
+      }
+    },
+    "description" : "Rob Booker - Knoxville Divergence",
+    "format" : {
+      "type" : "inherit"
+    },
+    "graphics" : {
+      "lines" : {
+        "lines" : {
+          "title" : "Lines"
+        }
+      }
+    },
+    "id" : "BookerKnoxvilleDivergence@tv-basicstudies-112",
+    "inputs" : [
+      {
+        "defval" : 150,
+        "id" : "barsBack",
+        "max" : 300,
+        "min" : 0,
+        "name" : "Bars Back",
+        "type" : "integer"
+      },
+      {
+        "defval" : 21,
+        "id" : "rsiPeriod",
+        "max" : 100,
+        "min" : 1,
+        "name" : "RSI Period",
+        "type" : "integer"
+      },
+      {
+        "defval" : 20,
+        "id" : "momentumPeriod",
+        "max" : 100,
+        "min" : 1,
+        "name" : "Momentum Period",
+        "type" : "integer"
+      }
+    ],
+    "is_price_study" : true,
+    "shortDescription" : "RB_KnoxDiv"
+  },
+  {
+    "_metainfoVersion" : 51,
+    "defaults" : {
+      "graphics" : {
+        "horizlines" : {
+          "dailyPivots" : {
+            "color" : "#0000ff",
+            "style" : 0,
+            "visible" : true,
+            "width" : 2
+          },
+          "monthlyPivots" : {
+            "color" : "#ff0000",
+            "style" : 0,
+            "visible" : true,
+            "width" : 2
+          },
+          "weeklyPivots" : {
+            "color" : "#008000",
+            "style" : 0,
+            "visible" : true,
+            "width" : 2
+          }
+        }
+      },
+      "inputs" : {
+        "daysBack" : 180,
+        "showTouched" : false
+      }
+    },
+    "description" : "Rob Booker - Missed Pivot Points",
+    "format" : {
+      "type" : "inherit"
+    },
+    "graphics" : {
+      "horizlines" : {
+        "dailyPivots" : {
+          "name" : "Daily Pivots",
+          "showPrice" : false
+        },
+        "monthlyPivots" : {
+          "name" : "Monthly Pivots",
+          "showPrice" : false
+        },
+        "weeklyPivots" : {
+          "name" : "Weekly Pivots",
+          "showPrice" : false
+        }
+      }
+    },
+    "id" : "BookerMissedPivots@tv-basicstudies-112",
+    "inputs" : [
+      {
+        "defval" : 180,
+        "id" : "daysBack",
+        "max" : 730,
+        "min" : 1,
+        "name" : "Days Back",
+        "type" : "integer"
+      },
+      {
+        "defval" : false,
+        "id" : "showTouched",
+        "name" : "Show Touched Pivots",
+        "type" : "bool"
+      }
+    ],
+    "is_price_study" : true,
+    "shortDescription" : "RB_MPP"
+  },
+  {
+    "_metainfoVersion" : 51,
+    "defaults" : {
+      "graphics" : {
+        "textmarks" : {
+          "buyMarks" : {
+            "color" : "#008000",
+            "fontBold" : false,
+            "fontColor" : "#000000",
+            "fontFamily" : "Arial",
+            "fontItalic" : false,
+            "fontSize" : 12,
+            "transparency" : 30,
+            "visible" : true
+          },
+          "sellMarks" : {
+            "color" : "#ff0000",
+            "fontBold" : false,
+            "fontColor" : "#000000",
+            "fontFamily" : "Arial",
+            "fontItalic" : false,
+            "fontSize" : 12,
+            "transparency" : 30,
+            "visible" : true
+          }
+        }
+      },
+      "inputs" : {
+        "KPeriod" : 70,
+        "fastMAPeriod" : 12,
+        "slowMAPeriod" : 26,
+        "slowing" : 10,
+        "stochasticLower" : 30.0,
+        "stochasticUpper" : 70.0
+      }
+    },
+    "description" : "Rob Booker - Reversal",
+    "format" : {
+      "type" : "inherit"
+    },
+    "graphics" : {
+      "textmarks" : {
+        "buyMarks" : {
+          "halign" : "center",
+          "location" : "BelowBar",
+          "name" : "Buy Marks",
+          "shape" : "triangle",
+          "valign" : "middle"
+        },
+        "sellMarks" : {
+          "halign" : "center",
+          "location" : "AboveBar",
+          "name" : "Sell Marks",
+          "shape" : "triangle",
+          "valign" : "middle"
+        }
+      }
+    },
+    "id" : "BookerReversal@tv-basicstudies-112",
+    "inputs" : [
+      {
+        "defval" : 12,
+        "id" : "fastMAPeriod",
+        "max" : 2000,
+        "min" : 1,
+        "name" : "Fast MA Period",
+        "type" : "integer"
+      },
+      {
+        "defval" : 26,
+        "id" : "slowMAPeriod",
+        "max" : 2000,
+        "min" : 1,
+        "name" : "Slow MA Period",
+        "type" : "integer"
+      },
+      {
+        "defval" : 70,
+        "id" : "KPeriod",
+        "max" : 100,
+        "min" : 1,
+        "name" : "KPeriod",
+        "type" : "integer"
+      },
+      {
+        "defval" : 10,
+        "id" : "slowing",
+        "max" : 100,
+        "min" : 0,
+        "name" : "Slowing",
+        "type" : "integer"
+      },
+      {
+        "defval" : 70.0,
+        "id" : "stochasticUpper",
+        "max" : 100.0,
+        "min" : 0.0,
+        "name" : "Stochastic Upper",
+        "type" : "float"
+      },
+      {
+        "defval" : 30.0,
+        "id" : "stochasticLower",
+        "max" : 100.0,
+        "min" : 0.0,
+        "name" : "Stochastic Lower",
+        "type" : "float"
+      }
+    ],
+    "is_price_study" : true,
+    "shortDescription" : "RB_Rev"
+  },
+  {
+    "_metainfoVersion" : 51,
+    "bands" : [
+      {
+        "name" : "Upper Band"
+      },
+      {
+        "name" : "Lower Band"
+      }
+    ],
+    "defaults" : {
+      "bands" : [
+        {
+          "color" : "#c0c0c0",
+          "linestyle" : 2,
+          "linewidth" : 1,
+          "value" : 100.0,
+          "visible" : true
+        },
+        {
+          "color" : "#c0c0c0",
+          "linestyle" : 2,
+          "linewidth" : 1,
+          "value" : -100.0,
+          "visible" : true
+        }
+      ],
+      "bandsBackground" : {
+        "backgroundColor" : "#996a15",
+        "fillBackground" : true,
+        "transparency" : 90
+      },
+      "inputs" : {
+        "length" : 20,
+        "source" : "close"
+      },
+      "styles" : {
+        "CCI" : {
+          "color" : "#996a15",
+          "linestyle" : 0,
+          "linewidth" : 1,
+          "plottype" : 0,
+          "trackPrice" : false,
+          "transparency" : 0,
+          "visible" : true
+        }
+      }
+    },
+    "description" : "Commodity Channel Index",
+    "format" : {
+      "type" : "price",
+      "precision" : 2
+    },
+    "id" : "CCI@tv-basicstudies-112",
+    "inputs" : [
+      {
+        "defval" : 20,
+        "id" : "length",
+        "max" : 2000,
+        "min" : 1,
+        "name" : "Length",
+        "type" : "integer"
+      },
+      {
+        "defval" : "close",
+        "id" : "source",
+        "name" : "Source",
+        "options" : [
+          "open",
+          "high",
+          "low",
+          "close",
+          "hl2",
+          "hlc3",
+          "ohlc4"
+        ],
+        "type" : "source"
+      }
+    ],
+    "is_hidden_study" : true,
+    "is_price_study" : false,
+    "plots" : [
+      {
+        "id" : "CCI",
+        "type" : "line"
+      }
+    ],
+    "shortDescription" : "CCI",
+    "styles" : {
+      "CCI" : {
+        "histogramBase" : 0.0,
+        "title" : "CCI"
+      }
+    }
+  },
+  {
+    "_metainfoVersion" : 51,
+    "bands" : [
+      {
+        "name" : "Zero"
+      }
+    ],
+    "defaults" : {
+      "bands" : [
+        {
+          "color" : "#606060",
+          "linestyle" : 2,
+          "linewidth" : 1,
+          "value" : 0.0,
+          "visible" : true
+        }
+      ],
+      "inputs" : {
+        "length" : 20
+      },
+      "styles" : {
+        "ChaikinMoneyFlow" : {
+          "color" : "#459915",
+          "linestyle" : 0,
+          "linewidth" : 1,
+          "plottype" : 0,
+          "trackPrice" : false,
+          "transparency" : 0,
+          "visible" : true
+        }
+      }
+    },
+    "description" : "Chaikin Money Flow",
+    "format" : {
+      "type" : "price",
+      "precision" : 2
+    },
+    "id" : "CMF@tv-basicstudies-112",
+    "inputs" : [
+      {
+        "defval" : 20,
+        "id" : "length",
+        "max" : 2000,
+        "min" : 1,
+        "name" : "Length",
+        "type" : "integer"
+      }
+    ],
+    "is_hidden_study" : true,
+    "is_price_study" : false,
+    "plots" : [
+      {
+        "id" : "ChaikinMoneyFlow",
+        "type" : "line"
+      }
+    ],
+    "shortDescription" : "CMF",
+    "styles" : {
+      "ChaikinMoneyFlow" : {
+        "histogramBase" : 0.0,
+        "title" : "MF"
+      }
+    }
+  },
+  {
+    "_metainfoVersion" : 51,
+    "bands" : [
+      {
+        "name" : "Upper Band"
+      },
+      {
+        "name" : "Lower Band"
+      }
+    ],
+    "defaults" : {
+      "bands" : [
+        {
+          "color" : "#c0c0c0",
+          "linestyle" : 2,
+          "linewidth" : 1,
+          "value" : 70.0,
+          "visible" : true
+        },
+        {
+          "color" : "#c0c0c0",
+          "linestyle" : 2,
+          "linewidth" : 1,
+          "value" : 30.0,
+          "visible" : true
+        }
+      ],
+      "bandsBackground" : {
+        "backgroundColor" : "#9915ff",
+        "fillBackground" : true,
+        "transparency" : 90
+      },
+      "inputs" : {
+        "LenROC" : 100,
+        "LenRSI" : 3,
+        "LenUP" : 2
+      },
+      "styles" : {
+        "crsi" : {
+          "color" : "#3a78aa",
+          "linestyle" : 0,
+          "linewidth" : 1,
+          "plottype" : 0,
+          "trackPrice" : false,
+          "transparency" : 0,
+          "visible" : true
+        }
+      }
+    },
+    "description" : "ConnorsRSI",
+    "format" : {
+      "type" : "price",
+      "precision" : 2
+    },
+    "id" : "CRSI@tv-basicstudies-112",
+    "inputs" : [
+      {
+        "defval" : 3,
+        "id" : "LenRSI",
+        "max" : 2000,
+        "min" : 1,
+        "name" : "RSI Length",
+        "type" : "integer"
+      },
+      {
+        "defval" : 2,
+        "id" : "LenUP",
+        "max" : 2000,
+        "min" : 1,
+        "name" : "UpDown Length",
+        "type" : "integer"
+      },
+      {
+        "defval" : 100,
+        "id" : "LenROC",
+        "max" : 2000,
+        "min" : 1,
+        "name" : "ROC Length",
+        "type" : "integer"
+      }
+    ],
+    "is_hidden_study" : true,
+    "is_price_study" : false,
+    "plots" : [
+      {
+        "id" : "crsi",
+        "type" : "line"
+      }
+    ],
+    "shortDescription" : "CRSI",
+    "styles" : {
+      "crsi" : {
+        "histogramBase" : 0.0,
+        "title" : "CRSI"
+      }
+    }
+  },
+  {
+    "_metainfoVersion" : 51,
+    "bands" : [
+      {
+        "name" : "Zero"
+      }
+    ],
+    "defaults" : {
+      "bands" : [
+        {
+          "color" : "#606060",
+          "linestyle" : 2,
+          "linewidth" : 1,
+          "value" : 0.0,
+          "visible" : true
+        }
+      ],
+      "inputs" : {
+        "fast length" : 3,
+        "slow length" : 10
+      },
+      "styles" : {
+        "ChaikinOscillator" : {
+          "color" : "#ff8080",
+          "linestyle" : 0,
+          "linewidth" : 1,
+          "plottype" : 0,
+          "trackPrice" : false,
+          "transparency" : 0,
+          "visible" : true
+        }
+      }
+    },
+    "description" : "Chaikin Oscillator",
+    "format" : {
+      "type" : "volume"
+    },
+    "id" : "ChaikinOscillator@tv-basicstudies-112",
+    "inputs" : [
+      {
+        "defval" : 3,
+        "id" : "fast length",
+        "max" : 2000,
+        "min" : 1,
+        "name" : "Fast length",
+        "type" : "integer"
+      },
+      {
+        "defval" : 10,
+        "id" : "slow length",
+        "max" : 2000,
+        "min" : 1,
+        "name" : "Slow length",
+        "type" : "integer"
+      }
+    ],
+    "is_hidden_study" : true,
+    "is_price_study" : false,
+    "plots" : [
+      {
+        "id" : "ChaikinOscillator",
+        "type" : "line"
+      }
+    ],
+    "shortDescription" : "Chaikin Osc",
+    "styles" : {
+      "ChaikinOscillator" : {
+        "histogramBase" : 0.0,
+        "title" : "Chaikin Oscillator"
+      }
+    }
+  },
+  {
+    "_metainfoVersion" : 51,
+    "bands" : [
+      {
+        "name" : "Upper Band"
+      },
+      {
+        "name" : "Lower Band"
+      }
+    ],
+    "defaults" : {
+      "bands" : [
+        {
+          "color" : "#c0c0c0",
+          "linestyle" : 2,
+          "linewidth" : 1,
+          "value" : 61.8,
+          "visible" : true
+        },
+        {
+          "color" : "#c0c0c0",
+          "linestyle" : 2,
+          "linewidth" : 1,
+          "value" : 38.2,
+          "visible" : true
+        }
+      ],
+      "bandsBackground" : {
+        "backgroundColor" : "#996a15",
+        "fillBackground" : true,
+        "transparency" : 90
+      },
+      "inputs" : {
+        "length" : 14
+      },
+      "offset" : {
+        "val" : 0.0
+      },
+      "styles" : {
+        "idx" : {
+          "color" : "#3a6ca8",
+          "linestyle" : 0,
+          "linewidth" : 1,
+          "plottype" : 0,
+          "trackPrice" : false,
+          "transparency" : 0,
+          "visible" : true
+        }
+      }
+    },
+    "description" : "Choppiness Index",
+    "format" : {
+      "type" : "price",
+      "precision" : 2
+    },
+    "id" : "ChoppinessIndex@tv-basicstudies-112",
+    "inputs" : [
+      {
+        "defval" : 14,
+        "id" : "length",
+        "max" : 2000,
+        "min" : 1,
+        "name" : "Length",
+        "type" : "integer"
+      }
+    ],
+    "is_hidden_study" : true,
+    "is_price_study" : false,
+    "offset" : {
+      "max" : 500.0,
+      "min" : -500.0,
+      "title" : "Offset"
+    },
+    "plots" : [
+      {
+        "id" : "idx",
+        "type" : "line"
+      }
+    ],
+    "shortDescription" : "CHOP",
+    "styles" : {
+      "idx" : {
+        "histogramBase" : 0.0,
+        "title" : "CHOP"
+      }
+    }
+  },
+  {
+    "_metainfoVersion" : 51,
+    "defaults" : {
+      "inputs" : {
+        "Offset" : 0,
+        "source" : "close",
+        "symbol" : ""
+      },
+      "styles" : {
+        "compare" : {
+          "color" : "#ff3a00",
+          "linestyle" : 0,
+          "linewidth" : 2,
+          "plottype" : 0,
+          "trackPrice" : false,
+          "transparency" : 0,
+          "visible" : true
+        }
+      }
+    },
+    "description" : "Compare",
+    "format" : {
+      "type" : "inherit"
+    },
+    "id" : "Compare@tv-basicstudies-112",
+    "inputs" : [
+      {
+        "defval" : "",
+        "id" : "symbol",
+        "name" : "Symbol",
+        "type" : "symbol"
+      },
+      {
+        "defval" : "close",
+        "id" : "source",
+        "name" : "Source",
+        "options" : [
+          "open",
+          "high",
+          "low",
+          "close",
+          "hl2",
+          "hlc3",
+          "ohlc4"
+        ],
+        "type" : "text"
+      },
+      {
+        "defval" : 0,
+        "id" : "Offset",
+        "max" : 2147483647,
+        "min" : -2147483648,
+        "name" : "Offset",
+        "type" : "integer"
+      }
+    ],
+    "is_hidden_study" : true,
+    "is_price_study" : true,
+    "plots" : [
+      {
+        "id" : "compare",
+        "type" : "line"
+      }
+    ],
+    "shortDescription" : "Compare",
+    "styles" : {
+      "compare" : {
+        "histogramBase" : 0.0,
+        "title" : "Compare"
+      }
+    }
+  },
+  {
+    "_metainfoVersion" : 51,
+    "defaults" : {
+      "inputs" : {
+        "length" : 20,
+        "source" : "close",
+        "symbol" : "GOOG"
+      },
+      "styles" : {
+        "compare" : {
+          "color" : "#ff0000",
+          "linestyle" : 0,
+          "linewidth" : 1,
+          "plottype" : 4,
+          "trackPrice" : false,
+          "transparency" : 0,
+          "visible" : true
+        }
+      }
+    },
+    "description" : "Correlation Coefficient",
+    "format" : {
+      "type" : "price",
+      "precision" : 2
+    },
+    "id" : "CorrelationCoefficient@tv-basicstudies-112",
+    "inputs" : [
+      {
+        "defval" : "GOOG",
+        "id" : "symbol",
+        "name" : "Symbol",
+        "type" : "symbol"
+      },
+      {
+        "defval" : "close",
+        "id" : "source",
+        "name" : "Source",
+        "options" : [
+          "open",
+          "high",
+          "low",
+          "close",
+          "hl2",
+          "hlc3",
+          "ohlc4"
+        ],
+        "type" : "text"
+      },
+      {
+        "defval" : 20,
+        "id" : "length",
+        "max" : 2000,
+        "min" : 1,
+        "name" : "Length",
+        "type" : "integer"
+      }
+    ],
+    "is_price_study" : false,
+    "plots" : [
+      {
+        "id" : "compare",
+        "type" : "line"
+      }
+    ],
+    "shortDescription" : "CC",
+    "styles" : {
+      "compare" : {
+        "histogramBase" : 0.0,
+        "title" : "Correlation"
+      }
+    }
+  },
+  {
+    "_metainfoVersion" : 51,
+    "defaults" : {
+      "inputs" : {
+        "ADX smoothing" : 14,
+        "DI Length" : 14
+      },
+      "styles" : {
+        "ADX" : {
+          "color" : "#ff006e",
+          "linestyle" : 0,
+          "linewidth" : 1,
+          "plottype" : 0,
+          "trackPrice" : false,
+          "transparency" : 0,
+          "visible" : true
+        },
+        "DI_N" : {
+          "color" : "#ff6a00",
+          "linestyle" : 0,
+          "linewidth" : 1,
+          "plottype" : 0,
+          "trackPrice" : false,
+          "transparency" : 0,
+          "visible" : true
+        },
+        "DI_P" : {
+          "color" : "#0094ff",
+          "linestyle" : 0,
+          "linewidth" : 1,
+          "plottype" : 0,
+          "trackPrice" : false,
+          "transparency" : 0,
+          "visible" : true
+        }
+      }
+    },
+    "description" : "Directional Movement",
+    "format" : {
+      "type" : "price",
+      "precision" : 4
+    },
+    "id" : "DM@tv-basicstudies-112",
+    "inputs" : [
+      {
+        "defval" : 14,
+        "id" : "ADX smoothing",
+        "max" : 50,
+        "min" : 1,
+        "name" : "ADX smoothing",
+        "type" : "integer"
+      },
+      {
+        "defval" : 14,
+        "id" : "DI Length",
+        "max" : 2000,
+        "min" : 1,
+        "name" : "DI Length",
+        "type" : "integer"
+      }
+    ],
+    "is_hidden_study" : true,
+    "is_price_study" : false,
+    "plots" : [
+      {
+        "id" : "ADX",
+        "type" : "line"
+      },
+      {
+        "id" : "DI_P",
+        "type" : "line"
+      },
+      {
+        "id" : "DI_N",
+        "type" : "line"
+      }
+    ],
+    "shortDescription" : "DMI",
+    "styles" : {
+      "ADX" : {
+        "histogramBase" : 0.0,
+        "title" : "ADX"
+      },
+      "DI_N" : {
+        "histogramBase" : 0.0,
+        "title" : "-DI"
+      },
+      "DI_P" : {
+        "histogramBase" : 0.0,
+        "title" : "+DI"
+      }
+    }
+  },
+  {
+    "_metainfoVersion" : 51,
+    "area" : [
+      {
+        "name" : "DonchianUpper",
+        "visible" : true
+      },
+      {
+        "name" : "DonchianLower",
+        "visible" : true
+      }
+    ],
+    "defaults" : {
+      "areaBackground" : {
+        "backgroundColor" : "#0094ff",
+        "fillBackground" : true,
+        "transparency" : 95
+      },
+      "inputs" : {
+        "length" : 20
+      },
+      "styles" : {
+        "DonchianBasis" : {
+          "color" : "#ff6a00",
+          "linestyle" : 0,
+          "linewidth" : 1,
+          "plottype" : 0,
+          "trackPrice" : false,
+          "transparency" : 0,
+          "visible" : true
+        },
+        "DonchianLower" : {
+          "color" : "#0094ff",
+          "linestyle" : 0,
+          "linewidth" : 1,
+          "plottype" : 0,
+          "trackPrice" : false,
+          "transparency" : 0,
+          "visible" : true
+        },
+        "DonchianUpper" : {
+          "color" : "#0094ff",
+          "linestyle" : 0,
+          "linewidth" : 1,
+          "plottype" : 0,
+          "trackPrice" : false,
+          "transparency" : 0,
+          "visible" : true
+        }
+      }
+    },
+    "description" : "Donchian Channels",
+    "format" : {
+      "type" : "inherit"
+    },
+    "id" : "DONCH@tv-basicstudies-112",
+    "inputs" : [
+      {
+        "defval" : 20,
+        "id" : "length",
+        "max" : 2000,
+        "min" : 1,
+        "name" : "Length",
+        "type" : "integer"
+      }
+    ],
+    "is_hidden_study" : true,
+    "is_price_study" : true,
+    "plots" : [
+      {
+        "id" : "DonchianBasis",
+        "type" : "line"
+      },
+      {
+        "id" : "DonchianUpper",
+        "type" : "line"
+      },
+      {
+        "id" : "DonchianLower",
+        "type" : "line"
+      }
+    ],
+    "shortDescription" : "DC",
+    "styles" : {
+      "DonchianBasis" : {
+        "histogramBase" : 0.0,
+        "title" : "Basis"
+      },
+      "DonchianLower" : {
+        "histogramBase" : 0.0,
+        "title" : "Lower"
+      },
+      "DonchianUpper" : {
+        "histogramBase" : 0.0,
+        "title" : "Upper"
+      }
+    }
+  },
+  {
+    "_metainfoVersion" : 51,
+    "bands" : [
+      {
+        "name" : "Zero Line"
+      }
+    ],
+    "defaults" : {
+      "bands" : [
+        {
+          "color" : "#c0c0c0",
+          "linestyle" : 2,
+          "linewidth" : 1,
+          "value" : 0.0,
+          "visible" : true
+        }
+      ],
+      "inputs" : {
+        "centered" : false,
+        "period" : 21
+      },
+      "styles" : {
+        "DPO" : {
+          "color" : "#c0c000",
+          "linestyle" : 0,
+          "linewidth" : 1,
+          "plottype" : 0,
+          "trackPrice" : false,
+          "transparency" : 0,
+          "visible" : true
+        }
+      }
+    },
+    "description" : "Detrended Price Oscillator",
+    "format" : {
+      "type" : "price",
+      "precision" : 2
+    },
+    "id" : "DetrendedPriceOscillator@tv-basicstudies-112",
+    "inputs" : [
+      {
+        "defval" : 21,
+        "id" : "period",
+        "max" : 2000,
+        "min" : 1,
+        "name" : "Period",
+        "type" : "integer"
+      },
+      {
+        "defval" : false,
+        "id" : "centered",
+        "name" : "Centered",
+        "type" : "bool"
+      }
+    ],
+    "is_hidden_study" : true,
+    "is_price_study" : false,
+    "plots" : [
+      {
+        "id" : "DPO",
+        "type" : "line"
+      }
+    ],
+    "shortDescription" : "DPO",
+    "styles" : {
+      "DPO" : {
+        "histogramBase" : 0.0,
+        "title" : "Detrended Price Oscillator"
+      }
+    }
+  },
+  {
+    "_metainfoVersion" : 51,
+    "defaults" : {
+      "inputs" : {
+        "Length" : 9
+      },
+      "styles" : {
+        "DEMA" : {
+          "color" : "#008000",
+          "linestyle" : 0,
+          "linewidth" : 1,
+          "plottype" : 0,
+          "trackPrice" : false,
+          "transparency" : 0,
+          "visible" : true
+        }
+      }
+    },
+    "description" : "Double EMA",
+    "format" : {
+      "type" : "inherit"
+    },
+    "id" : "DoubleEMA@tv-basicstudies-112",
+    "inputs" : [
+      {
+        "defval" : 9,
+        "id" : "Length",
+        "max" : 10000,
+        "min" : 1,
+        "name" : "Length",
+        "type" : "integer"
+      }
+    ],
+    "is_hidden_study" : true,
+    "is_price_study" : true,
+    "plots" : [
+      {
+        "id" : "DEMA",
+        "type" : "line"
+      }
+    ],
+    "shortDescription" : "DEMA",
+    "styles" : {
+      "DEMA" : {
+        "histogramBase" : 0.0,
+        "title" : "DEMA"
+      }
+    }
+  },
+  {
+    "_metainfoVersion" : 51,
+    "bands" : [
+      {
+        "name" : "Zero"
+      }
+    ],
+    "defaults" : {
+      "bands" : [
+        {
+          "color" : "#606060",
+          "linestyle" : 2,
+          "linewidth" : 1,
+          "value" : 0.0,
+          "visible" : true
+        }
+      ],
+      "inputs" : {
+        "length" : 13
+      },
+      "styles" : {
+        "EldersForceIndex" : {
+          "color" : "#d66654",
+          "linestyle" : 0,
+          "linewidth" : 1,
+          "plottype" : 0,
+          "trackPrice" : false,
+          "transparency" : 0,
+          "visible" : true
+        }
+      }
+    },
+    "description" : "Elder's Force Index",
+    "format" : {
+      "type" : "volume"
+    },
+    "id" : "EFI@tv-basicstudies-112",
+    "inputs" : [
+      {
+        "defval" : 13,
+        "id" : "length",
+        "max" : 2000,
+        "min" : 1,
+        "name" : "Length",
+        "type" : "integer"
+      }
+    ],
+    "is_hidden_study" : true,
+    "is_price_study" : false,
+    "plots" : [
+      {
+        "id" : "EldersForceIndex",
+        "type" : "line"
+      }
+    ],
+    "shortDescription" : "EFI",
+    "styles" : {
+      "EldersForceIndex" : {
+        "histogramBase" : 0.0,
+        "title" : "Elder's Force Index"
+      }
+    }
+  },
+  {
+    "_metainfoVersion" : 51,
+    "area" : [
+      {
+        "name" : "envlower",
+        "visible" : true
+      },
+      {
+        "name" : "envupper",
+        "visible" : true
+      }
+    ],
+    "defaults" : {
+      "areaBackground" : {
+        "backgroundColor" : "#0094ff",
+        "fillBackground" : true,
+        "transparency" : 95
+      },
+      "inputs" : {
+        "exponential" : false,
+        "length" : 20,
+        "percent" : 10.0,
+        "source" : "close"
+      },
+      "styles" : {
+        "envbasis" : {
+          "color" : "#ff6a00",
+          "linestyle" : 0,
+          "linewidth" : 1,
+          "plottype" : 0,
+          "trackPrice" : false,
+          "transparency" : 0,
+          "visible" : true
+        },
+        "envlower" : {
+          "color" : "#0094ff",
+          "linestyle" : 0,
+          "linewidth" : 1,
+          "plottype" : 0,
+          "trackPrice" : false,
+          "transparency" : 0,
+          "visible" : true
+        },
+        "envupper" : {
+          "color" : "#0094ff",
+          "linestyle" : 0,
+          "linewidth" : 1,
+          "plottype" : 0,
+          "trackPrice" : false,
+          "transparency" : 0,
+          "visible" : true
+        }
+      }
+    },
+    "description" : "Envelope",
+    "format" : {
+      "type" : "inherit"
+    },
+    "id" : "ENV@tv-basicstudies-112",
+    "inputs" : [
+      {
+        "defval" : 20,
+        "id" : "length",
+        "max" : 2000,
+        "min" : 1,
+        "name" : "Length",
+        "type" : "integer"
+      },
+      {
+        "defval" : 10.0,
+        "id" : "percent",
+        "max" : 1.7976931348623157E308,
+        "min" : -1.7976931348623157E308,
+        "name" : "Percent",
+        "type" : "float"
+      },
+      {
+        "defval" : "close",
+        "id" : "source",
+        "name" : "Source",
+        "options" : [
+          "open",
+          "high",
+          "low",
+          "close",
+          "hl2",
+          "hlc3",
+          "ohlc4"
+        ],
+        "type" : "source"
+      },
+      {
+        "defval" : false,
+        "id" : "exponential",
+        "name" : "Exponential",
+        "type" : "bool"
+      }
+    ],
+    "is_hidden_study" : true,
+    "is_price_study" : true,
+    "plots" : [
+      {
+        "id" : "envbasis",
+        "type" : "line"
+      },
+      {
+        "id" : "envupper",
+        "type" : "line"
+      },
+      {
+        "id" : "envlower",
+        "type" : "line"
+      }
+    ],
+    "shortDescription" : "Env",
+    "styles" : {
+      "envbasis" : {
+        "histogramBase" : 0.0,
+        "title" : "Basis"
+      },
+      "envlower" : {
+        "histogramBase" : 0.0,
+        "title" : "Lower"
+      },
+      "envupper" : {
+        "histogramBase" : 0.0,
+        "title" : "Upper"
+      }
+    }
+  },
+  {
+    "_metainfoVersion" : 51,
+    "defaults" : {
+      "inputs" : {
+        "divisor" : 10000,
+        "length" : 14
+      },
+      "styles" : {
+        "EaseOfMovement" : {
+          "color" : "#999915",
+          "linestyle" : 0,
+          "linewidth" : 1,
+          "plottype" : 0,
+          "trackPrice" : false,
+          "transparency" : 0,
+          "visible" : true
+        }
+      }
+    },
+    "description" : "Ease Of Movement",
+    "format" : {
+      "type" : "volume"
+    },
+    "id" : "EaseOfMovement@tv-basicstudies-112",
+    "inputs" : [
+      {
+        "defval" : 14,
+        "id" : "length",
+        "max" : 2000,
+        "min" : 1,
+        "name" : "Length",
+        "type" : "integer"
+      },
+      {
+        "defval" : 10000,
+        "id" : "divisor",
+        "max" : 1000000000,
+        "min" : 1,
+        "name" : "Divisor",
+        "type" : "integer"
+      }
+    ],
+    "is_hidden_study" : true,
+    "is_price_study" : false,
+    "plots" : [
+      {
+        "id" : "EaseOfMovement",
+        "type" : "line"
+      }
+    ],
+    "shortDescription" : "EOM",
+    "styles" : {
+      "EaseOfMovement" : {
+        "histogramBase" : 0.0,
+        "title" : "EOM"
+      }
+    }
+  },
+  {
+    "_metainfoVersion" : 51,
+    "description" : "Elliott Wave",
+    "format" : {
+      "type" : "inherit"
+    },
+    "id" : "ElliottWave@tv-basicstudies-112",
+    "is_hidden_study" : true,
+    "is_price_study" : true,
+    "linkedToSeries" : true,
+    "shortDescription" : "Elliott"
+  },
+  {
+    "_metainfoVersion" : 51,
+    "bands" : [
+      {
+        "name" : "1.5"
+      },
+      {
+        "name" : "0.75"
+      },
+      {
+        "name" : "0"
+      },
+      {
+        "name" : "-0.75"
+      },
+      {
+        "name" : "-1.5"
+      }
+    ],
+    "defaults" : {
+      "bands" : [
+        {
+          "color" : "#ffc5b5",
+          "linestyle" : 2,
+          "linewidth" : 1,
+          "value" : 1.5,
+          "visible" : true
+        },
+        {
+          "color" : "#c6c6c6",
+          "linestyle" : 2,
+          "linewidth" : 1,
+          "value" : 0.75,
+          "visible" : true
+        },
+        {
+          "color" : "#ffc5b5",
+          "linestyle" : 2,
+          "linewidth" : 1,
+          "value" : 0.0,
+          "visible" : true
+        },
+        {
+          "color" : "#c6c6c6",
+          "linestyle" : 2,
+          "linewidth" : 1,
+          "value" : -0.75,
+          "visible" : true
+        },
+        {
+          "color" : "#ffc5b5",
+          "linestyle" : 2,
+          "linewidth" : 1,
+          "value" : -1.5,
+          "visible" : true
+        }
+      ],
+      "inputs" : {
+        "length" : 9
+      },
+      "styles" : {
+        "F1" : {
+          "color" : "#0094ff",
+          "linestyle" : 0,
+          "linewidth" : 1,
+          "plottype" : 0,
+          "trackPrice" : false,
+          "transparency" : 0,
+          "visible" : true
+        },
+        "F2" : {
+          "color" : "#ff6a00",
+          "linestyle" : 0,
+          "linewidth" : 1,
+          "plottype" : 0,
+          "trackPrice" : false,
+          "transparency" : 0,
+          "visible" : true
+        }
+      }
+    },
+    "description" : "Fisher Transform",
+    "format" : {
+      "type" : "price",
+      "precision" : 2
+    },
+    "id" : "FisherTransform@tv-basicstudies-112",
+    "inputs" : [
+      {
+        "defval" : 9,
+        "id" : "length",
+        "max" : 1000,
+        "min" : 5,
+        "name" : "Length",
+        "type" : "integer"
+      }
+    ],
+    "is_hidden_study" : true,
+    "is_price_study" : false,
+    "plots" : [
+      {
+        "id" : "F1",
+        "type" : "line"
+      },
+      {
+        "id" : "F2",
+        "type" : "line"
+      }
+    ],
+    "shortDescription" : "Fisher",
+    "styles" : {
+      "F1" : {
+        "histogramBase" : 0.0,
+        "title" : "Fisher"
+      },
+      "F2" : {
+        "histogramBase" : 0.0,
+        "title" : "Trigger"
+      }
+    }
+  },
+  {
+    "_metainfoVersion" : 51,
+    "defaults" : {
+      "inputs" : {
+        "length" : 10
+      },
+      "styles" : {
+        "HV" : {
+          "color" : "#3a85ad",
+          "linestyle" : 0,
+          "linewidth" : 1,
+          "plottype" : 0,
+          "trackPrice" : false,
+          "transparency" : 0,
+          "visible" : true
+        }
+      }
+    },
+    "description" : "Historical Volatility",
+    "format" : {
+      "type" : "price",
+      "precision" : 2
+    },
+    "id" : "HV@tv-basicstudies-112",
+    "inputs" : [
+      {
+        "defval" : 10,
+        "id" : "length",
+        "max" : 1000,
+        "min" : 1,
+        "name" : "Length",
+        "type" : "integer"
+      }
+    ],
+    "is_hidden_study" : true,
+    "is_price_study" : false,
+    "plots" : [
+      {
+        "id" : "HV",
+        "type" : "line"
+      }
+    ],
+    "shortDescription" : "HV",
+    "styles" : {
+      "HV" : {
+        "histogramBase" : 0.0,
+        "title" : "HV"
+      }
+    }
+  },
+  {
+    "_metainfoVersion" : 51,
+    "area" : [
+      {
+        "name" : "Lead1Line",
+        "visible" : true
+      },
+      {
+        "name" : "Lead2Line",
+        "visible" : true
+      }
+    ],
+    "defaults" : {
+      "areaBackground" : {
+        "backgroundColor" : "#773499",
+        "fillBackground" : true,
+        "transparency" : 80
+      },
+      "inputs" : {
+        "displacement" : 26,
+        "leading span 2 periods" : 52,
+        "standard line periods" : 26,
+        "turning line periods" : 9
+      },
+      "styles" : {
+        "CloseLine" : {
+          "color" : "#459915",
+          "linestyle" : 0,
+          "linewidth" : 1,
+          "plottype" : 0,
+          "trackPrice" : false,
+          "transparency" : 0,
+          "visible" : true
+        },
+        "Lead1Line" : {
+          "color" : "#008000",
+          "linestyle" : 0,
+          "linewidth" : 1,
+          "plottype" : 0,
+          "trackPrice" : false,
+          "transparency" : 0,
+          "visible" : true
+        },
+        "Lead2Line" : {
+          "color" : "#ff0000",
+          "linestyle" : 0,
+          "linewidth" : 1,
+          "plottype" : 0,
+          "trackPrice" : false,
+          "transparency" : 0,
+          "visible" : true
+        },
+        "StandardLine" : {
+          "color" : "#991515",
+          "linestyle" : 0,
+          "linewidth" : 1,
+          "plottype" : 0,
+          "trackPrice" : false,
+          "transparency" : 0,
+          "visible" : true
+        },
+        "TurningLine" : {
+          "color" : "#0496ff",
+          "linestyle" : 0,
+          "linewidth" : 1,
+          "plottype" : 0,
+          "trackPrice" : false,
+          "transparency" : 0,
+          "visible" : true
+        }
+      }
+    },
+    "description" : "Ichimoku Cloud",
+    "format" : {
+      "type" : "inherit"
+    },
+    "id" : "IchimokuCloud@tv-basicstudies-112",
+    "inputs" : [
+      {
+        "defval" : 9,
+        "id" : "turning line periods",
+        "max" : 2000,
+        "min" : 1,
+        "name" : "Conversion Line Periods",
+        "type" : "integer"
+      },
+      {
+        "defval" : 26,
+        "id" : "standard line periods",
+        "max" : 2000,
+        "min" : 1,
+        "name" : "Base Line Periods",
+        "type" : "integer"
+      },
+      {
+        "defval" : 52,
+        "id" : "leading span 2 periods",
+        "max" : 2000,
+        "min" : 1,
+        "name" : "Lagging Span 2 Periods",
+        "type" : "integer"
+      },
+      {
+        "defval" : 26,
+        "id" : "displacement",
+        "max" : 1000,
+        "min" : 0,
+        "name" : "Displacement",
+        "type" : "integer"
+      }
+    ],
+    "is_hidden_study" : true,
+    "is_price_study" : true,
+    "plots" : [
+      {
+        "id" : "TurningLine",
+        "type" : "line"
+      },
+      {
+        "id" : "StandardLine",
+        "type" : "line"
+      },
+      {
+        "id" : "CloseLine",
+        "type" : "line"
+      },
+      {
+        "id" : "Lead1Line",
+        "type" : "line"
+      },
+      {
+        "id" : "Lead2Line",
+        "type" : "line"
+      }
+    ],
+    "shortDescription" : "Ichimoku",
+    "styles" : {
+      "CloseLine" : {
+        "histogramBase" : 0.0,
+        "title" : "Lagging Span"
+      },
+      "Lead1Line" : {
+        "histogramBase" : 0.0,
+        "title" : "Lead 1"
+      },
+      "Lead2Line" : {
+        "histogramBase" : 0.0,
+        "title" : "Lead 2"
+      },
+      "StandardLine" : {
+        "histogramBase" : 0.0,
+        "title" : "Base Line"
+      },
+      "TurningLine" : {
+        "histogramBase" : 0.0,
+        "title" : "Conversion Line"
+      }
+    }
+  },
+  {
+    "_metainfoVersion" : 51,
+    "area" : [
+      {
+        "name" : "KeltnerLower",
+        "visible" : true
+      },
+      {
+        "name" : "KeltnerUpper",
+        "visible" : true
+      }
+    ],
+    "defaults" : {
+      "areaBackground" : {
+        "backgroundColor" : "#0094ff",
+        "fillBackground" : true,
+        "transparency" : 95
+      },
+      "inputs" : {
+        "bands style" : "true range",
+        "exponential" : true,
+        "length" : 20,
+        "multiplier" : 1.0,
+        "source" : "close"
+      },
+      "styles" : {
+        "KeltnerCenter" : {
+          "color" : "#0094ff",
+          "linestyle" : 0,
+          "linewidth" : 1,
+          "plottype" : 0,
+          "trackPrice" : false,
+          "transparency" : 0,
+          "visible" : true
+        },
+        "KeltnerLower" : {
+          "color" : "#0094ff",
+          "linestyle" : 0,
+          "linewidth" : 1,
+          "plottype" : 0,
+          "trackPrice" : false,
+          "transparency" : 0,
+          "visible" : true
+        },
+        "KeltnerUpper" : {
+          "color" : "#0094ff",
+          "linestyle" : 0,
+          "linewidth" : 1,
+          "plottype" : 0,
+          "trackPrice" : false,
+          "transparency" : 0,
+          "visible" : true
+        }
+      }
+    },
+    "description" : "Keltner Channels",
+    "format" : {
+      "type" : "inherit"
+    },
+    "id" : "KLTNR@tv-basicstudies-112",
+    "inputs" : [
+      {
+        "defval" : 20,
+        "id" : "length",
+        "max" : 2000,
+        "min" : 1,
+        "name" : "Length",
+        "type" : "integer"
+      },
+      {
+        "defval" : 1.0,
+        "id" : "multiplier",
+        "max" : 1.7976931348623157E308,
+        "min" : -1.7976931348623157E308,
+        "name" : "Multiplier",
+        "type" : "float"
+      },
+      {
+        "defval" : "close",
+        "id" : "source",
+        "name" : "Source",
+        "options" : [
+          "open",
+          "high",
+          "low",
+          "close",
+          "hl2",
+          "hlc3",
+          "ohlc4"
+        ],
+        "type" : "source"
+      },
+      {
+        "defval" : true,
+        "id" : "exponential",
+        "name" : "Exponential",
+        "type" : "bool"
+      },
+      {
+        "defval" : "true range",
+        "id" : "bands style",
+        "name" : "Bands style",
+        "options" : [
+          "range",
+          "true range"
+        ],
+        "type" : "text"
+      }
+    ],
+    "is_hidden_study" : true,
+    "is_price_study" : true,
+    "plots" : [
+      {
+        "id" : "KeltnerUpper",
+        "type" : "line"
+      },
+      {
+        "id" : "KeltnerCenter",
+        "type" : "line"
+      },
+      {
+        "id" : "KeltnerLower",
+        "type" : "line"
+      }
+    ],
+    "shortDescription" : "KC",
+    "styles" : {
+      "KeltnerCenter" : {
+        "histogramBase" : 0.0,
+        "title" : "Basis"
+      },
+      "KeltnerLower" : {
+        "histogramBase" : 0.0,
+        "title" : "Lower"
+      },
+      "KeltnerUpper" : {
+        "histogramBase" : 0.0,
+        "title" : "Upper"
+      }
+    }
+  },
+  {
+    "_metainfoVersion" : 51,
+    "bands" : [
+      {
+        "name" : "Zero Line"
+      }
+    ],
+    "defaults" : {
+      "bands" : [
+        {
+          "color" : "#c0c0c0",
+          "linestyle" : 2,
+          "linewidth" : 1,
+          "value" : 0.0,
+          "visible" : true
+        }
+      ],
+      "inputs" : {
+        "ROCLen1" : 10,
+        "ROCLen2" : 15,
+        "ROCLen3" : 20,
+        "ROCLen4" : 30,
+        "SMALen1" : 10,
+        "SMALen2" : 10,
+        "SMALen3" : 10,
+        "SMALen4" : 15,
+        "SigLen" : 9
+      },
+      "styles" : {
+        "KST" : {
+          "color" : "#008000",
+          "linestyle" : 0,
+          "linewidth" : 1,
+          "plottype" : 0,
+          "trackPrice" : false,
+          "transparency" : 0,
+          "visible" : true
+        },
+        "SIG" : {
+          "color" : "#ff0000",
+          "linestyle" : 0,
+          "linewidth" : 1,
+          "plottype" : 0,
+          "trackPrice" : false,
+          "transparency" : 0,
+          "visible" : true
+        }
+      }
+    },
+    "description" : "Know Sure Thing",
+    "format" : {
+      "type" : "price",
+      "precision" : 4
+    },
+    "id" : "KST@tv-basicstudies-112",
+    "inputs" : [
+      {
+        "defval" : 10,
+        "id" : "ROCLen1",
+        "max" : 2000,
+        "min" : 1,
+        "name" : "ROCLen1",
+        "type" : "integer"
+      },
+      {
+        "defval" : 15,
+        "id" : "ROCLen2",
+        "max" : 2000,
+        "min" : 1,
+        "name" : "ROCLen2",
+        "type" : "integer"
+      },
+      {
+        "defval" : 20,
+        "id" : "ROCLen3",
+        "max" : 2000,
+        "min" : 1,
+        "name" : "ROCLen3",
+        "type" : "integer"
+      },
+      {
+        "defval" : 30,
+        "id" : "ROCLen4",
+        "max" : 2000,
+        "min" : 1,
+        "name" : "ROCLen4",
+        "type" : "integer"
+      },
+      {
+        "defval" : 10,
+        "id" : "SMALen1",
+        "max" : 2000,
+        "min" : 1,
+        "name" : "SMALen1",
+        "type" : "integer"
+      },
+      {
+        "defval" : 10,
+        "id" : "SMALen2",
+        "max" : 2000,
+        "min" : 1,
+        "name" : "SMALen2",
+        "type" : "integer"
+      },
+      {
+        "defval" : 10,
+        "id" : "SMALen3",
+        "max" : 2000,
+        "min" : 1,
+        "name" : "SMALen3",
+        "type" : "integer"
+      },
+      {
+        "defval" : 15,
+        "id" : "SMALen4",
+        "max" : 2000,
+        "min" : 1,
+        "name" : "SMALen4",
+        "type" : "integer"
+      },
+      {
+        "defval" : 9,
+        "id" : "SigLen",
+        "max" : 2000,
+        "min" : 1,
+        "name" : "SigLen",
+        "type" : "integer"
+      }
+    ],
+    "is_price_study" : false,
+    "plots" : [
+      {
+        "id" : "KST",
+        "type" : "line"
+      },
+      {
+        "id" : "SIG",
+        "type" : "line"
+      }
+    ],
+    "shortDescription" : "KST",
+    "styles" : {
+      "KST" : {
+        "histogramBase" : 0.0,
+        "title" : "KST"
+      },
+      "SIG" : {
+        "histogramBase" : 0.0,
+        "title" : "Sig"
+      }
+    }
+  },
+  {
+    "_metainfoVersion" : 51,
+    "defaults" : {
+      "inputs" : {
+        "count" : 100,
+        "lower diviation" : -2.0,
+        "source" : "close",
+        "upper diviation" : 2.0,
+        "use lower diviation" : true,
+        "use upper diviation" : true
+      }
+    },
+    "description" : "Linear Regression",
+    "format" : {
+      "type" : "inherit"
+    },
+    "id" : "LinearRegression@tv-basicstudies-112",
+    "inputs" : [
+      {
+        "defval" : 2.0,
+        "id" : "upper diviation",
+        "max" : 500.0,
+        "min" : -500.0,
+        "name" : "Upper Deviation",
+        "type" : "float"
+      },
+      {
+        "defval" : -2.0,
+        "id" : "lower diviation",
+        "max" : 500.0,
+        "min" : -500.0,
+        "name" : "Lower Deviation",
+        "type" : "float"
+      },
+      {
+        "defval" : true,
+        "id" : "use upper diviation",
+        "name" : "Use Upper Deviation",
+        "type" : "bool"
+      },
+      {
+        "defval" : true,
+        "id" : "use lower diviation",
+        "name" : "Use Lower Deviation",
+        "type" : "bool"
+      },
+      {
+        "defval" : 100,
+        "id" : "count",
+        "max" : 2000,
+        "min" : 1,
+        "name" : "Count",
+        "type" : "integer"
+      },
+      {
+        "defval" : "close",
+        "id" : "source",
+        "name" : "Source",
+        "options" : [
+          "open",
+          "high",
+          "low",
+          "close",
+          "hl2",
+          "hlc3",
+          "ohlc4"
+        ],
+        "type" : "source"
+      }
+    ],
+    "is_price_study" : true,
+    "shortDescription" : "Lin Reg"
+  },
+  {
+    "_metainfoVersion" : 51,
+    "defaults" : {
+      "inputs" : {
+        "fast length" : 12,
+        "signal smoothing" : 9,
+        "simple ma(oscillator)" : false,
+        "simple ma(signal line)" : false,
+        "slow length" : 26,
+        "source" : "close"
+      },
+      "styles" : {
+        "histogram" : {
+          "color" : "#ff006e",
+          "linestyle" : 0,
+          "linewidth" : 1,
+          "plottype" : 1,
+          "trackPrice" : false,
+          "transparency" : 0,
+          "visible" : true
+        },
+        "macd" : {
+          "color" : "#0094ff",
+          "linestyle" : 0,
+          "linewidth" : 1,
+          "plottype" : 0,
+          "trackPrice" : false,
+          "transparency" : 0,
+          "visible" : true
+        },
+        "signal" : {
+          "color" : "#ff6a00",
+          "linestyle" : 0,
+          "linewidth" : 1,
+          "plottype" : 0,
+          "trackPrice" : false,
+          "transparency" : 0,
+          "visible" : true
+        }
+      }
+    },
+    "description" : "MACD",
+    "format" : {
+      "type" : "inherit"
+    },
+    "id" : "MACD@tv-basicstudies-112",
+    "inputs" : [
+      {
+        "defval" : 12,
+        "id" : "fast length",
+        "max" : 2000,
+        "min" : 1,
+        "name" : "Fast length",
+        "type" : "integer"
+      },
+      {
+        "defval" : 26,
+        "id" : "slow length",
+        "max" : 2000,
+        "min" : 1,
+        "name" : "Slow length",
+        "type" : "integer"
+      },
+      {
+        "defval" : "close",
+        "id" : "source",
+        "name" : "Source",
+        "options" : [
+          "open",
+          "high",
+          "low",
+          "close",
+          "hl2",
+          "hlc3",
+          "ohlc4"
+        ],
+        "type" : "source"
+      },
+      {
+        "defval" : 9,
+        "id" : "signal smoothing",
+        "max" : 50,
+        "min" : 1,
+        "name" : "Signal smoothing",
+        "type" : "integer"
+      },
+      {
+        "defval" : false,
+        "id" : "simple ma(oscillator)",
+        "name" : "Simple ma(oscillator)",
+        "type" : "bool"
+      },
+      {
+        "defval" : false,
+        "id" : "simple ma(signal line)",
+        "name" : "Simple ma(signal line)",
+        "type" : "bool"
+      }
+    ],
+    "is_hidden_study" : true,
+    "is_price_study" : false,
+    "plots" : [
+      {
+        "id" : "histogram",
+        "type" : "line"
+      },
+      {
+        "id" : "macd",
+        "type" : "line"
+      },
+      {
+        "id" : "signal",
+        "type" : "line"
+      }
+    ],
+    "shortDescription" : "MACD",
+    "styles" : {
+      "histogram" : {
+        "histogramBase" : 0.0,
+        "title" : "Histogram"
+      },
+      "macd" : {
+        "histogramBase" : 0.0,
+        "title" : "MACD"
+      },
+      "signal" : {
+        "histogramBase" : 0.0,
+        "title" : "Signal"
+      }
+    }
+  },
+  {
+    "_metainfoVersion" : 51,
+    "defaults" : {
+      "inputs" : {
+        "length" : 9,
+        "source" : "close"
+      },
+      "offset" : {
+        "val" : 0.0
+      },
+      "styles" : {
+        "MovAvgExp" : {
+          "color" : "#3a78aa",
+          "linestyle" : 0,
+          "linewidth" : 1,
+          "plottype" : 0,
+          "trackPrice" : false,
+          "transparency" : 0,
+          "visible" : true
+        }
+      }
+    },
+    "description" : "Moving Average Exponential",
+    "format" : {
+      "type" : "inherit"
+    },
+    "id" : "MAExp@tv-basicstudies-112",
+    "inputs" : [
+      {
+        "defval" : 9,
+        "id" : "length",
+        "max" : 10000,
+        "min" : 1,
+        "name" : "Length",
+        "type" : "integer"
+      },
+      {
+        "defval" : "close",
+        "id" : "source",
+        "name" : "Source",
+        "options" : [
+          "open",
+          "high",
+          "low",
+          "close",
+          "hl2",
+          "hlc3",
+          "ohlc4"
+        ],
+        "type" : "source"
+      }
+    ],
+    "is_hidden_study" : true,
+    "is_price_study" : true,
+    "offset" : {
+      "max" : 500.0,
+      "min" : -500.0,
+      "title" : "Offset"
+    },
+    "plots" : [
+      {
+        "id" : "MovAvgExp",
+        "type" : "line"
+      }
+    ],
+    "shortDescription" : "EMA",
+    "styles" : {
+      "MovAvgExp" : {
+        "histogramBase" : 0.0,
+        "title" : "MA"
+      }
+    }
+  },
+  {
+    "_metainfoVersion" : 51,
+    "defaults" : {
+      "inputs" : {
+        "length" : 9,
+        "source" : "close"
+      },
+      "offset" : {
+        "val" : 0.0
+      },
+      "styles" : {
+        "MovAvgSimple" : {
+          "color" : "#3a85ad",
+          "linestyle" : 0,
+          "linewidth" : 1,
+          "plottype" : 0,
+          "trackPrice" : false,
+          "transparency" : 0,
+          "visible" : true
+        }
+      }
+    },
+    "description" : "Moving Average",
+    "format" : {
+      "type" : "inherit"
+    },
+    "id" : "MASimple@tv-basicstudies-112",
+    "inputs" : [
+      {
+        "defval" : 9,
+        "id" : "length",
+        "max" : 10000,
+        "min" : 1,
+        "name" : "Length",
+        "type" : "integer"
+      },
+      {
+        "defval" : "close",
+        "id" : "source",
+        "name" : "Source",
+        "options" : [
+          "open",
+          "high",
+          "low",
+          "close",
+          "hl2",
+          "hlc3",
+          "ohlc4"
+        ],
+        "type" : "source"
+      }
+    ],
+    "is_hidden_study" : true,
+    "is_price_study" : true,
+    "offset" : {
+      "max" : 500.0,
+      "min" : -500.0,
+      "title" : "Offset"
+    },
+    "plots" : [
+      {
+        "id" : "MovAvgSimple",
+        "type" : "line"
+      }
+    ],
+    "shortDescription" : "MA",
+    "styles" : {
+      "MovAvgSimple" : {
+        "histogramBase" : 0.0,
+        "title" : "MA"
+      }
+    }
+  },
+  {
+    "_metainfoVersion" : 51,
+    "defaults" : {
+      "inputs" : {
+        "length" : 20,
+        "source" : "close"
+      },
+      "offset" : {
+        "val" : 0.0
+      },
+      "styles" : {
+        "MovAvgVolumeWeighted" : {
+          "color" : "#3a6ca8",
+          "linestyle" : 0,
+          "linewidth" : 1,
+          "plottype" : 0,
+          "trackPrice" : false,
+          "transparency" : 0,
+          "visible" : true
+        }
+      }
+    },
+    "description" : "VWMA",
+    "format" : {
+      "type" : "inherit"
+    },
+    "id" : "MAVolumeWeighted@tv-basicstudies-112",
+    "inputs" : [
+      {
+        "defval" : 20,
+        "id" : "length",
+        "max" : 10000,
+        "min" : 1,
+        "name" : "Length",
+        "type" : "integer"
+      },
+      {
+        "defval" : "close",
+        "id" : "source",
+        "name" : "Source",
+        "options" : [
+          "open",
+          "high",
+          "low",
+          "close",
+          "hl2",
+          "hlc3",
+          "ohlc4"
+        ],
+        "type" : "source"
+      }
+    ],
+    "is_hidden_study" : true,
+    "is_price_study" : true,
+    "offset" : {
+      "max" : 500.0,
+      "min" : -500.0,
+      "title" : "Offset"
+    },
+    "plots" : [
+      {
+        "id" : "MovAvgVolumeWeighted",
+        "type" : "line"
+      }
+    ],
+    "shortDescription" : "VWMA",
+    "styles" : {
+      "MovAvgVolumeWeighted" : {
+        "histogramBase" : 0.0,
+        "title" : "VWMA"
+      }
+    }
+  },
+  {
+    "_metainfoVersion" : 51,
+    "defaults" : {
+      "inputs" : {
+        "length" : 9,
+        "source" : "close"
+      },
+      "offset" : {
+        "val" : 0.0
+      },
+      "styles" : {
+        "MovAvgWeighted" : {
+          "color" : "#3a61a5",
+          "linestyle" : 0,
+          "linewidth" : 1,
+          "plottype" : 0,
+          "trackPrice" : false,
+          "transparency" : 0,
+          "visible" : true
+        }
+      }
+    },
+    "description" : "Moving Average Weighted",
+    "format" : {
+      "type" : "inherit"
+    },
+    "id" : "MAWeighted@tv-basicstudies-112",
+    "inputs" : [
+      {
+        "defval" : 9,
+        "id" : "length",
+        "max" : 10000,
+        "min" : 1,
+        "name" : "Length",
+        "type" : "integer"
+      },
+      {
+        "defval" : "close",
+        "id" : "source",
+        "name" : "Source",
+        "options" : [
+          "open",
+          "high",
+          "low",
+          "close",
+          "hl2",
+          "hlc3",
+          "ohlc4"
+        ],
+        "type" : "source"
+      }
+    ],
+    "is_hidden_study" : true,
+    "is_price_study" : true,
+    "offset" : {
+      "max" : 500.0,
+      "min" : -500.0,
+      "title" : "Offset"
+    },
+    "plots" : [
+      {
+        "id" : "MovAvgWeighted",
+        "type" : "line"
+      }
+    ],
+    "shortDescription" : "WMA",
+    "styles" : {
+      "MovAvgWeighted" : {
+        "histogramBase" : 0.0,
+        "title" : "MA"
+      }
+    }
+  },
+  {
+    "_metainfoVersion" : 51,
+    "bands" : [
+      {
+        "name" : "Overbought"
+      },
+      {
+        "name" : "Oversold"
+      }
+    ],
+    "defaults" : {
+      "bands" : [
+        {
+          "color" : "#c0c0c0",
+          "linestyle" : 2,
+          "linewidth" : 1,
+          "value" : 80.0,
+          "visible" : true
+        },
+        {
+          "color" : "#c0c0c0",
+          "linestyle" : 2,
+          "linewidth" : 1,
+          "value" : 20.0,
+          "visible" : true
+        }
+      ],
+      "bandsBackground" : {
+        "backgroundColor" : "#9915ff",
+        "fillBackground" : true,
+        "transparency" : 90
+      },
+      "inputs" : {
+        "length" : 14
+      },
+      "styles" : {
+        "MoneyFlow" : {
+          "color" : "#459915",
+          "linestyle" : 0,
+          "linewidth" : 1,
+          "plottype" : 0,
+          "trackPrice" : false,
+          "transparency" : 0,
+          "visible" : true
+        }
+      }
+    },
+    "description" : "Money Flow",
+    "format" : {
+      "type" : "price",
+      "precision" : 2
+    },
+    "id" : "MF@tv-basicstudies-112",
+    "inputs" : [
+      {
+        "defval" : 14,
+        "id" : "length",
+        "max" : 2000,
+        "min" : 1,
+        "name" : "Length",
+        "type" : "integer"
+      }
+    ],
+    "is_hidden_study" : true,
+    "is_price_study" : false,
+    "plots" : [
+      {
+        "id" : "MoneyFlow",
+        "type" : "line"
+      }
+    ],
+    "shortDescription" : "MFl",
+    "styles" : {
+      "MoneyFlow" : {
+        "histogramBase" : 0.0,
+        "title" : "MF"
+      }
+    }
+  },
+  {
+    "_metainfoVersion" : 51,
+    "defaults" : {
+      "inputs" : {
+        "length" : 10,
+        "source" : "close"
+      },
+      "styles" : {
+        "Momentum" : {
+          "color" : "#999915",
+          "linestyle" : 0,
+          "linewidth" : 1,
+          "plottype" : 0,
+          "trackPrice" : false,
+          "transparency" : 0,
+          "visible" : true
+        }
+      }
+    },
+    "description" : "Momentum",
+    "format" : {
+      "type" : "inherit"
+    },
+    "id" : "MOM@tv-basicstudies-112",
+    "inputs" : [
+      {
+        "defval" : 10,
+        "id" : "length",
+        "max" : 2000,
+        "min" : 1,
+        "name" : "Length",
+        "type" : "integer"
+      },
+      {
+        "defval" : "close",
+        "id" : "source",
+        "name" : "Source",
+        "options" : [
+          "open",
+          "high",
+          "low",
+          "close",
+          "hl2",
+          "hlc3",
+          "ohlc4"
+        ],
+        "type" : "source"
+      }
+    ],
+    "is_hidden_study" : true,
+    "is_price_study" : false,
+    "plots" : [
+      {
+        "id" : "Momentum",
+        "type" : "line"
+      }
+    ],
+    "shortDescription" : "Mom",
+    "styles" : {
+      "Momentum" : {
+        "histogramBase" : 0.0,
+        "title" : "MOM"
+      }
+    }
+  },
+  {
+    "_metainfoVersion" : 51,
+    "defaults" : {
+      "graphics" : {
+        "polygons" : {
+          "01_timeBoxUp" : {
+            "color" : "#008000",
+            "transparency" : 80
+          },
+          "02_timeBoxDown" : {
+            "color" : "#ff0000",
+            "transparency" : 80
+          }
+        }
+      },
+      "inputs" : {
+        "calculation" : "True Range",
+        "timeFrame" : "Auto"
+      }
+    },
+    "description" : "Multi-Time Period Charts",
+    "format" : {
+      "type" : "inherit"
+    },
+    "graphics" : {
+      "polygons" : {
+        "01_timeBoxUp" : {
+          "mouseTouchable" : false,
+          "name" : "Up",
+          "showBorder" : true
+        },
+        "02_timeBoxDown" : {
+          "mouseTouchable" : false,
+          "name" : "Down",
+          "showBorder" : true
+        }
+      }
+    },
+    "id" : "MTPC@tv-basicstudies-112",
+    "inputs" : [
+      {
+        "defval" : "Auto",
+        "id" : "timeFrame",
+        "name" : "Time frame",
+        "options" : [
+          "Auto",
+          "Daily",
+          "Weekly",
+          "Monthly",
+          "Quarterly",
+          "Yearly"
+        ],
+        "type" : "text"
+      },
+      {
+        "defval" : "True Range",
+        "id" : "calculation",
+        "name" : "Calculation",
+        "options" : [
+          "True Range",
+          "Trading Range"
+        ],
+        "type" : "text"
+      }
+    ],
+    "is_price_study" : true,
+    "linkedToSeries" : true,
+    "shortDescription" : "MTPC"
+  },
+  {
+    "_metainfoVersion" : 51,
+    "defaults" : {
+      "graphics" : {
+        "backgrounds" : {
+          "backgroundGrowingMoon" : {
+            "color" : "#4098ee",
+            "transparency" : 85,
+            "visible" : true
+          },
+          "backgroundWaningMoon" : {
+            "color" : "#8a9695",
+            "transparency" : 85,
+            "visible" : true
+          }
+        },
+        "shapemarks" : {
+          "fullMoon" : {
+            "color" : "#505050",
+            "size" : 12,
+            "transparency" : 50,
+            "visible" : true
+          },
+          "newMoon" : {
+            "color" : "#eeeeee",
+            "size" : 12,
+            "transparency" : 50,
+            "visible" : true
+          }
+        }
+      }
+    },
+    "description" : "Moon Phases",
+    "format" : {
+      "type" : "inherit"
+    },
+    "graphics" : {
+      "backgrounds" : {
+        "backgroundGrowingMoon" : {
+          "name" : "Growing moon"
+        },
+        "backgroundWaningMoon" : {
+          "name" : "Waning moon"
+        }
+      },
+      "shapemarks" : {
+        "fullMoon" : {
+          "halign" : "left",
+          "location" : "BelowBar",
+          "name" : "Full moon mark",
+          "shape" : "circle"
+        },
+        "newMoon" : {
+          "halign" : "left",
+          "location" : "AboveBar",
+          "name" : "New moon mark",
+          "shape" : "circle"
+        }
+      }
+    },
+    "id" : "MoonPhases@tv-basicstudies-112",
+    "is_price_study" : true,
+    "linkedToSeries" : true,
+    "shortDescription" : "MP"
+  },
+  {
+    "_metainfoVersion" : 51,
+    "defaults" : {
+      "styles" : {
+        "OnBalanceVolume" : {
+          "color" : "#3a6ca8",
+          "linestyle" : 0,
+          "linewidth" : 1,
+          "plottype" : 0,
+          "trackPrice" : false,
+          "transparency" : 0,
+          "visible" : true
+        }
+      }
+    },
+    "description" : "On Balance Volume",
+    "format" : {
+      "type" : "volume"
+    },
+    "id" : "OBV@tv-basicstudies-112",
+    "is_hidden_study" : true,
+    "is_price_study" : false,
+    "plots" : [
+      {
+        "id" : "OnBalanceVolume",
+        "type" : "line"
+      }
+    ],
+    "shortDescription" : "OBV",
+    "styles" : {
+      "OnBalanceVolume" : {
+        "histogramBase" : 0.0,
+        "title" : "OnBalanceVolume"
+      }
+    }
+  },
+  {
+    "_metainfoVersion" : 51,
+    "defaults" : {
+      "inputs" : {
+        "mult" : -1,
+        "useIntraday" : false
+      }
+    },
+    "description" : "Unnamed Study",
+    "format" : {
+      "type" : "inherit"
+    },
+    "id" : "OHLCV@tv-basicstudies-112",
+    "inputs" : [
+      {
+        "defval" : -1,
+        "id" : "mult",
+        "max" : 2147483647,
+        "min" : -1,
+        "name" : "Mult",
+        "type" : "integer"
+      },
+      {
+        "defval" : false,
+        "id" : "useIntraday",
+        "name" : "UseIntraday",
+        "type" : "bool"
+      }
+    ],
+    "is_hidden_study" : true,
+    "is_price_study" : false,
+    "plots" : [
+      {
+        "id" : "open",
+        "type" : "line"
+      },
+      {
+        "id" : "high",
+        "type" : "line"
+      },
+      {
+        "id" : "low",
+        "type" : "line"
+      },
+      {
+        "id" : "close",
+        "type" : "line"
+      },
+      {
+        "id" : "volume",
+        "type" : "line"
+      }
+    ],
+    "shortDescription" : "Unnamed Study"
+  },
+  {
+    "_metainfoVersion" : 51,
+    "defaults" : {
+      "inputs" : {
+        "symbol" : "GOOG"
+      },
+      "styles" : {
+        "close" : {
+          "linestyle" : 0,
+          "linewidth" : 1,
+          "plottype" : 0,
+          "trackPrice" : false,
+          "transparency" : 0,
+          "visible" : true
+        },
+        "high" : {
+          "linestyle" : 0,
+          "linewidth" : 1,
+          "plottype" : 0,
+          "trackPrice" : false,
+          "transparency" : 0,
+          "visible" : true
+        },
+        "low" : {
+          "linestyle" : 0,
+          "linewidth" : 1,
+          "plottype" : 0,
+          "trackPrice" : false,
+          "transparency" : 0,
+          "visible" : true
+        },
+        "open" : {
+          "linestyle" : 0,
+          "linewidth" : 1,
+          "plottype" : 0,
+          "trackPrice" : false,
+          "transparency" : 0,
+          "visible" : true
+        }
+      }
+    },
+    "description" : "Overlay",
+    "format" : {
+      "type" : "inherit"
+    },
+    "id" : "Overlay@tv-basicstudies-112",
+    "inputs" : [
+      {
+        "defval" : "GOOG",
+        "id" : "symbol",
+        "name" : "Symbol",
+        "type" : "symbol"
+      }
+    ],
+    "is_hidden_study" : true,
+    "is_price_study" : false,
+    "plots" : [
+      {
+        "id" : "open",
+        "type" : "line"
+      },
+      {
+        "id" : "high",
+        "type" : "line"
+      },
+      {
+        "id" : "low",
+        "type" : "line"
+      },
+      {
+        "id" : "close",
+        "type" : "line"
+      }
+    ],
+    "shortDescription" : "Ovl",
+    "styles" : {
+      "close" : {
+        "histogramBase" : 0.0,
+        "title" : "Close"
+      },
+      "high" : {
+        "histogramBase" : 0.0,
+        "title" : "High"
+      },
+      "low" : {
+        "histogramBase" : 0.0,
+        "title" : "Low"
+      },
+      "open" : {
+        "histogramBase" : 0.0,
+        "title" : "Open"
+      }
+    }
+  },
+  {
+    "_metainfoVersion" : 51,
+    "defaults" : {
+      "inputs" : {
+        "increment" : 0.02,
+        "max value" : 0.2,
+        "start" : 0.02
+      },
+      "styles" : {
+        "ParabolicSAR" : {
+          "color" : "#3a6ca8",
+          "linestyle" : 0,
+          "linewidth" : 1,
+          "plottype" : 3,
+          "trackPrice" : false,
+          "transparency" : 0,
+          "visible" : true
+        }
+      }
+    },
+    "description" : "Parabolic SAR",
+    "format" : {
+      "type" : "inherit"
+    },
+    "id" : "PSAR@tv-basicstudies-112",
+    "inputs" : [
+      {
+        "defval" : 0.02,
+        "id" : "start",
+        "max" : 1.7976931348623157E308,
+        "min" : -1.7976931348623157E308,
+        "name" : "Start",
+        "type" : "float"
+      },
+      {
+        "defval" : 0.02,
+        "id" : "increment",
+        "max" : 1.7976931348623157E308,
+        "min" : -1.7976931348623157E308,
+        "name" : "Increment",
+        "type" : "float"
+      },
+      {
+        "defval" : 0.2,
+        "id" : "max value",
+        "max" : 1.7976931348623157E308,
+        "min" : -1.7976931348623157E308,
+        "name" : "Max value",
+        "type" : "float"
+      }
+    ],
+    "is_hidden_study" : true,
+    "is_price_study" : true,
+    "plots" : [
+      {
+        "id" : "ParabolicSAR",
+        "type" : "line"
+      }
+    ],
+    "shortDescription" : "SAR",
+    "styles" : {
+      "ParabolicSAR" : {
+        "histogramBase" : 0.0,
+        "title" : "ParabolicSAR"
+      }
+    }
+  },
+  {
+    "_metainfoVersion" : 51,
+    "defaults" : {
+      "inputs" : {
+        "length high" : 10,
+        "length low" : 10
+      }
+    },
+    "description" : "Pivot Points High Low",
+    "format" : {
+      "type" : "inherit"
+    },
+    "id" : "PivotPointsHighLow@tv-basicstudies-112",
+    "inputs" : [
+      {
+        "defval" : 10,
+        "id" : "length high",
+        "max" : 2000,
+        "min" : 1,
+        "name" : "Length high",
+        "type" : "integer"
+      },
+      {
+        "defval" : 10,
+        "id" : "length low",
+        "max" : 2000,
+        "min" : 1,
+        "name" : "Length low",
+        "type" : "integer"
+      }
+    ],
+    "is_price_study" : true,
+    "linkedToSeries" : true,
+    "shortDescription" : "Pivots HL"
+  },
+  {
+    "_metainfoVersion" : 51,
+    "defaults" : {
+      "inputs" : {
+        "kind" : "Traditional",
+        "lookBack" : 15,
+        "pivTimeFrame" : "Auto",
+        "showHistoricalPivots" : true
+      }
+    },
+    "description" : "Pivot Points Standard",
+    "format" : {
+      "type" : "inherit"
+    },
+    "id" : "PivotPointsStandard@tv-basicstudies-112",
+    "inputs" : [
+      {
+        "defval" : "Traditional",
+        "id" : "kind",
+        "name" : "Type",
+        "options" : [
+          "Traditional",
+          "Fibonacci",
+          "Woodie",
+          "Classic",
+          "DeMark",
+          "Camarilla"
+        ],
+        "optionsTitles" : {
+          "DeMark" : "DM"
+        },
+        "type" : "text"
+      },
+      {
+        "defval" : true,
+        "id" : "showHistoricalPivots",
+        "name" : "Show historical pivots",
+        "type" : "bool"
+      },
+      {
+        "defval" : "Auto",
+        "id" : "pivTimeFrame",
+        "name" : "Pivots Timeframe",
+        "options" : [
+          "Auto",
+          "Daily",
+          "Weekly",
+          "Monthly",
+          "Yearly"
+        ],
+        "type" : "text"
+      },
+      {
+        "defval" : 15,
+        "id" : "lookBack",
+        "max" : 5000,
+        "min" : 2,
+        "name" : "Number of Pivots Back",
+        "type" : "integer"
+      }
+    ],
+    "is_price_study" : true,
+    "linkedToSeries" : true,
+    "shortDescription" : "Pivots"
+  },
+  {
+    "_metainfoVersion" : 51,
+    "defaults" : {
+      "inputs" : {
+        "exponential" : false,
+        "long length" : 21,
+        "short length" : 10,
+        "source" : "close"
+      },
+      "styles" : {
+        "PriceOsc" : {
+          "color" : "#159980",
+          "linestyle" : 0,
+          "linewidth" : 1,
+          "plottype" : 0,
+          "trackPrice" : false,
+          "transparency" : 0,
+          "visible" : true
+        }
+      }
+    },
+    "description" : "Price Oscillator",
+    "format" : {
+      "type" : "price",
+      "precision" : 2
+    },
+    "id" : "PriceOsc@tv-basicstudies-112",
+    "inputs" : [
+      {
+        "defval" : 10,
+        "id" : "short length",
+        "max" : 2000,
+        "min" : 1,
+        "name" : "Short length",
+        "type" : "integer"
+      },
+      {
+        "defval" : 21,
+        "id" : "long length",
+        "max" : 2000,
+        "min" : 1,
+        "name" : "Long length",
+        "type" : "integer"
+      },
+      {
+        "defval" : "close",
+        "id" : "source",
+        "name" : "Source",
+        "options" : [
+          "open",
+          "high",
+          "low",
+          "close",
+          "hl2",
+          "hlc3",
+          "ohlc4"
+        ],
+        "type" : "source"
+      },
+      {
+        "defval" : false,
+        "id" : "exponential",
+        "name" : "Exponential",
+        "type" : "bool"
+      }
+    ],
+    "is_hidden_study" : true,
+    "is_price_study" : false,
+    "plots" : [
+      {
+        "id" : "PriceOsc",
+        "type" : "line"
+      }
+    ],
+    "shortDescription" : "PPO",
+    "styles" : {
+      "PriceOsc" : {
+        "histogramBase" : 0.0,
+        "title" : "OSC"
+      }
+    }
+  },
+  {
+    "_metainfoVersion" : 51,
+    "defaults" : {
+      "styles" : {
+        "pvt" : {
+          "color" : "#3a6ca8",
+          "linestyle" : 0,
+          "linewidth" : 1,
+          "plottype" : 0,
+          "trackPrice" : false,
+          "transparency" : 0,
+          "visible" : true
+        }
+      }
+    },
+    "description" : "Price Volume Trend",
+    "format" : {
+      "type" : "volume"
+    },
+    "id" : "PriceVolumeTrend@tv-basicstudies-112",
+    "is_price_study" : false,
+    "plots" : [
+      {
+        "id" : "pvt",
+        "type" : "line"
+      }
+    ],
+    "shortDescription" : "PVT",
+    "styles" : {
+      "pvt" : {
+        "histogramBase" : 0.0,
+        "title" : "PVT"
+      }
+    }
+  },
+  {
+    "_metainfoVersion" : 51,
+    "bands" : [
+      {
+        "name" : "Zero Line"
+      }
+    ],
+    "defaults" : {
+      "bands" : [
+        {
+          "color" : "#c0c0c0",
+          "linestyle" : 2,
+          "linewidth" : 1,
+          "value" : 0.0,
+          "visible" : true
+        }
+      ],
+      "inputs" : {
+        "length" : 9,
+        "source" : "close"
+      },
+      "styles" : {
+        "ROC" : {
+          "color" : "#156a99",
+          "linestyle" : 0,
+          "linewidth" : 1,
+          "plottype" : 0,
+          "trackPrice" : false,
+          "transparency" : 0,
+          "visible" : true
+        }
+      }
+    },
+    "description" : "Rate Of Change",
+    "format" : {
+      "type" : "price",
+      "precision" : 2
+    },
+    "id" : "ROC@tv-basicstudies-112",
+    "inputs" : [
+      {
+        "defval" : 9,
+        "id" : "length",
+        "max" : 2000,
+        "min" : 1,
+        "name" : "Length",
+        "type" : "integer"
+      },
+      {
+        "defval" : "close",
+        "id" : "source",
+        "name" : "Source",
+        "options" : [
+          "open",
+          "high",
+          "low",
+          "close",
+          "hl2",
+          "hlc3",
+          "ohlc4"
+        ],
+        "type" : "source"
+      }
+    ],
+    "is_hidden_study" : true,
+    "is_price_study" : false,
+    "plots" : [
+      {
+        "id" : "ROC",
+        "type" : "line"
+      }
+    ],
+    "shortDescription" : "ROC",
+    "styles" : {
+      "ROC" : {
+        "histogramBase" : 0.0,
+        "title" : "ROC"
+      }
+    }
+  },
+  {
+    "_metainfoVersion" : 51,
+    "bands" : [
+      {
+        "name" : "Upper Band"
+      },
+      {
+        "name" : "Lower Band"
+      }
+    ],
+    "defaults" : {
+      "bands" : [
+        {
+          "color" : "#c0c0c0",
+          "linestyle" : 2,
+          "linewidth" : 1,
+          "value" : 70.0,
+          "visible" : true
+        },
+        {
+          "color" : "#c0c0c0",
+          "linestyle" : 2,
+          "linewidth" : 1,
+          "value" : 30.0,
+          "visible" : true
+        }
+      ],
+      "bandsBackground" : {
+        "backgroundColor" : "#9915ff",
+        "fillBackground" : true,
+        "transparency" : 90
+      },
+      "inputs" : {
+        "length" : 14,
+        "source" : "close"
+      },
+      "styles" : {
+        "RelativeStrengthIndex" : {
+          "color" : "#8e1599",
+          "linestyle" : 0,
+          "linewidth" : 1,
+          "plottype" : 0,
+          "trackPrice" : false,
+          "transparency" : 0,
+          "visible" : true
+        }
+      }
+    },
+    "description" : "Relative Strength Index",
+    "format" : {
+      "type" : "price",
+      "precision" : 2
+    },
+    "id" : "RSI@tv-basicstudies-112",
+    "inputs" : [
+      {
+        "defval" : 14,
+        "id" : "length",
+        "max" : 2000,
+        "min" : 1,
+        "name" : "Length",
+        "type" : "integer"
+      },
+      {
+        "defval" : "close",
+        "id" : "source",
+        "name" : "Source",
+        "options" : [
+          "open",
+          "high",
+          "low",
+          "close",
+          "hl2",
+          "hlc3",
+          "ohlc4"
+        ],
+        "type" : "source"
+      }
+    ],
+    "is_hidden_study" : true,
+    "is_price_study" : false,
+    "plots" : [
+      {
+        "id" : "RelativeStrengthIndex",
+        "type" : "line"
+      }
+    ],
+    "shortDescription" : "RSI",
+    "styles" : {
+      "RelativeStrengthIndex" : {
+        "histogramBase" : 0.0,
+        "title" : "RSI"
+      }
+    }
+  },
+  {
+    "_metainfoVersion" : 51,
+    "defaults" : {
+      "inputs" : {
+        "first bar time" : 0,
+        "last bar time" : 0,
+        "lower diviation" : -2.0,
+        "source" : "close",
+        "upper diviation" : 2.0,
+        "use lower diviation" : true,
+        "use upper diviation" : true
+      }
+    },
+    "description" : "Regression Trend",
+    "format" : {
+      "type" : "inherit"
+    },
+    "id" : "RegressionTrend@tv-basicstudies-112",
+    "inputs" : [
+      {
+        "defval" : 2.0,
+        "id" : "upper diviation",
+        "max" : 500.0,
+        "min" : -500.0,
+        "name" : "Upper Deviation",
+        "type" : "float"
+      },
+      {
+        "defval" : -2.0,
+        "id" : "lower diviation",
+        "max" : 500.0,
+        "min" : -500.0,
+        "name" : "Lower Deviation",
+        "type" : "float"
+      },
+      {
+        "defval" : true,
+        "id" : "use upper diviation",
+        "name" : "Use Upper Deviation",
+        "type" : "bool"
+      },
+      {
+        "defval" : true,
+        "id" : "use lower diviation",
+        "name" : "Use Lower Deviation",
+        "type" : "bool"
+      },
+      {
+        "defval" : 0,
+        "id" : "first bar time",
+        "isHidden" : true,
+        "max" : 253370764800,
+        "min" : -253370764800,
+        "name" : "First bar time",
+        "type" : "time"
+      },
+      {
+        "defval" : 0,
+        "id" : "last bar time",
+        "isHidden" : true,
+        "max" : 253370764800,
+        "min" : -253370764800,
+        "name" : "Last bar time",
+        "type" : "time"
+      },
+      {
+        "defval" : "close",
+        "id" : "source",
+        "name" : "Source",
+        "options" : [
+          "open",
+          "high",
+          "low",
+          "close",
+          "hl2",
+          "hlc3",
+          "ohlc4"
+        ],
+        "type" : "source"
+      }
+    ],
+    "is_hidden_study" : true,
+    "is_price_study" : true,
+    "shortDescription" : "Reg Trend"
+  },
+  {
+    "_metainfoVersion" : 51,
+    "defaults" : {
+      "inputs" : {
+        "long period" : 20,
+        "short period" : 5,
+        "signal line period" : 5
+      },
+      "styles" : {
+        "SMI" : {
+          "color" : "#0094ff",
+          "linestyle" : 0,
+          "linewidth" : 1,
+          "plottype" : 0,
+          "trackPrice" : false,
+          "transparency" : 0,
+          "visible" : true
+        },
+        "Signal" : {
+          "color" : "#ff6a00",
+          "linestyle" : 0,
+          "linewidth" : 1,
+          "plottype" : 0,
+          "trackPrice" : false,
+          "transparency" : 0,
+          "visible" : true
+        }
+      }
+    },
+    "description" : "SMI Ergodic Indicator",
+    "format" : {
+      "type" : "price",
+      "precision" : 4
+    },
+    "id" : "SMIErgodicIndicator@tv-basicstudies-112",
+    "inputs" : [
+      {
+        "defval" : 20,
+        "id" : "long period",
+        "max" : 2000,
+        "min" : 1,
+        "name" : "Long period",
+        "type" : "integer"
+      },
+      {
+        "defval" : 5,
+        "id" : "short period",
+        "max" : 2000,
+        "min" : 1,
+        "name" : "Short period",
+        "type" : "integer"
+      },
+      {
+        "defval" : 5,
+        "id" : "signal line period",
+        "max" : 2000,
+        "min" : 1,
+        "name" : "Signal line period",
+        "type" : "integer"
+      }
+    ],
+    "is_hidden_study" : true,
+    "is_price_study" : false,
+    "plots" : [
+      {
+        "id" : "SMI",
+        "type" : "line"
+      },
+      {
+        "id" : "Signal",
+        "type" : "line"
+      }
+    ],
+    "shortDescription" : "SMII",
+    "styles" : {
+      "SMI" : {
+        "histogramBase" : 0.0,
+        "title" : "SMI"
+      },
+      "Signal" : {
+        "histogramBase" : 0.0,
+        "title" : "Signal"
+      }
+    }
+  },
+  {
+    "_metainfoVersion" : 51,
+    "defaults" : {
+      "inputs" : {
+        "long period" : 20,
+        "short period" : 5,
+        "signal line period" : 5
+      },
+      "styles" : {
+        "SMIOSC" : {
+          "color" : "#ff8080",
+          "linestyle" : 0,
+          "linewidth" : 1,
+          "plottype" : 1,
+          "trackPrice" : false,
+          "transparency" : 0,
+          "visible" : true
+        }
+      }
+    },
+    "description" : "SMI Ergodic Oscillator",
+    "format" : {
+      "type" : "price",
+      "precision" : 4
+    },
+    "id" : "SMIErgodicOscillator@tv-basicstudies-112",
+    "inputs" : [
+      {
+        "defval" : 20,
+        "id" : "long period",
+        "max" : 2000,
+        "min" : 1,
+        "name" : "Long period",
+        "type" : "integer"
+      },
+      {
+        "defval" : 5,
+        "id" : "short period",
+        "max" : 2000,
+        "min" : 1,
+        "name" : "Short period",
+        "type" : "integer"
+      },
+      {
+        "defval" : 5,
+        "id" : "signal line period",
+        "max" : 2000,
+        "min" : 1,
+        "name" : "Signal line period",
+        "type" : "integer"
+      }
+    ],
+    "is_hidden_study" : true,
+    "is_price_study" : false,
+    "plots" : [
+      {
+        "id" : "SMIOSC",
+        "type" : "line"
+      }
+    ],
+    "shortDescription" : "SMIO",
+    "styles" : {
+      "SMIOSC" : {
+        "histogramBase" : 0.0,
+        "title" : "SMI Ergodic Oscillator"
+      }
+    }
+  },
+  {
+    "_metainfoVersion" : 51,
+    "defaults" : {
+      "graphics" : {
+        "backgrounds" : {
+          "postMarket" : {
+            "color" : "#2196f3",
+            "transparency" : 92,
+            "visible" : false
+          },
+          "preMarket" : {
+            "color" : "#ff9800",
+            "transparency" : 92,
+            "visible" : false
+          }
+        },
+        "vertlines" : {
+          "sessBreaks" : {
+            "color" : "#4985e7",
+            "style" : 2,
+            "visible" : false,
+            "width" : 1
+          }
+        }
+      }
+    },
+    "description" : "Sessions",
+    "format" : {
+      "type" : "inherit"
+    },
+    "graphics" : {
+      "backgrounds" : {
+        "postMarket" : {
+          "name" : "Post-Market Extended Hours"
+        },
+        "preMarket" : {
+          "name" : "Pre-Market Extended Hours"
+        }
+      },
+      "vertlines" : {
+        "sessBreaks" : {
+          "halign" : "left",
+          "name" : "Session Break"
+        }
+      }
+    },
+    "id" : "Sessions@tv-basicstudies-112",
+    "is_hidden_study" : true,
+    "is_price_study" : true,
+    "linkedToSeries" : true,
+    "shortDescription" : "Sessions"
+  },
+  {
+    "_metainfoVersion" : 51,
+    "bands" : [
+      {
+        "name" : "Upper Band"
+      },
+      {
+        "name" : "Lower Band"
+      }
+    ],
+    "defaults" : {
+      "bands" : [
+        {
+          "color" : "#606060",
+          "linestyle" : 2,
+          "linewidth" : 1,
+          "value" : 80.0,
+          "visible" : true
+        },
+        {
+          "color" : "#606060",
+          "linestyle" : 2,
+          "linewidth" : 1,
+          "value" : 20.0,
+          "visible" : true
+        }
+      ],
+      "bandsBackground" : {
+        "backgroundColor" : "#9915ff",
+        "fillBackground" : true,
+        "transparency" : 80
+      },
+      "inputs" : {
+        "D" : 3,
+        "K" : 14,
+        "smooth" : 3
+      },
+      "styles" : {
+        "D" : {
+          "color" : "#ff6a00",
+          "linestyle" : 0,
+          "linewidth" : 1,
+          "plottype" : 0,
+          "trackPrice" : false,
+          "transparency" : 0,
+          "visible" : true
+        },
+        "K" : {
+          "color" : "#0094ff",
+          "linestyle" : 0,
+          "linewidth" : 1,
+          "plottype" : 0,
+          "trackPrice" : false,
+          "transparency" : 0,
+          "visible" : true
+        }
+      }
+    },
+    "description" : "Stochastic",
+    "format" : {
+      "type" : "price",
+      "precision" : 2
+    },
+    "id" : "Stochastic@tv-basicstudies-112",
+    "inputs" : [
+      {
+        "defval" : 14,
+        "id" : "K",
+        "max" : 10000,
+        "min" : 1,
+        "name" : "K",
+        "type" : "integer"
+      },
+      {
+        "defval" : 3,
+        "id" : "D",
+        "max" : 10000,
+        "min" : 1,
+        "name" : "D",
+        "type" : "integer"
+      },
+      {
+        "defval" : 3,
+        "id" : "smooth",
+        "max" : 10000,
+        "min" : 1,
+        "name" : "Smooth",
+        "type" : "integer"
+      }
+    ],
+    "is_hidden_study" : true,
+    "is_price_study" : false,
+    "plots" : [
+      {
+        "id" : "K",
+        "type" : "line"
+      },
+      {
+        "id" : "D",
+        "type" : "line"
+      }
+    ],
+    "shortDescription" : "Stoch",
+    "styles" : {
+      "D" : {
+        "histogramBase" : 0.0,
+        "title" : "%D"
+      },
+      "K" : {
+        "histogramBase" : 0.0,
+        "title" : "%K"
+      }
+    }
+  },
+  {
+    "_metainfoVersion" : 51,
+    "bands" : [
+      {
+        "name" : "Upper Band"
+      },
+      {
+        "name" : "Lower Band"
+      }
+    ],
+    "defaults" : {
+      "bands" : [
+        {
+          "color" : "#606060",
+          "linestyle" : 2,
+          "linewidth" : 1,
+          "value" : 80.0,
+          "visible" : true
+        },
+        {
+          "color" : "#606060",
+          "linestyle" : 2,
+          "linewidth" : 1,
+          "value" : 20.0,
+          "visible" : true
+        }
+      ],
+      "bandsBackground" : {
+        "backgroundColor" : "#9915ff",
+        "fillBackground" : true,
+        "transparency" : 80
+      },
+      "inputs" : {
+        "D" : 3,
+        "K" : 3,
+        "RSI Length" : 14,
+        "RSI Source" : "close",
+        "Stochastic Length" : 14
+      },
+      "styles" : {
+        "D" : {
+          "color" : "#ff6a00",
+          "linestyle" : 0,
+          "linewidth" : 1,
+          "plottype" : 0,
+          "trackPrice" : false,
+          "transparency" : 0,
+          "visible" : true
+        },
+        "K" : {
+          "color" : "#0094ff",
+          "linestyle" : 0,
+          "linewidth" : 1,
+          "plottype" : 0,
+          "trackPrice" : false,
+          "transparency" : 0,
+          "visible" : true
+        }
+      }
+    },
+    "description" : "Stochastic RSI",
+    "format" : {
+      "type" : "price",
+      "precision" : 2
+    },
+    "id" : "StochasticRSI@tv-basicstudies-112",
+    "inputs" : [
+      {
+        "defval" : 3,
+        "id" : "K",
+        "max" : 10000,
+        "min" : 1,
+        "name" : "K",
+        "type" : "integer"
+      },
+      {
+        "defval" : 3,
+        "id" : "D",
+        "max" : 10000,
+        "min" : 1,
+        "name" : "D",
+        "type" : "integer"
+      },
+      {
+        "defval" : 14,
+        "id" : "RSI Length",
+        "max" : 10000,
+        "min" : 1,
+        "name" : "RSI Length",
+        "type" : "integer"
+      },
+      {
+        "defval" : 14,
+        "id" : "Stochastic Length",
+        "max" : 10000,
+        "min" : 1,
+        "name" : "Stochastic Length",
+        "type" : "integer"
+      },
+      {
+        "defval" : "close",
+        "id" : "RSI Source",
+        "name" : "RSI Source",
+        "options" : [
+          "open",
+          "high",
+          "low",
+          "close",
+          "hl2",
+          "hlc3",
+          "ohlc4"
+        ],
+        "type" : "source"
+      }
+    ],
+    "is_hidden_study" : true,
+    "is_price_study" : false,
+    "plots" : [
+      {
+        "id" : "K",
+        "type" : "line"
+      },
+      {
+        "id" : "D",
+        "type" : "line"
+      }
+    ],
+    "shortDescription" : "Stoch RSI",
+    "styles" : {
+      "D" : {
+        "histogramBase" : 0.0,
+        "title" : "D"
+      },
+      "K" : {
+        "histogramBase" : 0.0,
+        "title" : "K"
+      }
+    }
+  },
+  {
+    "_metainfoVersion" : 51,
+    "defaults" : {
+      "inputs" : {
+        "Length" : 9
+      },
+      "styles" : {
+        "TEMA" : {
+          "color" : "#008000",
+          "linestyle" : 0,
+          "linewidth" : 1,
+          "plottype" : 0,
+          "trackPrice" : false,
+          "transparency" : 0,
+          "visible" : true
+        }
+      }
+    },
+    "description" : "Triple EMA",
+    "format" : {
+      "type" : "inherit"
+    },
+    "id" : "TripleEMA@tv-basicstudies-112",
+    "inputs" : [
+      {
+        "defval" : 9,
+        "id" : "Length",
+        "max" : 10000,
+        "min" : 1,
+        "name" : "Length",
+        "type" : "integer"
+      }
+    ],
+    "is_hidden_study" : true,
+    "is_price_study" : true,
+    "plots" : [
+      {
+        "id" : "TEMA",
+        "type" : "line"
+      }
+    ],
+    "shortDescription" : "TEMA",
+    "styles" : {
+      "TEMA" : {
+        "histogramBase" : 0.0,
+        "title" : "TEMA"
+      }
+    }
+  },
+  {
+    "_metainfoVersion" : 51,
+    "bands" : [
+      {
+        "name" : "Zero"
+      }
+    ],
+    "defaults" : {
+      "bands" : [
+        {
+          "color" : "#606060",
+          "linestyle" : 2,
+          "linewidth" : 1,
+          "value" : 0.0,
+          "visible" : true
+        }
+      ],
+      "inputs" : {
+        "length" : 18
+      },
+      "styles" : {
+        "Trix" : {
+          "color" : "#991515",
+          "linestyle" : 0,
+          "linewidth" : 1,
+          "plottype" : 0,
+          "trackPrice" : false,
+          "transparency" : 0,
+          "visible" : true
+        }
+      }
+    },
+    "description" : "TRIX",
+    "format" : {
+      "type" : "price",
+      "precision" : 2
+    },
+    "id" : "Trix@tv-basicstudies-112",
+    "inputs" : [
+      {
+        "defval" : 18,
+        "id" : "length",
+        "max" : 2000,
+        "min" : 1,
+        "name" : "Length",
+        "type" : "integer"
+      }
+    ],
+    "is_hidden_study" : true,
+    "is_price_study" : false,
+    "plots" : [
+      {
+        "id" : "Trix",
+        "type" : "line"
+      }
+    ],
+    "shortDescription" : "TRIX",
+    "styles" : {
+      "Trix" : {
+        "histogramBase" : 0.0,
+        "title" : "TRIX"
+      }
+    }
+  },
+  {
+    "_metainfoVersion" : 51,
+    "defaults" : {
+      "inputs" : {
+        "length1" : 7,
+        "length2" : 14,
+        "length3" : 28
+      },
+      "styles" : {
+        "UltimateOsc" : {
+          "color" : "#ff0000",
+          "linestyle" : 0,
+          "linewidth" : 1,
+          "plottype" : 0,
+          "trackPrice" : false,
+          "transparency" : 0,
+          "visible" : true
+        }
+      }
+    },
+    "description" : "Ultimate Oscillator",
+    "format" : {
+      "type" : "price",
+      "precision" : 2
+    },
+    "id" : "UltimateOsc@tv-basicstudies-112",
+    "inputs" : [
+      {
+        "defval" : 7,
+        "id" : "length1",
+        "max" : 2000,
+        "min" : 1,
+        "name" : "Length1",
+        "type" : "integer"
+      },
+      {
+        "defval" : 14,
+        "id" : "length2",
+        "max" : 2000,
+        "min" : 1,
+        "name" : "Length2",
+        "type" : "integer"
+      },
+      {
+        "defval" : 28,
+        "id" : "length3",
+        "max" : 2000,
+        "min" : 1,
+        "name" : "Length3",
+        "type" : "integer"
+      }
+    ],
+    "is_hidden_study" : true,
+    "is_price_study" : false,
+    "plots" : [
+      {
+        "id" : "UltimateOsc",
+        "type" : "line"
+      }
+    ],
+    "shortDescription" : "UO",
+    "styles" : {
+      "UltimateOsc" : {
+        "histogramBase" : 0.0,
+        "title" : "Oscillator"
+      }
+    }
+  },
+  {
+    "_metainfoVersion" : 51,
+    "defaults" : {
+      "inputs" : {
+        "length" : 20,
+        "multiplier" : 2.0,
+        "source" : "close"
+      },
+      "palettes" : {
+        "volStopPalette" : {
+          "colors" : {
+            "0" : {
+              "color" : "#007f0e",
+              "style" : 0,
+              "width" : 1
+            },
+            "1" : {
+              "color" : "#872323",
+              "style" : 0,
+              "width" : 1
+            }
+          }
+        }
+      },
+      "styles" : {
+        "VolatilityStop" : {
+          "color" : "#3a6ca8",
+          "linestyle" : 0,
+          "linewidth" : 1,
+          "plottype" : 3,
+          "trackPrice" : false,
+          "transparency" : 0,
+          "visible" : true
+        }
+      }
+    },
+    "description" : "Volatility Stop",
+    "format" : {
+      "type" : "inherit"
+    },
+    "id" : "VSTOP@tv-basicstudies-112",
+    "inputs" : [
+      {
+        "defval" : 20,
+        "id" : "length",
+        "max" : 2000,
+        "min" : 1,
+        "name" : "Length",
+        "type" : "integer"
+      },
+      {
+        "defval" : "close",
+        "id" : "source",
+        "name" : "Source",
+        "options" : [
+          "open",
+          "high",
+          "low",
+          "close",
+          "hl2",
+          "hlc3",
+          "ohlc4"
+        ],
+        "type" : "source"
+      },
+      {
+        "defval" : 2.0,
+        "id" : "multiplier",
+        "max" : 1.7976931348623157E308,
+        "min" : -1.7976931348623157E308,
+        "name" : "Multiplier",
+        "type" : "float"
+      }
+    ],
+    "is_price_study" : true,
+    "palettes" : {
+      "volStopPalette" : {
+        "colors" : {
+          "0" : {
+            "name" : "Up"
+          },
+          "1" : {
+            "name" : "Down"
+          }
+        }
+      }
+    },
+    "plots" : [
+      {
+        "id" : "VolatilityStop",
+        "type" : "line"
+      },
+      {
+        "id" : "VolatilityStopColor",
+        "palette" : "volStopPalette",
+        "target" : "VolatilityStop",
+        "type" : "colorer"
+      }
+    ],
+    "shortDescription" : "VStop",
+    "styles" : {
+      "VolatilityStop" : {
+        "histogramBase" : 0.0,
+        "title" : "VolatilityStop"
+      }
+    }
+  },
+  {
+    "_metainfoVersion" : 51,
+    "defaults" : {
+      "inputs" : {
+        "Anchor Period" : "Session",
+        "source" : "hlc3"
+      },
+      "offset" : {
+        "val" : 0.0
+      },
+      "styles" : {
+        "VWAP" : {
+          "color" : "#3a6ca8",
+          "linestyle" : 0,
+          "linewidth" : 1,
+          "plottype" : 0,
+          "trackPrice" : false,
+          "transparency" : 0,
+          "visible" : true
+        }
+      }
+    },
+    "description" : "VWAP",
+    "format" : {
+      "type" : "inherit"
+    },
+    "id" : "VWAP@tv-basicstudies-112",
+    "inputs" : [
+      {
+        "defval" : "Session",
+        "id" : "Anchor Period",
+        "name" : "Anchor Period",
+        "options" : [
+          "Session",
+          "Week",
+          "Month",
+          "Year",
+          "Decade",
+          "Century"
+        ],
+        "type" : "text"
+      },
+      {
+        "defval" : "hlc3",
+        "id" : "source",
+        "name" : "Source",
+        "options" : [
+          "open",
+          "high",
+          "low",
+          "close",
+          "hl2",
+          "hlc3",
+          "ohlc4"
+        ],
+        "type" : "source"
+      }
+    ],
+    "is_price_study" : true,
+    "offset" : {
+      "max" : 500.0,
+      "min" : -500.0,
+      "title" : "Offset"
+    },
+    "plots" : [
+      {
+        "id" : "VWAP",
+        "type" : "line"
+      }
+    ],
+    "shortDescription" : "VWAP",
+    "styles" : {
+      "VWAP" : {
+        "histogramBase" : 0.0,
+        "title" : "VWAP"
+      }
+    }
+  },
+  {
+    "_metainfoVersion" : 51,
+    "defaults" : {
+      "inputs" : {
+        "length" : 10
+      },
+      "offset" : {
+        "val" : 0.0
+      },
+      "styles" : {
+        "RVGI" : {
+          "color" : "#008000",
+          "linestyle" : 0,
+          "linewidth" : 1,
+          "plottype" : 0,
+          "trackPrice" : false,
+          "transparency" : 0,
+          "visible" : true
+        },
+        "SIG" : {
+          "color" : "#ff0000",
+          "linestyle" : 0,
+          "linewidth" : 1,
+          "plottype" : 0,
+          "trackPrice" : false,
+          "transparency" : 0,
+          "visible" : true
+        }
+      }
+    },
+    "description" : "Relative Vigor Index",
+    "format" : {
+      "type" : "price",
+      "precision" : 4
+    },
+    "id" : "VigorIndex@tv-basicstudies-112",
+    "inputs" : [
+      {
+        "defval" : 10,
+        "id" : "length",
+        "max" : 2000,
+        "min" : 1,
+        "name" : "Length",
+        "type" : "integer"
+      }
+    ],
+    "is_hidden_study" : true,
+    "is_price_study" : false,
+    "offset" : {
+      "max" : 500.0,
+      "min" : -500.0,
+      "title" : "Offset"
+    },
+    "plots" : [
+      {
+        "id" : "RVGI",
+        "type" : "line"
+      },
+      {
+        "id" : "SIG",
+        "type" : "line"
+      }
+    ],
+    "shortDescription" : "RVGI",
+    "styles" : {
+      "RVGI" : {
+        "histogramBase" : 0.0,
+        "title" : "RVGI"
+      },
+      "SIG" : {
+        "histogramBase" : 0.0,
+        "title" : "Signal"
+      }
+    }
+  },
+  {
+    "_metainfoVersion" : 51,
+    "bands" : [
+      {
+        "name" : "Upper Band"
+      },
+      {
+        "name" : "Lower Band"
+      }
+    ],
+    "defaults" : {
+      "bands" : [
+        {
+          "color" : "#c0c0c0",
+          "linestyle" : 2,
+          "linewidth" : 1,
+          "value" : 80.0,
+          "visible" : true
+        },
+        {
+          "color" : "#c0c0c0",
+          "linestyle" : 2,
+          "linewidth" : 1,
+          "value" : 20.0,
+          "visible" : true
+        }
+      ],
+      "bandsBackground" : {
+        "backgroundColor" : "#996a15",
+        "fillBackground" : true,
+        "transparency" : 90
+      },
+      "inputs" : {
+        "Length" : 10
+      },
+      "offset" : {
+        "val" : 0.0
+      },
+      "styles" : {
+        "RVI" : {
+          "color" : "#008000",
+          "linestyle" : 0,
+          "linewidth" : 1,
+          "plottype" : 0,
+          "trackPrice" : false,
+          "transparency" : 0,
+          "visible" : true
+        }
+      }
+    },
+    "description" : "Relative Volatility Index",
+    "format" : {
+      "type" : "price",
+      "precision" : 2
+    },
+    "id" : "VolatilityIndex@tv-basicstudies-112",
+    "inputs" : [
+      {
+        "defval" : 10,
+        "id" : "Length",
+        "max" : 2000,
+        "min" : 1,
+        "name" : "Length",
+        "type" : "integer"
+      }
+    ],
+    "is_hidden_study" : true,
+    "is_price_study" : false,
+    "offset" : {
+      "max" : 500.0,
+      "min" : -500.0,
+      "title" : "Offset"
+    },
+    "plots" : [
+      {
+        "id" : "RVI",
+        "type" : "line"
+      }
+    ],
+    "shortDescription" : "RVI",
+    "styles" : {
+      "RVI" : {
+        "histogramBase" : 0.0,
+        "title" : "RVI"
+      }
+    }
+  },
+  {
+    "_metainfoVersion" : 51,
+    "defaults" : {
+      "inputs" : {
+        "col_prev_close" : false,
+        "length" : 20
+      },
+      "palettes" : {
+        "volumePalette" : {
+          "colors" : {
+            "0" : {
+              "color" : "#26a69a",
+              "style" : 0,
+              "width" : 1
+            },
+            "1" : {
+              "color" : "#ef5350",
+              "style" : 0,
+              "width" : 1
+            }
+          }
+        }
+      },
+      "styles" : {
+        "vol" : {
+          "linestyle" : 0,
+          "linewidth" : 1,
+          "plottype" : 5,
+          "trackPrice" : false,
+          "transparency" : 50,
+          "visible" : true
+        },
+        "vol_ma" : {
+          "color" : "#ff9850",
+          "linestyle" : 0,
+          "linewidth" : 1,
+          "plottype" : 0,
+          "trackPrice" : false,
+          "transparency" : 0,
+          "visible" : false
+        }
+      }
+    },
+    "description" : "Volume",
+    "format" : {
+      "type" : "volume"
+    },
+    "id" : "Volume@tv-basicstudies-112",
+    "inputs" : [
+      {
+        "defval" : 20,
+        "id" : "length",
+        "max" : 2000,
+        "min" : 1,
+        "name" : "MA Length",
+        "type" : "integer"
+      },
+      {
+        "defval" : false,
+        "id" : "col_prev_close",
+        "name" : "Color based on previous close",
+        "type" : "bool"
+      }
+    ],
+    "is_price_study" : false,
+    "palettes" : {
+      "volumePalette" : {
+        "colors" : {
+          "0" : {
+            "name" : "Growing"
+          },
+          "1" : {
+            "name" : "Falling"
+          }
+        }
+      }
+    },
+    "plots" : [
+      {
+        "id" : "vol",
+        "type" : "line"
+      },
+      {
+        "id" : "vol_color",
+        "palette" : "volumePalette",
+        "target" : "vol",
+        "type" : "colorer"
+      },
+      {
+        "id" : "vol_ma",
+        "type" : "line"
+      }
+    ],
+    "shortDescription" : "Vol",
+    "styles" : {
+      "vol" : {
+        "histogramBase" : 0.0,
+        "title" : "Volume"
+      },
+      "vol_ma" : {
+        "histogramBase" : 0.0,
+        "title" : "Volume MA"
+      }
+    }
+  },
+  {
+    "_metainfoVersion" : 51,
+    "bands" : [
+      {
+        "name" : "Upper Band"
+      },
+      {
+        "name" : "Lower Band"
+      }
+    ],
+    "defaults" : {
+      "bands" : [
+        {
+          "color" : "#606060",
+          "linestyle" : 2,
+          "linewidth" : 1,
+          "value" : -20.0,
+          "visible" : true
+        },
+        {
+          "color" : "#606060",
+          "linestyle" : 2,
+          "linewidth" : 1,
+          "value" : -80.0,
+          "visible" : true
+        }
+      ],
+      "bandsBackground" : {
+        "backgroundColor" : "#9915ff",
+        "fillBackground" : true,
+        "transparency" : 90
+      },
+      "inputs" : {
+        "length" : 14,
+        "source" : "close"
+      },
+      "styles" : {
+        "PercentRange" : {
+          "color" : "#3a6ca8",
+          "linestyle" : 0,
+          "linewidth" : 1,
+          "plottype" : 0,
+          "trackPrice" : false,
+          "transparency" : 0,
+          "visible" : true
+        }
+      }
+    },
+    "description" : "Williams %R",
+    "format" : {
+      "type" : "price",
+      "precision" : 2
+    },
+    "id" : "WilliamR@tv-basicstudies-112",
+    "inputs" : [
+      {
+        "defval" : 14,
+        "id" : "length",
+        "max" : 2000,
+        "min" : 1,
+        "name" : "Length",
+        "type" : "integer"
+      },
+      {
+        "defval" : "close",
+        "id" : "source",
+        "name" : "Source",
+        "options" : [
+          "open",
+          "high",
+          "low",
+          "close",
+          "hl2",
+          "hlc3",
+          "ohlc4"
+        ],
+        "type" : "source"
+      }
+    ],
+    "is_hidden_study" : true,
+    "is_price_study" : false,
+    "plots" : [
+      {
+        "id" : "PercentRange",
+        "type" : "line"
+      }
+    ],
+    "shortDescription" : "%R",
+    "styles" : {
+      "PercentRange" : {
+        "histogramBase" : 0.0,
+        "title" : "%R"
+      }
+    }
+  },
+  {
+    "_metainfoVersion" : 51,
+    "defaults" : {
+      "inputs" : {
+        "jaw length" : 13,
+        "lips length" : 5,
+        "teeth length" : 8
+      },
+      "offsets" : {
+        "Jaw" : {
+          "val" : 8.0
+        },
+        "Lips" : {
+          "val" : 3.0
+        },
+        "Teeth" : {
+          "val" : 5.0
+        }
+      },
+      "styles" : {
+        "Jaw" : {
+          "color" : "#3bb3e4",
+          "linestyle" : 0,
+          "linewidth" : 1,
+          "plottype" : 0,
+          "trackPrice" : false,
+          "transparency" : 0,
+          "visible" : true
+        },
+        "Lips" : {
+          "color" : "#36c711",
+          "linestyle" : 0,
+          "linewidth" : 1,
+          "plottype" : 0,
+          "trackPrice" : false,
+          "transparency" : 0,
+          "visible" : true
+        },
+        "Teeth" : {
+          "color" : "#ff006e",
+          "linestyle" : 0,
+          "linewidth" : 1,
+          "plottype" : 0,
+          "trackPrice" : false,
+          "transparency" : 0,
+          "visible" : true
+        }
+      }
+    },
+    "description" : "Williams Alligator",
+    "format" : {
+      "type" : "inherit"
+    },
+    "id" : "WilliamsAlligator@tv-basicstudies-112",
+    "inputs" : [
+      {
+        "defval" : 13,
+        "id" : "jaw length",
+        "max" : 2000,
+        "min" : 1,
+        "name" : "Jaw Length",
+        "type" : "integer"
+      },
+      {
+        "defval" : 8,
+        "id" : "teeth length",
+        "max" : 2000,
+        "min" : 1,
+        "name" : "Teeth Length",
+        "type" : "integer"
+      },
+      {
+        "defval" : 5,
+        "id" : "lips length",
+        "max" : 2000,
+        "min" : 1,
+        "name" : "Lips Length",
+        "type" : "integer"
+      }
+    ],
+    "is_hidden_study" : true,
+    "is_price_study" : true,
+    "offsets" : {
+      "Jaw" : {
+        "max" : 1000.0,
+        "min" : -1000.0,
+        "title" : "Jaw Offset"
+      },
+      "Lips" : {
+        "max" : 1000.0,
+        "min" : -1000.0,
+        "title" : "Lips Offset"
+      },
+      "Teeth" : {
+        "max" : 1000.0,
+        "min" : -1000.0,
+        "title" : "Teeth Offset"
+      }
+    },
+    "plots" : [
+      {
+        "id" : "Jaw",
+        "type" : "line"
+      },
+      {
+        "id" : "Teeth",
+        "type" : "line"
+      },
+      {
+        "id" : "Lips",
+        "type" : "line"
+      }
+    ],
+    "shortDescription" : "Alligator",
+    "styles" : {
+      "Jaw" : {
+        "histogramBase" : 0.0,
+        "title" : "Jaw"
+      },
+      "Lips" : {
+        "histogramBase" : 0.0,
+        "title" : "Lips"
+      },
+      "Teeth" : {
+        "histogramBase" : 0.0,
+        "title" : "Teeth"
+      }
+    }
+  },
+  {
+    "_metainfoVersion" : 51,
+    "defaults" : {
+      "graphics" : {
+        "shapemarks" : {
+          "downFractal" : {
+            "color" : "#ff0000",
+            "size" : 12,
+            "transparency" : 50,
+            "visible" : true
+          },
+          "upFractal" : {
+            "color" : "#008000",
+            "size" : 12,
+            "transparency" : 50,
+            "visible" : true
+          }
+        }
+      }
+    },
+    "description" : "Williams Fractal",
+    "format" : {
+      "type" : "inherit"
+    },
+    "graphics" : {
+      "shapemarks" : {
+        "downFractal" : {
+          "halign" : "center",
+          "location" : "BelowBar",
+          "name" : "Down fractals",
+          "shape" : "arrowDown"
+        },
+        "upFractal" : {
+          "halign" : "center",
+          "location" : "AboveBar",
+          "name" : "Up fractals",
+          "shape" : "arrowUp"
+        }
+      }
+    },
+    "id" : "WilliamsFractal@tv-basicstudies-112",
+    "is_hidden_study" : true,
+    "is_price_study" : true,
+    "linkedToSeries" : true,
+    "shortDescription" : "Fractal"
+  },
+  {
+    "_metainfoVersion" : 51,
+    "defaults" : {
+      "inputs" : {
+        "depth" : 10,
+        "diviation (%)" : 5.0,
+        "drawFakeTail" : false
+      }
+    },
+    "description" : "Zig Zag",
+    "format" : {
+      "type" : "inherit"
+    },
+    "id" : "ZigZag@tv-basicstudies-112",
+    "inputs" : [
+      {
+        "defval" : 5.0,
+        "id" : "diviation (%)",
+        "max" : 100.0,
+        "min" : 1.0E-5,
+        "name" : "Deviation (%)",
+        "type" : "float"
+      },
+      {
+        "defval" : 10,
+        "id" : "depth",
+        "max" : 2000,
+        "min" : 1,
+        "name" : "Depth",
+        "type" : "integer"
+      },
+      {
+        "defval" : false,
+        "id" : "drawFakeTail",
+        "name" : "Extend to last bar",
+        "type" : "bool"
+      }
+    ],
+    "is_price_study" : true,
+    "shortDescription" : "Zig Zag"
+  },
+  {
+    "_metainfoVersion" : 51,
+    "bands" : [
+      {
+        "name" : "Zero Line"
+      }
+    ],
+    "defaults" : {
+      "bands" : [
+        {
+          "color" : "#c0c0c0",
+          "linestyle" : 2,
+          "linewidth" : 1,
+          "value" : 0.0,
+          "visible" : true
+        }
+      ],
+      "inputs" : {
+        "length" : 9,
+        "src" : "close"
+      },
+      "styles" : {
+        "chandeMO" : {
+          "color" : "#0094ff",
+          "linestyle" : 0,
+          "linewidth" : 1,
+          "plottype" : 0,
+          "trackPrice" : false,
+          "transparency" : 0,
+          "visible" : true
+        }
+      }
+    },
+    "description" : "Chande Momentum Oscillator",
+    "format" : {
+      "type" : "price",
+      "precision" : 2
+    },
+    "id" : "chandeMO@tv-basicstudies-112",
+    "inputs" : [
+      {
+        "defval" : 9,
+        "id" : "length",
+        "max" : 2000,
+        "min" : 1,
+        "name" : "Length",
+        "type" : "integer"
+      },
+      {
+        "defval" : "close",
+        "id" : "src",
+        "name" : "Price",
+        "options" : [
+          "open",
+          "high",
+          "low",
+          "close",
+          "hl2",
+          "hlc3",
+          "ohlc4"
+        ],
+        "type" : "source"
+      }
+    ],
+    "is_hidden_study" : true,
+    "is_price_study" : false,
+    "plots" : [
+      {
+        "id" : "chandeMO",
+        "type" : "line"
+      }
+    ],
+    "shortDescription" : "ChandeMO",
+    "styles" : {
+      "chandeMO" : {
+        "histogramBase" : 0.0,
+        "title" : "Chande MO"
+      }
+    }
+  },
+  {
+    "_metainfoVersion" : 51,
+    "defaults" : {
+      "inputs" : {
+        "length" : 9,
+        "src" : "close"
+      },
+      "styles" : {
+        "hma" : {
+          "color" : "#674ea7",
+          "linestyle" : 0,
+          "linewidth" : 1,
+          "plottype" : 0,
+          "trackPrice" : false,
+          "transparency" : 0,
+          "visible" : true
+        }
+      }
+    },
+    "description" : "Hull Moving Average",
+    "format" : {
+      "type" : "inherit"
+    },
+    "id" : "hullMA@tv-basicstudies-112",
+    "inputs" : [
+      {
+        "defval" : 9,
+        "id" : "length",
+        "max" : 10000,
+        "min" : 1,
+        "name" : "Length",
+        "type" : "integer"
+      },
+      {
+        "defval" : "close",
+        "id" : "src",
+        "name" : "Price",
+        "options" : [
+          "open",
+          "high",
+          "low",
+          "close",
+          "hl2",
+          "hlc3",
+          "ohlc4"
+        ],
+        "type" : "source"
+      }
+    ],
+    "is_hidden_study" : true,
+    "is_price_study" : true,
+    "plots" : [
+      {
+        "id" : "hma",
+        "type" : "line"
+      }
+    ],
+    "shortDescription" : "HMA",
+    "styles" : {
+      "hma" : {
+        "histogramBase" : 0.0,
+        "title" : "Hull MA"
+      }
+    }
+  },
+  {
+    "_metainfoVersion" : 51,
+    "bands" : [
+      {
+        "name" : "Equality Line"
+      }
+    ],
+    "defaults" : {
+      "bands" : [
+        {
+          "color" : "#4985e7",
+          "linestyle" : 2,
+          "linewidth" : 1,
+          "value" : 1.0,
+          "visible" : true
+        }
+      ],
+      "inputs" : {
+        "length" : 9
+      },
+      "styles" : {
+        "adr" : {
+          "color" : "#674ea7",
+          "linestyle" : 0,
+          "linewidth" : 1,
+          "plottype" : 0,
+          "trackPrice" : false,
+          "transparency" : 0,
+          "visible" : true
+        }
+      }
+    },
+    "description" : "Advance\/Decline Ratio (Bars)",
+    "format" : {
+      "type" : "price",
+      "precision" : 2
+    },
+    "id" : "studyADR@tv-basicstudies-112",
+    "inputs" : [
+      {
+        "defval" : 9,
+        "id" : "length",
+        "max" : 2000,
+        "min" : 1,
+        "name" : "Length",
+        "type" : "integer"
+      }
+    ],
+    "is_hidden_study" : true,
+    "is_price_study" : false,
+    "plots" : [
+      {
+        "id" : "adr",
+        "type" : "line"
+      }
+    ],
+    "shortDescription" : "ADR_B",
+    "styles" : {
+      "adr" : {
+        "histogramBase" : 0.0,
+        "title" : "ADR_B"
+      }
+    }
+  }
+]
