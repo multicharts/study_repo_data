@@ -1,0 +1,352 @@
+[
+  {
+    "_metainfoVersion" : 51,
+    "defaults" : {
+      "inputs" : {
+        "correction" : 1.0,
+        "ticker" : ""
+      }
+    },
+    "description" : "Unnamed Study",
+    "format" : {
+      "type" : "inherit"
+    },
+    "id" : "BarSetCFD@tv-indices-22",
+    "inputs" : [
+      {
+        "defval" : "",
+        "id" : "ticker",
+        "name" : "Ticker",
+        "type" : "text"
+      },
+      {
+        "defval" : 1.0,
+        "id" : "correction",
+        "max" : 1.7976931348623157E308,
+        "min" : -1.7976931348623157E308,
+        "name" : "Correction",
+        "type" : "float"
+      }
+    ],
+    "is_hidden_study" : true,
+    "is_price_study" : false,
+    "plots" : [
+      {
+        "id" : "open",
+        "type" : "line"
+      },
+      {
+        "id" : "high",
+        "type" : "line"
+      },
+      {
+        "id" : "low",
+        "type" : "line"
+      },
+      {
+        "id" : "close",
+        "type" : "line"
+      },
+      {
+        "id" : "volume",
+        "type" : "line"
+      }
+    ],
+    "shortDescription" : "Unnamed Study"
+  },
+  {
+    "_metainfoVersion" : 51,
+    "defaults" : {
+      "inputs" : {
+        "components" : "",
+        "divisorSymbol" : "",
+        "fundamentalsSourcePrefix" : "EDGR",
+        "historySymbol" : "",
+        "initialValue" : 1.0,
+        "mode" : "default",
+        "startDate" : 0,
+        "unadjustedSuffix" : "_UNADJ"
+      }
+    },
+    "description" : "Unnamed Study",
+    "format" : {
+      "type" : "inherit"
+    },
+    "id" : "CapWeightedIndex@tv-indices-22",
+    "inputs" : [
+      {
+        "defval" : 0,
+        "id" : "startDate",
+        "max" : 2147483647,
+        "min" : 0,
+        "name" : "StartDate",
+        "type" : "integer"
+      },
+      {
+        "defval" : 1.0,
+        "id" : "initialValue",
+        "max" : 1.7976931348623157E308,
+        "min" : -1.7976931348623157E308,
+        "name" : "InitialValue",
+        "type" : "float"
+      },
+      {
+        "defval" : "",
+        "id" : "components",
+        "name" : "Components",
+        "type" : "text"
+      },
+      {
+        "defval" : "EDGR",
+        "id" : "fundamentalsSourcePrefix",
+        "name" : "FundamentalsSourcePrefix",
+        "type" : "text"
+      },
+      {
+        "defval" : "_UNADJ",
+        "id" : "unadjustedSuffix",
+        "name" : "UnadjustedSuffix",
+        "type" : "text"
+      },
+      {
+        "defval" : "default",
+        "id" : "mode",
+        "name" : "Mode",
+        "options" : [
+          "default",
+          "divisor",
+          "realtime",
+          "history"
+        ],
+        "type" : "text"
+      },
+      {
+        "defval" : "",
+        "id" : "historySymbol",
+        "name" : "HistorySymbol",
+        "type" : "text"
+      },
+      {
+        "defval" : "",
+        "id" : "divisorSymbol",
+        "name" : "DivisorSymbol",
+        "type" : "text"
+      }
+    ],
+    "is_hidden_study" : true,
+    "is_price_study" : false,
+    "plots" : [
+      {
+        "id" : "open",
+        "type" : "line"
+      },
+      {
+        "id" : "high",
+        "type" : "line"
+      },
+      {
+        "id" : "low",
+        "type" : "line"
+      },
+      {
+        "id" : "close",
+        "type" : "line"
+      },
+      {
+        "id" : "volume",
+        "type" : "line"
+      }
+    ],
+    "shortDescription" : "Unnamed Study"
+  },
+  {
+    "_metainfoVersion" : 51,
+    "defaults" : {
+      "inputs" : {
+        "components" : "",
+        "historySymbol" : "",
+        "mode" : "default",
+        "multiplier" : 1.0
+      }
+    },
+    "description" : "Unnamed Study",
+    "format" : {
+      "type" : "inherit"
+    },
+    "id" : "PriceWeightedIndex@tv-indices-22",
+    "inputs" : [
+      {
+        "defval" : 1.0,
+        "id" : "multiplier",
+        "max" : 1.7976931348623157E308,
+        "min" : -1.7976931348623157E308,
+        "name" : "Multiplier",
+        "type" : "float"
+      },
+      {
+        "defval" : "",
+        "id" : "components",
+        "name" : "Components",
+        "type" : "text"
+      },
+      {
+        "defval" : "default",
+        "id" : "mode",
+        "name" : "Mode",
+        "options" : [
+          "default",
+          "realtime",
+          "history"
+        ],
+        "type" : "text"
+      },
+      {
+        "defval" : "",
+        "id" : "historySymbol",
+        "name" : "HistorySymbol",
+        "type" : "text"
+      }
+    ],
+    "is_hidden_study" : true,
+    "is_price_study" : false,
+    "plots" : [
+      {
+        "id" : "open",
+        "type" : "line"
+      },
+      {
+        "id" : "high",
+        "type" : "line"
+      },
+      {
+        "id" : "low",
+        "type" : "line"
+      },
+      {
+        "id" : "close",
+        "type" : "line"
+      },
+      {
+        "id" : "volume",
+        "type" : "line"
+      }
+    ],
+    "shortDescription" : "Unnamed Study"
+  },
+  {
+    "_metainfoVersion" : 51,
+    "defaults" : {
+      "inputs" : {
+        "config" : "",
+        "config_compressed" : "",
+        "main_symbol" : "BITFINEX:BTCUSD",
+        "start_time" : 0
+      }
+    },
+    "description" : "Unnamed Study",
+    "format" : {
+      "type" : "inherit"
+    },
+    "id" : "TotalCryptoCap@tv-indices-22",
+    "inputs" : [
+      {
+        "defval" : "",
+        "id" : "config",
+        "name" : "Config",
+        "type" : "text"
+      },
+      {
+        "defval" : "",
+        "id" : "config_compressed",
+        "name" : "Config_compressed",
+        "type" : "text"
+      },
+      {
+        "defval" : "BITFINEX:BTCUSD",
+        "id" : "main_symbol",
+        "name" : "Main_symbol",
+        "type" : "text"
+      },
+      {
+        "defval" : 0,
+        "id" : "start_time",
+        "isHidden" : true,
+        "max" : 253370764800,
+        "min" : -253370764800,
+        "name" : "Start_time",
+        "type" : "time"
+      }
+    ],
+    "is_hidden_study" : true,
+    "is_price_study" : false,
+    "plots" : [
+      {
+        "id" : "open",
+        "type" : "line"
+      },
+      {
+        "id" : "high",
+        "type" : "line"
+      },
+      {
+        "id" : "low",
+        "type" : "line"
+      },
+      {
+        "id" : "close",
+        "type" : "line"
+      },
+      {
+        "id" : "volume",
+        "type" : "line"
+      }
+    ],
+    "shortDescription" : "Unnamed Study"
+  },
+  {
+    "_metainfoVersion" : 51,
+    "defaults" : {
+      "inputs" : {
+        "ticker" : ""
+      }
+    },
+    "description" : "Unnamed Study",
+    "format" : {
+      "type" : "inherit"
+    },
+    "id" : "TotalCryptoCapMerger@tv-indices-22",
+    "inputs" : [
+      {
+        "defval" : "",
+        "id" : "ticker",
+        "name" : "Ticker",
+        "type" : "text"
+      }
+    ],
+    "is_hidden_study" : true,
+    "is_price_study" : false,
+    "plots" : [
+      {
+        "id" : "open",
+        "type" : "line"
+      },
+      {
+        "id" : "high",
+        "type" : "line"
+      },
+      {
+        "id" : "low",
+        "type" : "line"
+      },
+      {
+        "id" : "close",
+        "type" : "line"
+      },
+      {
+        "id" : "volume",
+        "type" : "line"
+      }
+    ],
+    "shortDescription" : "Unnamed Study"
+  }
+]
