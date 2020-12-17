@@ -1,0 +1,428 @@
+[
+  {
+    "_metainfoVersion" : 51,
+    "defaults" : {
+      "inputs" : {
+        "atrLength" : 14,
+        "reversalAmount" : 1.0,
+        "source" : "open",
+        "style" : "Traditional"
+      }
+    },
+    "description" : "Unnamed Study",
+    "format" : {
+      "type" : "inherit"
+    },
+    "id" : "BarSetKagi@tv-prostudies-45",
+    "inputs" : [
+      {
+        "defval" : "open",
+        "id" : "source",
+        "isHidden" : true,
+        "name" : "Source",
+        "options" : [
+          "open",
+          "high",
+          "low",
+          "close",
+          "hl2",
+          "hlc3",
+          "ohlc4"
+        ],
+        "type" : "source"
+      },
+      {
+        "defval" : "Traditional",
+        "id" : "style",
+        "name" : "Style",
+        "options" : [
+          "ATR",
+          "Traditional"
+        ],
+        "type" : "text"
+      },
+      {
+        "defval" : 14,
+        "id" : "atrLength",
+        "max" : 100,
+        "min" : 1,
+        "name" : "AtrLength",
+        "type" : "integer",
+        "visible" : "style==ATR"
+      },
+      {
+        "defval" : 1.0,
+        "id" : "reversalAmount",
+        "max" : 1.7976931348623157E308,
+        "min" : -1.7976931348623157E308,
+        "name" : "ReversalAmount",
+        "type" : "float",
+        "visible" : "style==Traditional"
+      }
+    ],
+    "is_hidden_study" : true,
+    "is_price_study" : false,
+    "plots" : [
+      {
+        "id" : "open",
+        "type" : "line"
+      },
+      {
+        "id" : "high",
+        "type" : "line"
+      },
+      {
+        "id" : "low",
+        "type" : "line"
+      },
+      {
+        "id" : "close",
+        "type" : "line"
+      },
+      {
+        "id" : "volume",
+        "type" : "line"
+      },
+      {
+        "id" : "change_price",
+        "type" : "line"
+      }
+    ],
+    "shortDescription" : "Unnamed Study"
+  },
+  {
+    "_metainfoVersion" : 51,
+    "defaults" : {
+      "inputs" : {
+        "atrLength" : 14,
+        "boxSize" : 1.0,
+        "oneStepBackBuilding" : false,
+        "reversalAmount" : 3,
+        "sources" : "Close",
+        "style" : "ATR"
+      }
+    },
+    "description" : "Unnamed Study",
+    "format" : {
+      "type" : "inherit"
+    },
+    "id" : "BarSetPnF@tv-prostudies-45",
+    "inputs" : [
+      {
+        "defval" : "Close",
+        "id" : "sources",
+        "name" : "Sources",
+        "options" : [
+          "HL",
+          "Close"
+        ],
+        "type" : "text"
+      },
+      {
+        "defval" : "ATR",
+        "id" : "style",
+        "name" : "Style",
+        "options" : [
+          "ATR",
+          "Traditional"
+        ],
+        "type" : "text"
+      },
+      {
+        "defval" : 1.0,
+        "id" : "boxSize",
+        "max" : 1.7976931348623157E308,
+        "min" : -1.7976931348623157E308,
+        "name" : "BoxSize",
+        "type" : "float",
+        "visible" : "style==Traditional"
+      },
+      {
+        "defval" : 14,
+        "id" : "atrLength",
+        "max" : 100,
+        "min" : 1,
+        "name" : "AtrLength",
+        "type" : "integer",
+        "visible" : "style==ATR"
+      },
+      {
+        "defval" : 3,
+        "id" : "reversalAmount",
+        "max" : 100,
+        "min" : 1,
+        "name" : "ReversalAmount",
+        "type" : "integer"
+      },
+      {
+        "defval" : false,
+        "id" : "oneStepBackBuilding",
+        "name" : "OneStepBackBuilding",
+        "type" : "bool"
+      }
+    ],
+    "is_hidden_study" : true,
+    "is_price_study" : false,
+    "plots" : [
+      {
+        "id" : "open",
+        "type" : "line"
+      },
+      {
+        "id" : "high",
+        "type" : "line"
+      },
+      {
+        "id" : "low",
+        "type" : "line"
+      },
+      {
+        "id" : "close",
+        "type" : "line"
+      },
+      {
+        "id" : "volume",
+        "type" : "line"
+      },
+      {
+        "id" : "factor",
+        "type" : "line"
+      }
+    ],
+    "shortDescription" : "Unnamed Study"
+  },
+  {
+    "_metainfoVersion" : 51,
+    "defaults" : {
+      "inputs" : {
+        "lb" : 3,
+        "source" : "close"
+      }
+    },
+    "description" : "Unnamed Study",
+    "format" : {
+      "type" : "inherit"
+    },
+    "id" : "BarSetPriceBreak@tv-prostudies-45",
+    "inputs" : [
+      {
+        "defval" : "close",
+        "id" : "source",
+        "isHidden" : true,
+        "name" : "Source",
+        "options" : [
+          "open",
+          "high",
+          "low",
+          "close",
+          "hl2",
+          "hlc3",
+          "ohlc4"
+        ],
+        "type" : "source"
+      },
+      {
+        "defval" : 3,
+        "id" : "lb",
+        "max" : 100,
+        "min" : 1,
+        "name" : "Lb",
+        "type" : "integer"
+      }
+    ],
+    "is_hidden_study" : true,
+    "is_price_study" : false,
+    "plots" : [
+      {
+        "id" : "open",
+        "type" : "line"
+      },
+      {
+        "id" : "high",
+        "type" : "line"
+      },
+      {
+        "id" : "low",
+        "type" : "line"
+      },
+      {
+        "id" : "close",
+        "type" : "line"
+      },
+      {
+        "id" : "volume",
+        "type" : "line"
+      }
+    ],
+    "shortDescription" : "Unnamed Study"
+  },
+  {
+    "_metainfoVersion" : 51,
+    "defaults" : {
+      "inputs" : {
+        "atrLength" : 14,
+        "boxSize" : 5.0,
+        "source" : "Close",
+        "sources" : "Close",
+        "style" : "ATR",
+        "wicks" : true
+      }
+    },
+    "description" : "Unnamed Study",
+    "format" : {
+      "type" : "inherit"
+    },
+    "id" : "BarSetRenko@tv-prostudies-45",
+    "inputs" : [
+      {
+        "defval" : "Close",
+        "id" : "sources",
+        "name" : "Sources",
+        "options" : [
+          "Close",
+          "OHLC"
+        ],
+        "type" : "text"
+      },
+      {
+        "defval" : "Close",
+        "id" : "source",
+        "isHidden" : true,
+        "name" : "Source",
+        "options" : [
+          "Close",
+          "OHLC",
+          "close"
+        ],
+        "type" : "text"
+      },
+      {
+        "defval" : "ATR",
+        "id" : "style",
+        "name" : "Style",
+        "options" : [
+          "ATR",
+          "Traditional"
+        ],
+        "type" : "text"
+      },
+      {
+        "defval" : 5.0,
+        "id" : "boxSize",
+        "max" : 1.7976931348623157E308,
+        "min" : -1.7976931348623157E308,
+        "name" : "BoxSize",
+        "type" : "float",
+        "visible" : "style==Traditional"
+      },
+      {
+        "defval" : 14,
+        "id" : "atrLength",
+        "max" : 100,
+        "min" : 1,
+        "name" : "AtrLength",
+        "type" : "integer",
+        "visible" : "style==ATR"
+      },
+      {
+        "defval" : true,
+        "id" : "wicks",
+        "isHidden" : true,
+        "name" : "Wicks",
+        "type" : "bool"
+      }
+    ],
+    "is_hidden_study" : true,
+    "is_price_study" : false,
+    "plots" : [
+      {
+        "id" : "open",
+        "type" : "line"
+      },
+      {
+        "id" : "high",
+        "type" : "line"
+      },
+      {
+        "id" : "low",
+        "type" : "line"
+      },
+      {
+        "id" : "close",
+        "type" : "line"
+      },
+      {
+        "id" : "volume",
+        "type" : "line"
+      }
+    ],
+    "shortDescription" : "Unnamed Study"
+  },
+  {
+    "_metainfoVersion" : 51,
+    "defaults" : {
+      "inputs" : {
+        "expr" : "",
+        "session" : "0000-0000",
+        "tickers" : "",
+        "tz" : "UTC"
+      }
+    },
+    "description" : "Unnamed Study",
+    "format" : {
+      "type" : "inherit"
+    },
+    "id" : "BarSetSpread@tv-prostudies-45",
+    "inputs" : [
+      {
+        "defval" : "",
+        "id" : "tickers",
+        "name" : "Tickers",
+        "type" : "text"
+      },
+      {
+        "defval" : "",
+        "id" : "expr",
+        "name" : "Expr",
+        "type" : "text"
+      },
+      {
+        "defval" : "UTC",
+        "id" : "tz",
+        "name" : "Tz",
+        "type" : "text"
+      },
+      {
+        "defval" : "0000-0000",
+        "id" : "session",
+        "name" : "Session",
+        "type" : "text"
+      }
+    ],
+    "is_hidden_study" : true,
+    "is_price_study" : false,
+    "plots" : [
+      {
+        "id" : "open",
+        "type" : "line"
+      },
+      {
+        "id" : "high",
+        "type" : "line"
+      },
+      {
+        "id" : "low",
+        "type" : "line"
+      },
+      {
+        "id" : "close",
+        "type" : "line"
+      },
+      {
+        "id" : "volume",
+        "type" : "line"
+      }
+    ],
+    "shortDescription" : "Unnamed Study"
+  }
+]
