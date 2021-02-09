@@ -1,0 +1,44 @@
+[
+  {
+    "pkgName" : "tv-indices",
+    "studyMigrations" : [
+      {
+        "rules" : [
+          {
+            "action" : "removeVal",
+            "inputId" : "startDate",
+            "type" : "inputRemoved"
+          },
+          {
+            "action" : "removeVal",
+            "inputId" : "initialValue",
+            "type" : "inputRemoved"
+          },
+          {
+            "action" : "removeVal",
+            "inputId" : "period",
+            "type" : "inputRemoved"
+          },
+          {
+            "action" : "removeVal",
+            "inputId" : "components",
+            "type" : "inputRemoved"
+          }
+        ],
+        "studyId" : "EquallyWeightedIndex@tv-indices"
+      },
+      {
+        "rules" : [
+          {
+            "action" : "removeVal",
+            "inputId" : "startDate",
+            "type" : "inputRemoved"
+          }
+        ],
+        "studyId" : "PriceWeightedIndex@tv-indices"
+      }
+    ],
+    "versFrom" : "10",
+    "versTo" : "11"
+  }
+]
