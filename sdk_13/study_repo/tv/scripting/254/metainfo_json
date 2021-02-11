@@ -1,0 +1,182 @@
+[
+  {
+    "_metainfoVersion" : 51,
+    "defaults" : {
+      "inputs" : {
+        "logToken" : "",
+        "pineId" : "",
+        "pineVersion" : "",
+        "text" : ""
+      }
+    },
+    "description" : "Unnamed Study",
+    "format" : {
+      "type" : "inherit"
+    },
+    "id" : "ESD@tv-scripting-254",
+    "inputs" : [
+      {
+        "defval" : "",
+        "id" : "text",
+        "name" : "Text",
+        "type" : "text"
+      },
+      {
+        "defval" : "",
+        "id" : "pineId",
+        "name" : "PineId",
+        "type" : "text"
+      },
+      {
+        "defval" : "",
+        "id" : "pineVersion",
+        "name" : "PineVersion",
+        "type" : "text"
+      },
+      {
+        "defval" : "",
+        "id" : "logToken",
+        "name" : "LogToken",
+        "type" : "text"
+      }
+    ],
+    "is_hidden_study" : true,
+    "is_price_study" : false,
+    "shortDescription" : "Unnamed Study"
+  },
+  {
+    "_metainfoVersion" : 51,
+    "defaults" : {
+      "inputs" : {
+        "logToken" : "",
+        "pineId" : "",
+        "pineVersion" : "",
+        "text" : ""
+      }
+    },
+    "description" : "Unnamed Study",
+    "format" : {
+      "type" : "inherit"
+    },
+    "id" : "Internal@tv-scripting-254",
+    "inputs" : [
+      {
+        "defval" : "",
+        "id" : "text",
+        "name" : "Text",
+        "type" : "text"
+      },
+      {
+        "defval" : "",
+        "id" : "pineId",
+        "name" : "PineId",
+        "type" : "text"
+      },
+      {
+        "defval" : "",
+        "id" : "pineVersion",
+        "name" : "PineVersion",
+        "type" : "text"
+      },
+      {
+        "defval" : "",
+        "id" : "logToken",
+        "name" : "LogToken",
+        "type" : "text"
+      }
+    ],
+    "is_hidden_study" : true,
+    "is_price_study" : false,
+    "shortDescription" : "Unnamed Study"
+  },
+  {
+    "_metainfoVersion" : 51,
+    "defaults" : {
+      "inputs" : {
+        "logToken" : "",
+        "pineId" : "",
+        "pineVersion" : "",
+        "text" : ""
+      }
+    },
+    "description" : "Unnamed Study",
+    "format" : {
+      "type" : "inherit"
+    },
+    "id" : "Script@tv-scripting-254",
+    "inputs" : [
+      {
+        "defval" : "",
+        "id" : "text",
+        "name" : "Text",
+        "type" : "text"
+      },
+      {
+        "defval" : "",
+        "id" : "pineId",
+        "name" : "PineId",
+        "type" : "text"
+      },
+      {
+        "defval" : "",
+        "id" : "pineVersion",
+        "name" : "PineVersion",
+        "type" : "text"
+      },
+      {
+        "defval" : "",
+        "id" : "logToken",
+        "name" : "LogToken",
+        "type" : "text"
+      }
+    ],
+    "is_hidden_study" : true,
+    "is_price_study" : false,
+    "shortDescription" : "Unnamed Study"
+  },
+  {
+    "_metainfoVersion" : 51,
+    "defaults" : {
+      "inputs" : {
+        "logToken" : "",
+        "pineId" : "",
+        "pineVersion" : "",
+        "text" : ""
+      }
+    },
+    "description" : "Unnamed Study",
+    "format" : {
+      "type" : "inherit"
+    },
+    "id" : "StrategyScript@tv-scripting-254",
+    "inputs" : [
+      {
+        "defval" : "",
+        "id" : "text",
+        "name" : "Text",
+        "type" : "text"
+      },
+      {
+        "defval" : "",
+        "id" : "pineId",
+        "name" : "PineId",
+        "type" : "text"
+      },
+      {
+        "defval" : "",
+        "id" : "pineVersion",
+        "name" : "PineVersion",
+        "type" : "text"
+      },
+      {
+        "defval" : "",
+        "id" : "logToken",
+        "name" : "LogToken",
+        "type" : "text"
+      }
+    ],
+    "is_hidden_study" : true,
+    "is_price_study" : false,
+    "shortDescription" : "Unnamed Study"
+  }
+]
