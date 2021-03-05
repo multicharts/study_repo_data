@@ -1,0 +1,141 @@
+[
+  {
+    "_metainfoVersion" : 51,
+    "defaults" : {
+      "graphics" : {
+        "horizlines" : {
+          "lev" : {
+            "color" : "#008000",
+            "style" : 0,
+            "visible" : true,
+            "width" : 2
+          }
+        },
+        "polygons" : {
+          "tri" : {
+            "color" : "#008000",
+            "transparency" : 40
+          }
+        }
+      },
+      "inputs" : {
+        "extend" : "6",
+        "months_back" : 60
+      }
+    },
+    "description" : "Earnings Price Support",
+    "format" : {
+      "type" : "inherit"
+    },
+    "graphics" : {
+      "horizlines" : {
+        "lev" : {
+          "name" : "Levels",
+          "showPrice" : false
+        }
+      },
+      "polygons" : {
+        "tri" : {
+          "mouseTouchable" : true,
+          "name" : "Triangles",
+          "showBorder" : false
+        }
+      }
+    },
+    "id" : "EarningsPriceSupport@wst-studies-4",
+    "inputs" : [
+      {
+        "defval" : "6",
+        "id" : "extend",
+        "name" : "Extend Months",
+        "options" : [
+          "3",
+          "6",
+          "9",
+          "12"
+        ],
+        "type" : "text"
+      },
+      {
+        "defval" : 60,
+        "id" : "months_back",
+        "max" : 600,
+        "min" : 3,
+        "name" : "Months Back",
+        "type" : "integer"
+      }
+    ],
+    "is_price_study" : true,
+    "shortDescription" : "TW_EPS"
+  },
+  {
+    "_metainfoVersion" : 51,
+    "defaults" : {
+      "graphics" : {
+        "horizlines" : {
+          "hlines" : {
+            "color" : "#3399ff",
+            "style" : 0,
+            "visible" : true,
+            "width" : 2
+          }
+        },
+        "vertlines" : {
+          "vlines" : {
+            "color" : "#3399ff",
+            "style" : 2,
+            "visible" : true,
+            "width" : 2
+          }
+        }
+      },
+      "inputs" : {
+        "extend" : "3",
+        "months_back" : 60
+      }
+    },
+    "description" : "Options Price Support",
+    "format" : {
+      "type" : "inherit"
+    },
+    "graphics" : {
+      "horizlines" : {
+        "hlines" : {
+          "name" : "Horizontal Lines",
+          "showPrice" : false
+        }
+      },
+      "vertlines" : {
+        "vlines" : {
+          "halign" : "center",
+          "name" : "Vertical Lines"
+        }
+      }
+    },
+    "id" : "OptionsPriceSupport@wst-studies-4",
+    "inputs" : [
+      {
+        "defval" : "3",
+        "id" : "extend",
+        "name" : "Extend Months",
+        "options" : [
+          "3",
+          "6",
+          "9",
+          "12"
+        ],
+        "type" : "text"
+      },
+      {
+        "defval" : 60,
+        "id" : "months_back",
+        "max" : 600,
+        "min" : 3,
+        "name" : "Months Back",
+        "type" : "integer"
+      }
+    ],
+    "is_price_study" : true,
+    "shortDescription" : "TW_OPS"
+  }
+]
