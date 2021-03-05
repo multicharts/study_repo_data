@@ -1,0 +1,73 @@
+{
+  "pkgName" : "av-essential",
+  "studyMigrations" : [
+    {
+      "rules" : [
+        {
+          "action" : "convertVal",
+          "defVal" : "close",
+          "inputId" : "source",
+          "inputType" : "source",
+          "inputTypeFrom" : "text",
+          "options" : [
+            "open",
+            "high",
+            "low",
+            "close",
+            "hl2",
+            "hlc3",
+            "ohlc4"
+          ],
+          "type" : "inputChangedType"
+        }
+      ],
+      "studyId" : "MACDBBBars@av-essential"
+    },
+    {
+      "rules" : [
+        {
+          "action" : "convertVal",
+          "defVal" : "close",
+          "inputId" : "source",
+          "inputType" : "source",
+          "inputTypeFrom" : "text",
+          "options" : [
+            "open",
+            "high",
+            "low",
+            "close",
+            "hl2",
+            "hlc3",
+            "ohlc4"
+          ],
+          "type" : "inputChangedType"
+        }
+      ],
+      "studyId" : "MACDBBLines@av-essential"
+    },
+    {
+      "rules" : [
+        {
+          "action" : "convertVal",
+          "defVal" : "close",
+          "inputId" : "source",
+          "inputType" : "source",
+          "inputTypeFrom" : "text",
+          "options" : [
+            "open",
+            "high",
+            "low",
+            "close",
+            "hl2",
+            "hlc3",
+            "ohlc4"
+          ],
+          "type" : "inputChangedType"
+        }
+      ],
+      "studyId" : "SuperTrend@av-essential"
+    }
+  ],
+  "versFrom" : "8",
+  "versTo" : "9"
+}

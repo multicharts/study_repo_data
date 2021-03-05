@@ -1,0 +1,1147 @@
+[
+  {
+    "_metainfoVersion" : 51,
+    "defaults" : {
+      "graphics" : {
+        "textmarks" : {
+          "patternMarks" : {
+            "color" : "#ffffff",
+            "fontBold" : false,
+            "fontColor" : "#000000",
+            "fontFamily" : "Arial",
+            "fontItalic" : false,
+            "fontSize" : 12,
+            "transparency" : 30,
+            "visible" : true
+          }
+        }
+      },
+      "inputs" : {
+        "pattern" : "MorningStar",
+        "trendStrength" : 4
+      },
+      "palettes" : {
+        "barColors_pal" : {
+          "colors" : {
+            "0" : {
+              "color" : "#000000",
+              "style" : 0,
+              "width" : 1
+            },
+            "1" : {
+              "color" : "#ffffff",
+              "style" : 0,
+              "width" : 1
+            }
+          }
+        }
+      }
+    },
+    "description" : "Candle Stick Patterns",
+    "format" : {
+      "type" : "inherit"
+    },
+    "graphics" : {
+      "textmarks" : {
+        "patternMarks" : {
+          "halign" : "center",
+          "location" : "BelowBar",
+          "name" : "Pattern Marks",
+          "shape" : "triangle",
+          "valign" : "middle"
+        }
+      }
+    },
+    "helpURL" : "http:\/\/www.algoview.com\/basic-package\/candlestick-pattern",
+    "id" : "CandleStickPatterns@av-essential-9",
+    "inputs" : [
+      {
+        "defval" : "MorningStar",
+        "id" : "pattern",
+        "name" : "Pattern",
+        "options" : [
+          "BearishBeltHold",
+          "BearishEngulfing",
+          "BearishHarami",
+          "BearishHaramiCross",
+          "BullishBeltHold",
+          "BullishEngulfing",
+          "BullishHarami",
+          "BullishHaramiCross",
+          "DarkCloudCover",
+          "Doji",
+          "DownsideTasukiGap",
+          "EveningStar",
+          "FallingThreeMethods",
+          "Hammer",
+          "HangingMan",
+          "InvertedHammer",
+          "MorningStar",
+          "PiercingLine",
+          "RisingThreeMethods",
+          "ShootingStar",
+          "StickSandwich",
+          "ThreeBlackCrows",
+          "ThreeWhiteSoldiers",
+          "UpsideGapTwoCrows",
+          "UpsideTasukiGap"
+        ],
+        "type" : "text"
+      },
+      {
+        "defval" : 4,
+        "id" : "trendStrength",
+        "max" : 2000,
+        "min" : 1,
+        "name" : "Trend Strength",
+        "type" : "integer"
+      }
+    ],
+    "is_price_study" : true,
+    "palettes" : {
+      "barColors_pal" : {
+        "colors" : {
+          "0" : {
+            "name" : "Down Bar"
+          },
+          "1" : {
+            "name" : "Up Bar"
+          }
+        }
+      }
+    },
+    "plots" : [
+      {
+        "id" : "barColors",
+        "palette" : "barColors_pal",
+        "type" : "bar_colorer"
+      }
+    ],
+    "shortDescription" : "AV_CSP"
+  },
+  {
+    "_metainfoVersion" : 51,
+    "defaults" : {
+      "graphics" : {
+        "textmarks" : {
+          "downMarks" : {
+            "color" : "#ff0000",
+            "fontBold" : false,
+            "fontColor" : "#000000",
+            "fontFamily" : "Arial",
+            "fontItalic" : false,
+            "fontSize" : 12,
+            "transparency" : 30,
+            "visible" : true
+          },
+          "upMarks" : {
+            "color" : "#00ff00",
+            "fontBold" : false,
+            "fontColor" : "#000000",
+            "fontFamily" : "Arial",
+            "fontItalic" : false,
+            "fontSize" : 12,
+            "transparency" : 30,
+            "visible" : true
+          }
+        }
+      },
+      "inputs" : {
+        "bandPeriod" : 10,
+        "fastLength" : 12,
+        "slowLength" : 26,
+        "source" : "close",
+        "stdDevNumber" : 1.0
+      },
+      "palettes" : {
+        "barColors_pal" : {
+          "colors" : {
+            "0" : {
+              "color" : "#00ff7f",
+              "style" : 0,
+              "width" : 4
+            },
+            "1" : {
+              "color" : "#66cdaa",
+              "style" : 0,
+              "width" : 4
+            },
+            "2" : {
+              "color" : "#ff0000",
+              "style" : 0,
+              "width" : 4
+            },
+            "3" : {
+              "color" : "#e9967a",
+              "style" : 0,
+              "width" : 4
+            }
+          }
+        }
+      }
+    },
+    "description" : "MACDBB Bars",
+    "format" : {
+      "type" : "inherit"
+    },
+    "graphics" : {
+      "textmarks" : {
+        "downMarks" : {
+          "halign" : "center",
+          "location" : "AboveBar",
+          "name" : "Down Marks",
+          "shape" : "triangle",
+          "valign" : "middle"
+        },
+        "upMarks" : {
+          "halign" : "center",
+          "location" : "BelowBar",
+          "name" : "Up Marks",
+          "shape" : "triangle",
+          "valign" : "middle"
+        }
+      }
+    },
+    "helpURL" : "http:\/\/www.algoview.com\/basic-package\/paint-bars-macdbb",
+    "id" : "MACDBBBars@av-essential-9",
+    "inputs" : [
+      {
+        "defval" : 1.0,
+        "id" : "stdDevNumber",
+        "max" : 1.7976931348623157E308,
+        "min" : -1.7976931348623157E308,
+        "name" : "# of Std. Dev.",
+        "type" : "float"
+      },
+      {
+        "defval" : 10,
+        "id" : "bandPeriod",
+        "max" : 2000,
+        "min" : 1,
+        "name" : "Band Period",
+        "type" : "integer"
+      },
+      {
+        "defval" : 12,
+        "id" : "fastLength",
+        "max" : 2000,
+        "min" : 1,
+        "name" : "Fast Length",
+        "type" : "integer"
+      },
+      {
+        "defval" : 26,
+        "id" : "slowLength",
+        "max" : 2000,
+        "min" : 1,
+        "name" : "Slow Length",
+        "type" : "integer"
+      },
+      {
+        "defval" : "close",
+        "id" : "source",
+        "name" : "Source",
+        "options" : [
+          "open",
+          "high",
+          "low",
+          "close",
+          "hl2",
+          "hlc3",
+          "ohlc4"
+        ],
+        "type" : "source"
+      }
+    ],
+    "is_price_study" : true,
+    "palettes" : {
+      "barColors_pal" : {
+        "colors" : {
+          "0" : {
+            "name" : "Dots Up Outside"
+          },
+          "1" : {
+            "name" : "Dots Up Inside"
+          },
+          "2" : {
+            "name" : "Dots Down Outside"
+          },
+          "3" : {
+            "name" : "Dots Down Inside"
+          }
+        }
+      }
+    },
+    "plots" : [
+      {
+        "id" : "barColors",
+        "palette" : "barColors_pal",
+        "type" : "bar_colorer"
+      }
+    ],
+    "shortDescription" : "AV_MACDBB_B"
+  },
+  {
+    "_metainfoVersion" : 51,
+    "defaults" : {
+      "inputs" : {
+        "bandPeriod" : 10,
+        "fastLength" : 12,
+        "slowLength" : 26,
+        "source" : "close",
+        "stdDevNumber" : 1.0
+      },
+      "palettes" : {
+        "macd_pal" : {
+          "colors" : {
+            "0" : {
+              "color" : "#00ff7f",
+              "style" : 0,
+              "width" : 4
+            },
+            "1" : {
+              "color" : "#66cdaa",
+              "style" : 0,
+              "width" : 4
+            },
+            "2" : {
+              "color" : "#ff0000",
+              "style" : 0,
+              "width" : 4
+            },
+            "3" : {
+              "color" : "#e9967a",
+              "style" : 0,
+              "width" : 4
+            }
+          }
+        },
+        "zero_pal" : {
+          "colors" : {
+            "0" : {
+              "color" : "#ff0000",
+              "style" : 0,
+              "width" : 2
+            },
+            "1" : {
+              "color" : "#00ff00",
+              "style" : 0,
+              "width" : 2
+            }
+          }
+        }
+      },
+      "styles" : {
+        "bbAverage" : {
+          "color" : "#a4c2f4",
+          "linestyle" : 2,
+          "linewidth" : 1,
+          "plottype" : 0,
+          "trackPrice" : false,
+          "transparency" : 0,
+          "visible" : true
+        },
+        "bbLower" : {
+          "color" : "#4985e7",
+          "linestyle" : 0,
+          "linewidth" : 1,
+          "plottype" : 0,
+          "trackPrice" : false,
+          "transparency" : 0,
+          "visible" : true
+        },
+        "bbUpper" : {
+          "color" : "#4985e7",
+          "linestyle" : 0,
+          "linewidth" : 1,
+          "plottype" : 0,
+          "trackPrice" : false,
+          "transparency" : 0,
+          "visible" : true
+        },
+        "macd" : {
+          "linestyle" : 0,
+          "linewidth" : 4,
+          "plottype" : 6,
+          "trackPrice" : false,
+          "transparency" : 0,
+          "visible" : true
+        },
+        "zero" : {
+          "linestyle" : 0,
+          "linewidth" : 2,
+          "plottype" : 0,
+          "trackPrice" : false,
+          "transparency" : 0,
+          "visible" : true
+        }
+      }
+    },
+    "description" : "MACDBB Lines",
+    "format" : {
+      "type" : "inherit"
+    },
+    "helpURL" : "http:\/\/www.algoview.com\/basic-package\/macdbb-lines",
+    "id" : "MACDBBLines@av-essential-9",
+    "inputs" : [
+      {
+        "defval" : 1.0,
+        "id" : "stdDevNumber",
+        "max" : 1.7976931348623157E308,
+        "min" : -1.7976931348623157E308,
+        "name" : "# of Std. Dev.",
+        "type" : "float"
+      },
+      {
+        "defval" : 10,
+        "id" : "bandPeriod",
+        "max" : 2000,
+        "min" : 1,
+        "name" : "Band Period",
+        "type" : "integer"
+      },
+      {
+        "defval" : 12,
+        "id" : "fastLength",
+        "max" : 2000,
+        "min" : 1,
+        "name" : "Fast Length",
+        "type" : "integer"
+      },
+      {
+        "defval" : 26,
+        "id" : "slowLength",
+        "max" : 2000,
+        "min" : 1,
+        "name" : "Slow Length",
+        "type" : "integer"
+      },
+      {
+        "defval" : "close",
+        "id" : "source",
+        "name" : "Source",
+        "options" : [
+          "open",
+          "high",
+          "low",
+          "close",
+          "hl2",
+          "hlc3",
+          "ohlc4"
+        ],
+        "type" : "source"
+      }
+    ],
+    "is_price_study" : false,
+    "palettes" : {
+      "macd_pal" : {
+        "colors" : {
+          "0" : {
+            "name" : "Dots Up Outside"
+          },
+          "1" : {
+            "name" : "Dots Up Inside"
+          },
+          "2" : {
+            "name" : "Dots Down Outside"
+          },
+          "3" : {
+            "name" : "Dots Down Inside"
+          }
+        }
+      },
+      "zero_pal" : {
+        "colors" : {
+          "0" : {
+            "name" : "Zeroline Negative"
+          },
+          "1" : {
+            "name" : "Zeroline Positive"
+          }
+        }
+      }
+    },
+    "plots" : [
+      {
+        "id" : "macd",
+        "type" : "line"
+      },
+      {
+        "id" : "macd_pal",
+        "palette" : "macd_pal",
+        "target" : "macd",
+        "type" : "colorer"
+      },
+      {
+        "id" : "bbAverage",
+        "type" : "line"
+      },
+      {
+        "id" : "bbUpper",
+        "type" : "line"
+      },
+      {
+        "id" : "bbLower",
+        "type" : "line"
+      },
+      {
+        "id" : "zero",
+        "type" : "line"
+      },
+      {
+        "id" : "zero_pal",
+        "palette" : "zero_pal",
+        "target" : "zero",
+        "type" : "colorer"
+      }
+    ],
+    "shortDescription" : "AV_MACDBB_L",
+    "styles" : {
+      "bbAverage" : {
+        "histogramBase" : 0.0,
+        "title" : "Bollinger Average"
+      },
+      "bbLower" : {
+        "histogramBase" : 0.0,
+        "title" : "Bollinger Lower Band"
+      },
+      "bbUpper" : {
+        "histogramBase" : 0.0,
+        "title" : "Bollinger Upper Band"
+      },
+      "macd" : {
+        "histogramBase" : 0.0,
+        "title" : "MACD"
+      },
+      "zero" : {
+        "histogramBase" : 0.0,
+        "title" : "Zero Line"
+      }
+    }
+  },
+  {
+    "_metainfoVersion" : 51,
+    "defaults" : {
+      "graphics" : {
+        "textmarks" : {
+          "dojiMarks" : {
+            "color" : "#ffd700",
+            "fontBold" : false,
+            "fontColor" : "#000000",
+            "fontFamily" : "Arial",
+            "fontItalic" : false,
+            "fontSize" : 12,
+            "transparency" : 30,
+            "visible" : true
+          },
+          "downcloseMarks" : {
+            "color" : "#ff0000",
+            "fontBold" : false,
+            "fontColor" : "#000000",
+            "fontFamily" : "Arial",
+            "fontItalic" : false,
+            "fontSize" : 12,
+            "transparency" : 30,
+            "visible" : true
+          },
+          "insideMarks" : {
+            "color" : "#ffff00",
+            "fontBold" : false,
+            "fontColor" : "#000000",
+            "fontFamily" : "Arial",
+            "fontItalic" : false,
+            "fontSize" : 12,
+            "transparency" : 30,
+            "visible" : true
+          },
+          "narrowRangeInsideMarks" : {
+            "color" : "#ff00ff",
+            "fontBold" : false,
+            "fontColor" : "#000000",
+            "fontFamily" : "Arial",
+            "fontItalic" : false,
+            "fontSize" : 12,
+            "transparency" : 30,
+            "visible" : true
+          },
+          "narrowRangeMarks" : {
+            "color" : "#ff8c00",
+            "fontBold" : false,
+            "fontColor" : "#000000",
+            "fontFamily" : "Arial",
+            "fontItalic" : false,
+            "fontSize" : 12,
+            "transparency" : 30,
+            "visible" : true
+          },
+          "outsideMarks" : {
+            "color" : "#1e90ff",
+            "fontBold" : false,
+            "fontColor" : "#000000",
+            "fontFamily" : "Arial",
+            "fontItalic" : false,
+            "fontSize" : 12,
+            "transparency" : 30,
+            "visible" : true
+          },
+          "upcloseMarks" : {
+            "color" : "#00ff00",
+            "fontBold" : false,
+            "fontColor" : "#000000",
+            "fontFamily" : "Arial",
+            "fontItalic" : false,
+            "fontSize" : 12,
+            "transparency" : 30,
+            "visible" : true
+          },
+          "wideRangeMarks" : {
+            "color" : "#dda0dd",
+            "fontBold" : false,
+            "fontColor" : "#000000",
+            "fontFamily" : "Arial",
+            "fontItalic" : false,
+            "fontSize" : 12,
+            "transparency" : 30,
+            "visible" : true
+          },
+          "wideRangeOutsideMarks" : {
+            "color" : "#00ffff",
+            "fontBold" : false,
+            "fontColor" : "#000000",
+            "fontFamily" : "Arial",
+            "fontItalic" : false,
+            "fontSize" : 12,
+            "transparency" : 30,
+            "visible" : true
+          }
+        }
+      },
+      "inputs" : {
+        "lookbackIB" : 4,
+        "lookbackNRB" : 7,
+        "lookbackOB" : 4,
+        "lookbackWRB" : 7,
+        "paintSeriesBars" : true,
+        "showIB" : true,
+        "showNRB" : true,
+        "showOB" : true,
+        "showText" : true,
+        "showWRB" : true
+      },
+      "palettes" : {
+        "barColors_pal" : {
+          "colors" : {
+            "0" : {
+              "color" : "#ffd700",
+              "style" : 0,
+              "width" : 1
+            },
+            "1" : {
+              "color" : "#ff0000",
+              "style" : 0,
+              "width" : 1
+            },
+            "2" : {
+              "color" : "#ffff00",
+              "style" : 0,
+              "width" : 1
+            },
+            "3" : {
+              "color" : "#ff8c00",
+              "style" : 0,
+              "width" : 1
+            },
+            "4" : {
+              "color" : "#ff00ff",
+              "style" : 0,
+              "width" : 1
+            },
+            "5" : {
+              "color" : "#1e90ff",
+              "style" : 0,
+              "width" : 1
+            },
+            "6" : {
+              "color" : "#00ff00",
+              "style" : 0,
+              "width" : 1
+            },
+            "7" : {
+              "color" : "#dda0dd",
+              "style" : 0,
+              "width" : 1
+            },
+            "8" : {
+              "color" : "#00ffff",
+              "style" : 0,
+              "width" : 1
+            }
+          }
+        }
+      }
+    },
+    "description" : "Range Pattern",
+    "format" : {
+      "type" : "inherit"
+    },
+    "graphics" : {
+      "textmarks" : {
+        "dojiMarks" : {
+          "halign" : "center",
+          "location" : "AboveBar",
+          "name" : "Doji Marks",
+          "shape" : "triangle",
+          "valign" : "middle"
+        },
+        "downcloseMarks" : {
+          "halign" : "center",
+          "location" : "AboveBar",
+          "name" : "Downclose Marks",
+          "shape" : "triangle",
+          "valign" : "middle"
+        },
+        "insideMarks" : {
+          "halign" : "center",
+          "location" : "AboveBar",
+          "name" : "Inside Marks",
+          "shape" : "triangle",
+          "valign" : "middle"
+        },
+        "narrowRangeInsideMarks" : {
+          "halign" : "center",
+          "location" : "AboveBar",
+          "name" : "Narrow Range Inside Marks",
+          "shape" : "triangle",
+          "valign" : "middle"
+        },
+        "narrowRangeMarks" : {
+          "halign" : "center",
+          "location" : "AboveBar",
+          "name" : "Narrow Range Marks",
+          "shape" : "triangle",
+          "valign" : "middle"
+        },
+        "outsideMarks" : {
+          "halign" : "center",
+          "location" : "AboveBar",
+          "name" : "Outside Marks",
+          "shape" : "triangle",
+          "valign" : "middle"
+        },
+        "upcloseMarks" : {
+          "halign" : "center",
+          "location" : "AboveBar",
+          "name" : "Upclose Marks",
+          "shape" : "triangle",
+          "valign" : "middle"
+        },
+        "wideRangeMarks" : {
+          "halign" : "center",
+          "location" : "AboveBar",
+          "name" : "Wide Range Marks",
+          "shape" : "triangle",
+          "valign" : "middle"
+        },
+        "wideRangeOutsideMarks" : {
+          "halign" : "center",
+          "location" : "AboveBar",
+          "name" : "Wide Range Outside Marks",
+          "shape" : "triangle",
+          "valign" : "middle"
+        }
+      }
+    },
+    "helpURL" : "http:\/\/www.algoview.com\/basic-package\/paint-bars-range-bars",
+    "id" : "RangePattern@av-essential-9",
+    "inputs" : [
+      {
+        "defval" : 4,
+        "id" : "lookbackIB",
+        "max" : 2000,
+        "min" : 1,
+        "name" : "Lookback Inside Bars",
+        "type" : "integer"
+      },
+      {
+        "defval" : 7,
+        "id" : "lookbackNRB",
+        "max" : 2000,
+        "min" : 1,
+        "name" : "Lookback Narrow Range Bars",
+        "type" : "integer"
+      },
+      {
+        "defval" : 4,
+        "id" : "lookbackOB",
+        "max" : 2000,
+        "min" : 1,
+        "name" : "Lookback Outside Bars",
+        "type" : "integer"
+      },
+      {
+        "defval" : 7,
+        "id" : "lookbackWRB",
+        "max" : 2000,
+        "min" : 1,
+        "name" : "Lookback Wide Range Bars",
+        "type" : "integer"
+      },
+      {
+        "defval" : true,
+        "id" : "showIB",
+        "name" : "Show Inside Bars",
+        "type" : "bool"
+      },
+      {
+        "defval" : true,
+        "id" : "showNRB",
+        "name" : "Show Narrow Range Bars",
+        "type" : "bool"
+      },
+      {
+        "defval" : true,
+        "id" : "showOB",
+        "name" : "Show Outside Bars",
+        "type" : "bool"
+      },
+      {
+        "defval" : true,
+        "id" : "showWRB",
+        "name" : "Show Wide Range Bars",
+        "type" : "bool"
+      },
+      {
+        "defval" : true,
+        "id" : "showText",
+        "name" : "Show Text",
+        "type" : "bool"
+      },
+      {
+        "defval" : true,
+        "id" : "paintSeriesBars",
+        "name" : "Paint Series Bars",
+        "type" : "bool"
+      }
+    ],
+    "is_price_study" : true,
+    "palettes" : {
+      "barColors_pal" : {
+        "colors" : {
+          "0" : {
+            "name" : "Doji Bar"
+          },
+          "1" : {
+            "name" : "Downclose Bar"
+          },
+          "2" : {
+            "name" : "Inside Bar"
+          },
+          "3" : {
+            "name" : "Narrow Range Bar"
+          },
+          "4" : {
+            "name" : "Narrow Range Inside Bar"
+          },
+          "5" : {
+            "name" : "Outside Bar"
+          },
+          "6" : {
+            "name" : "Upclose Bar"
+          },
+          "7" : {
+            "name" : "Wide Range Bar"
+          },
+          "8" : {
+            "name" : "Wide Range Outside Bar"
+          }
+        }
+      }
+    },
+    "plots" : [
+      {
+        "id" : "barColors",
+        "palette" : "barColors_pal",
+        "type" : "bar_colorer"
+      }
+    ],
+    "shortDescription" : "AV_RP"
+  },
+  {
+    "_metainfoVersion" : 51,
+    "defaults" : {
+      "graphics" : {
+        "textmarks" : {
+          "downMarks" : {
+            "color" : "#ff0000",
+            "fontBold" : false,
+            "fontColor" : "#000000",
+            "fontFamily" : "Arial",
+            "fontItalic" : false,
+            "fontSize" : 12,
+            "transparency" : 30,
+            "visible" : true
+          },
+          "upMarks" : {
+            "color" : "#0000ff",
+            "fontBold" : false,
+            "fontColor" : "#000000",
+            "fontFamily" : "Arial",
+            "fontItalic" : false,
+            "fontSize" : 12,
+            "transparency" : 30,
+            "visible" : true
+          }
+        }
+      },
+      "inputs" : {
+        "atrMul" : 2.5,
+        "atrPeriod" : 8,
+        "medianPeriod" : 3,
+        "revIntraBar" : false,
+        "source" : "close"
+      },
+      "palettes" : {
+        "trendPal" : {
+          "colors" : {
+            "0" : {
+              "color" : "#0000ff",
+              "style" : 0,
+              "width" : 2
+            },
+            "1" : {
+              "color" : "#ff0000",
+              "style" : 0,
+              "width" : 2
+            }
+          }
+        }
+      },
+      "styles" : {
+        "trend" : {
+          "color" : "#888888",
+          "linestyle" : 0,
+          "linewidth" : 1,
+          "plottype" : 6,
+          "trackPrice" : false,
+          "transparency" : 0,
+          "visible" : true
+        }
+      }
+    },
+    "description" : "Super Trend",
+    "format" : {
+      "type" : "inherit"
+    },
+    "graphics" : {
+      "textmarks" : {
+        "downMarks" : {
+          "halign" : "center",
+          "location" : "AbsoluteDown",
+          "name" : "Down Marks",
+          "shape" : "triangle",
+          "valign" : "middle"
+        },
+        "upMarks" : {
+          "halign" : "center",
+          "location" : "AbsoluteUp",
+          "name" : "Up Marks",
+          "shape" : "triangle",
+          "valign" : "middle"
+        }
+      }
+    },
+    "helpURL" : "http:\/\/www.algoview.com\/basic-package\/supertrend",
+    "id" : "SuperTrend@av-essential-9",
+    "inputs" : [
+      {
+        "defval" : "close",
+        "id" : "source",
+        "name" : "Source",
+        "options" : [
+          "open",
+          "high",
+          "low",
+          "close",
+          "hl2",
+          "hlc3",
+          "ohlc4"
+        ],
+        "type" : "source"
+      },
+      {
+        "defval" : 2.5,
+        "id" : "atrMul",
+        "max" : 1.7976931348623157E308,
+        "min" : -1.7976931348623157E308,
+        "name" : "ATR Multiplier",
+        "type" : "float"
+      },
+      {
+        "defval" : 8,
+        "id" : "atrPeriod",
+        "max" : 2000,
+        "min" : 1,
+        "name" : "ATR Period",
+        "type" : "integer"
+      },
+      {
+        "defval" : 3,
+        "id" : "medianPeriod",
+        "max" : 2000,
+        "min" : 1,
+        "name" : "Median Period",
+        "type" : "integer"
+      },
+      {
+        "defval" : false,
+        "id" : "revIntraBar",
+        "name" : "Reverse Intra Bars",
+        "type" : "bool"
+      }
+    ],
+    "is_price_study" : true,
+    "palettes" : {
+      "trendPal" : {
+        "colors" : {
+          "0" : {
+            "name" : "Up Trend"
+          },
+          "1" : {
+            "name" : "Down Trend"
+          }
+        }
+      }
+    },
+    "plots" : [
+      {
+        "id" : "trend",
+        "type" : "line"
+      },
+      {
+        "id" : "trend_pal",
+        "palette" : "trendPal",
+        "target" : "trend",
+        "type" : "colorer"
+      }
+    ],
+    "shortDescription" : "AV_ST",
+    "styles" : {
+      "trend" : {
+        "histogramBase" : 0.0,
+        "title" : "Trend"
+      }
+    }
+  },
+  {
+    "_metainfoVersion" : 51,
+    "defaults" : {
+      "palettes" : {
+        "seriesOfColors_pal" : {
+          "colors" : {
+            "0" : {
+              "color" : "#00ff00",
+              "style" : 0,
+              "width" : 1
+            },
+            "1" : {
+              "color" : "#ff0000",
+              "style" : 0,
+              "width" : 1
+            },
+            "2" : {
+              "color" : "#ffffff",
+              "style" : 0,
+              "width" : 1
+            },
+            "3" : {
+              "color" : "#ffff00",
+              "style" : 0,
+              "width" : 1
+            },
+            "4" : {
+              "color" : "#ffa500",
+              "style" : 0,
+              "width" : 1
+            },
+            "5" : {
+              "color" : "#008000",
+              "style" : 0,
+              "width" : 1
+            },
+            "6" : {
+              "color" : "#800000",
+              "style" : 0,
+              "width" : 1
+            },
+            "7" : {
+              "color" : "#d2691e",
+              "style" : 0,
+              "width" : 1
+            },
+            "8" : {
+              "color" : "#00ffff",
+              "style" : 0,
+              "width" : 1
+            },
+            "9" : {
+              "color" : "#ff00ff",
+              "style" : 0,
+              "width" : 1
+            }
+          }
+        }
+      }
+    },
+    "description" : "Thrust Bars",
+    "format" : {
+      "type" : "inherit"
+    },
+    "helpURL" : "http:\/\/www.algoview.com\/basic-package\/thrust-bars",
+    "id" : "ThrustBars@av-essential-9",
+    "is_price_study" : true,
+    "palettes" : {
+      "seriesOfColors_pal" : {
+        "colors" : {
+          "0" : {
+            "name" : "Upthrust Bar"
+          },
+          "1" : {
+            "name" : "Downthrust Bar"
+          },
+          "2" : {
+            "name" : "Inside Bar Up"
+          },
+          "3" : {
+            "name" : "Inside Bar Down"
+          },
+          "4" : {
+            "name" : "Inside Bar Doji"
+          },
+          "5" : {
+            "name" : "Inside Close Up"
+          },
+          "6" : {
+            "name" : "Inside Close Down"
+          },
+          "7" : {
+            "name" : "Inside Close Doji"
+          },
+          "8" : {
+            "name" : "Outside Reversal Up"
+          },
+          "9" : {
+            "name" : "Outside Reversal Down"
+          }
+        }
+      }
+    },
+    "plots" : [
+      {
+        "id" : "seriesOfColors",
+        "palette" : "seriesOfColors_pal",
+        "type" : "bar_colorer"
+      }
+    ],
+    "shortDescription" : "AV_THB"
+  }
+]
