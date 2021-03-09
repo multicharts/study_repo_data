@@ -1,0 +1,533 @@
+[
+  {
+    "pkgName" : "tv-basicstudies",
+    "studyMigrations" : [
+      {
+        "rules" : [
+          {
+            "action" : "removeVal",
+            "inputId" : "smoothing",
+            "type" : "inputRemoved"
+          }
+        ],
+        "studyId" : "ATR@tv-basicstudies"
+      }
+    ],
+    "versFrom" : "49",
+    "versTo" : "50"
+  },
+  {
+    "pkgName" : "tv-basicstudies",
+    "studyMigrations" : [
+      {
+        "rules" : [
+          {
+            "action" : "removeVal",
+            "inputId" : "source",
+            "type" : "inputRemoved"
+          }
+        ],
+        "studyId" : "WilliamR@tv-basicstudies"
+      },
+      {
+        "rules" : [
+          {
+            "action" : "removeVal",
+            "inputId" : "source",
+            "type" : "inputRemoved"
+          }
+        ],
+        "studyId" : "VSTOP@tv-basicstudies"
+      }
+    ],
+    "versFrom" : "39",
+    "versTo" : "40"
+  },
+  {
+    "pkgName" : "tv-basicstudies",
+    "studyMigrations" : [
+      {
+        "rules" : [
+          {
+            "action" : "resetToDefVal",
+            "defVal" : -2,
+            "inputId" : "lower diviation",
+            "inputType" : "float",
+            "type" : "inputChangedType"
+          },
+          {
+            "action" : "resetToDefVal",
+            "defVal" : 2,
+            "inputId" : "upper diviation",
+            "inputType" : "float",
+            "type" : "inputChangedType"
+          }
+        ],
+        "studyId" : "RegressionTrend@tv-basicstudies"
+      },
+      {
+        "rules" : [
+          {
+            "action" : "resetToDefVal",
+            "defVal" : -2,
+            "inputId" : "lower diviation",
+            "inputType" : "float",
+            "type" : "inputChangedType"
+          },
+          {
+            "action" : "resetToDefVal",
+            "defVal" : 2,
+            "inputId" : "upper diviation",
+            "inputType" : "float",
+            "type" : "inputChangedType"
+          }
+        ],
+        "studyId" : "LinearRegression@tv-basicstudies"
+      }
+    ],
+    "versFrom" : "36",
+    "versTo" : "37"
+  },
+  {
+    "pkgName" : "tv-basicstudies",
+    "studyMigrations" : [
+      {
+        "rules" : [
+          {
+            "action" : "resetToDefVal",
+            "defVal" : 2,
+            "inputId" : "stdDev",
+            "inputType" : "float",
+            "type" : "inputChangedType"
+          }
+        ],
+        "studyId" : "BollingerBandsR@tv-basicstudies"
+      },
+      {
+        "rules" : [
+          {
+            "action" : "resetToDefVal",
+            "defVal" : 2,
+            "inputId" : "stdDev",
+            "inputType" : "float",
+            "type" : "inputChangedType"
+          }
+        ],
+        "studyId" : "BollingerBandsWidth@tv-basicstudies"
+      }
+    ],
+    "versFrom" : "12",
+    "versTo" : "13"
+  },
+  {
+    "pkgName" : "tv-basicstudies",
+    "studyMigrations" : [
+      {
+        "rules" : [
+          {
+            "action" : "resetToDefVal",
+            "defVal" : 2,
+            "inputId" : "multiplier",
+            "inputType" : "float",
+            "type" : "inputChangedType"
+          }
+        ],
+        "studyId" : "VSTOP@tv-basicstudies"
+      }
+    ],
+    "versFrom" : "8",
+    "versTo" : "9"
+  },
+  {
+    "pkgName" : "tv-basicstudies",
+    "studyMigrations" : [
+      {
+        "rules" : [
+          {
+            "action" : "resetToDefVal",
+            "defVal" : "close",
+            "inputId" : "source",
+            "inputType" : "source",
+            "type" : "inputChangedType"
+          }
+        ],
+        "studyId" : "BB@tv-basicstudies"
+      },
+      {
+        "rules" : [
+          {
+            "action" : "resetToDefVal",
+            "defVal" : "close",
+            "inputId" : "source",
+            "inputType" : "source",
+            "type" : "inputChangedType"
+          }
+        ],
+        "studyId" : "BollingerBandsR@tv-basicstudies"
+      },
+      {
+        "rules" : [
+          {
+            "action" : "resetToDefVal",
+            "defVal" : "close",
+            "inputId" : "source",
+            "inputType" : "source",
+            "type" : "inputChangedType"
+          }
+        ],
+        "studyId" : "BollingerBandsWidth@tv-basicstudies"
+      },
+      {
+        "rules" : [
+          {
+            "action" : "resetToDefVal",
+            "defVal" : "close",
+            "inputId" : "source",
+            "inputType" : "source",
+            "type" : "inputChangedType"
+          }
+        ],
+        "studyId" : "CCI@tv-basicstudies"
+      },
+      {
+        "rules" : [
+          {
+            "action" : "resetToDefVal",
+            "defVal" : "close",
+            "inputId" : "src",
+            "inputType" : "source",
+            "type" : "inputChangedType"
+          }
+        ],
+        "studyId" : "chandeMO@tv-basicstudies"
+      },
+      {
+        "rules" : [
+          {
+            "action" : "resetToDefVal",
+            "defVal" : "close",
+            "inputId" : "source",
+            "inputType" : "source",
+            "type" : "inputChangedType"
+          }
+        ],
+        "studyId" : "ENV@tv-basicstudies"
+      },
+      {
+        "rules" : [
+          {
+            "action" : "resetToDefVal",
+            "defVal" : "close",
+            "inputId" : "source",
+            "inputType" : "source",
+            "type" : "inputChangedType"
+          }
+        ],
+        "studyId" : "MAExp@tv-basicstudies"
+      },
+      {
+        "rules" : [
+          {
+            "action" : "resetToDefVal",
+            "defVal" : "close",
+            "inputId" : "src",
+            "inputType" : "source",
+            "type" : "inputChangedType"
+          }
+        ],
+        "studyId" : "hullMA@tv-basicstudies"
+      },
+      {
+        "rules" : [
+          {
+            "action" : "resetToDefVal",
+            "defVal" : "close",
+            "inputId" : "source",
+            "inputType" : "source",
+            "type" : "inputChangedType"
+          }
+        ],
+        "studyId" : "KLTNR@tv-basicstudies"
+      },
+      {
+        "rules" : [
+          {
+            "action" : "resetToDefVal",
+            "defVal" : "close",
+            "inputId" : "source",
+            "inputType" : "source",
+            "type" : "inputChangedType"
+          }
+        ],
+        "studyId" : "LinearRegression@tv-basicstudies"
+      },
+      {
+        "rules" : [
+          {
+            "action" : "resetToDefVal",
+            "defVal" : "close",
+            "inputId" : "source",
+            "inputType" : "source",
+            "type" : "inputChangedType"
+          }
+        ],
+        "studyId" : "MACD@tv-basicstudies"
+      },
+      {
+        "rules" : [
+          {
+            "action" : "resetToDefVal",
+            "defVal" : "close",
+            "inputId" : "source",
+            "inputType" : "source",
+            "type" : "inputChangedType"
+          }
+        ],
+        "studyId" : "MAWeighted@tv-basicstudies"
+      },
+      {
+        "rules" : [
+          {
+            "action" : "resetToDefVal",
+            "defVal" : "close",
+            "inputId" : "source",
+            "inputType" : "source",
+            "type" : "inputChangedType"
+          }
+        ],
+        "studyId" : "MOM@tv-basicstudies"
+      },
+      {
+        "rules" : [
+          {
+            "action" : "resetToDefVal",
+            "defVal" : "close",
+            "inputId" : "source",
+            "inputType" : "source",
+            "type" : "inputChangedType"
+          }
+        ],
+        "studyId" : "PriceOsc@tv-basicstudies"
+      },
+      {
+        "rules" : [
+          {
+            "action" : "resetToDefVal",
+            "defVal" : "close",
+            "inputId" : "source",
+            "inputType" : "source",
+            "type" : "inputChangedType"
+          }
+        ],
+        "studyId" : "RSI@tv-basicstudies"
+      },
+      {
+        "rules" : [
+          {
+            "action" : "resetToDefVal",
+            "defVal" : "close",
+            "inputId" : "source",
+            "inputType" : "source",
+            "type" : "inputChangedType"
+          }
+        ],
+        "studyId" : "ROC@tv-basicstudies"
+      },
+      {
+        "rules" : [
+          {
+            "action" : "resetToDefVal",
+            "defVal" : "close",
+            "inputId" : "source",
+            "inputType" : "source",
+            "type" : "inputChangedType"
+          }
+        ],
+        "studyId" : "RegressionTrend@tv-basicstudies"
+      },
+      {
+        "rules" : [
+          {
+            "action" : "resetToDefVal",
+            "defVal" : "close",
+            "inputId" : "source",
+            "inputType" : "source",
+            "type" : "inputChangedType"
+          }
+        ],
+        "studyId" : "MASimple@tv-basicstudies"
+      },
+      {
+        "rules" : [
+          {
+            "action" : "resetToDefVal",
+            "defVal" : "close",
+            "inputId" : "RSI Source",
+            "inputType" : "source",
+            "type" : "inputChangedType"
+          }
+        ],
+        "studyId" : "StochasticRSI@tv-basicstudies"
+      },
+      {
+        "rules" : [
+          {
+            "action" : "resetToDefVal",
+            "defVal" : "close",
+            "inputId" : "source",
+            "inputType" : "source",
+            "type" : "inputChangedType"
+          }
+        ],
+        "studyId" : "MAVolumeWeighted@tv-basicstudies"
+      },
+      {
+        "rules" : [
+          {
+            "action" : "resetToDefVal",
+            "defVal" : "close",
+            "inputId" : "source",
+            "inputType" : "source",
+            "type" : "inputChangedType"
+          }
+        ],
+        "studyId" : "VSTOP@tv-basicstudies"
+      },
+      {
+        "rules" : [
+          {
+            "action" : "resetToDefVal",
+            "defVal" : "close",
+            "inputId" : "source",
+            "inputType" : "source",
+            "type" : "inputChangedType"
+          }
+        ],
+        "studyId" : "WilliamR@tv-basicstudies"
+      }
+    ],
+    "versFrom" : "51",
+    "versTo" : "52"
+  },
+  {
+    "pkgName" : "tv-basicstudies",
+    "studyMigrations" : [
+      {
+        "rules" : [
+          {
+            "action" : "resetToDefVal",
+            "defVal" : 5.0,
+            "inputId" : "diviation (%)",
+            "inputType" : "float",
+            "type" : "inputChangedType"
+          }
+        ],
+        "studyId" : "ZigZag@tv-basicstudies"
+      }
+    ],
+    "versFrom" : "55",
+    "versTo" : "56"
+  },
+  {
+    "pkgName" : "tv-basicstudies",
+    "studyMigrations" : [
+      {
+        "rules" : [
+          {
+            "action" : "removeVal",
+            "inputId" : "lookBack",
+            "type" : "inputRemoved"
+          },
+          {
+            "action" : "removeVal",
+            "inputId" : "periodOne",
+            "type" : "inputRemoved"
+          },
+          {
+            "action" : "removeVal",
+            "inputId" : "periodTwo",
+            "type" : "inputRemoved"
+          },
+          {
+            "action" : "removeVal",
+            "inputId" : "periodThree",
+            "type" : "inputRemoved"
+          }
+        ],
+        "studyId" : "BookerIntradayPivots@tv-basicstudies"
+      },
+      {
+        "rules" : [
+          {
+            "action" : "removeVal",
+            "inputId" : "barsBack",
+            "type" : "inputRemoved"
+          },
+          {
+            "action" : "removeVal",
+            "inputId" : "rsiPeriod",
+            "type" : "inputRemoved"
+          },
+          {
+            "action" : "removeVal",
+            "inputId" : "momentumPeriod",
+            "type" : "inputRemoved"
+          }
+        ],
+        "studyId" : "BookerKnoxvilleDivergence@tv-basicstudies"
+      },
+      {
+        "rules" : [
+          {
+            "action" : "removeVal",
+            "inputId" : "daysBack",
+            "type" : "inputRemoved"
+          },
+          {
+            "action" : "removeVal",
+            "inputId" : "showTouched",
+            "type" : "inputRemoved"
+          }
+        ],
+        "studyId" : "BookerMissedPivots@tv-basicstudies"
+      },
+      {
+        "rules" : [
+          {
+            "action" : "removeVal",
+            "inputId" : "fastMAPeriod",
+            "type" : "inputRemoved"
+          },
+          {
+            "action" : "removeVal",
+            "inputId" : "slowMAPeriod",
+            "type" : "inputRemoved"
+          },
+          {
+            "action" : "removeVal",
+            "inputId" : "KPeriod",
+            "type" : "inputRemoved"
+          },
+          {
+            "action" : "removeVal",
+            "inputId" : "slowing",
+            "type" : "inputRemoved"
+          },
+          {
+            "action" : "removeVal",
+            "inputId" : "stochasticUpper",
+            "type" : "inputRemoved"
+          },
+          {
+            "action" : "removeVal",
+            "inputId" : "stochasticLower",
+            "type" : "inputRemoved"
+          }
+        ],
+        "studyId" : "BookerReversal@tv-basicstudies"
+      }
+    ],
+    "versFrom" : "104",
+    "versTo" : "105"
+  }
+]
