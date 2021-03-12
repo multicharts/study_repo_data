@@ -1,0 +1,105 @@
+[
+  {
+    "pkgName" : "tv-prostudies",
+    "studyMigrations" : [
+      {
+        "rules" : [
+          {
+            "action" : "resetToDefVal",
+            "defVal" : "open",
+            "inputId" : "source",
+            "inputType" : "source",
+            "type" : "inputChangedType"
+          }
+        ],
+        "studyId" : "BarSetKagi@tv-prostudies"
+      },
+      {
+        "rules" : [
+          {
+            "action" : "resetToDefVal",
+            "defVal" : "close",
+            "inputId" : "source",
+            "inputType" : "source",
+            "type" : "inputChangedType"
+          }
+        ],
+        "studyId" : "BarSetPriceBreak@tv-prostudies"
+      },
+      {
+        "rules" : [
+          {
+            "action" : "resetToDefVal",
+            "defVal" : "close",
+            "inputId" : "source",
+            "inputType" : "source",
+            "type" : "inputChangedType"
+          }
+        ],
+        "studyId" : "BarSetRenko@tv-prostudies"
+      }
+    ],
+    "versFrom" : "13",
+    "versTo" : "14"
+  },
+  {
+    "pkgName" : "tv-prostudies",
+    "studyMigrations" : [
+      {
+        "rules" : [
+          {
+            "action" : "resetToDefValIfNeeded",
+            "defVal" : "Close",
+            "inputId" : "sources",
+            "inputType" : "text",
+            "options" : [
+              "HL",
+              "Close"
+            ],
+            "type" : "inputChangedOptions"
+          }
+        ],
+        "studyId" : "BarSetPnF@tv-prostudies"
+      }
+    ],
+    "versFrom" : "30",
+    "versTo" : "31"
+  },
+  {
+    "pkgName" : "tv-prostudies",
+    "studyMigrations" : [
+      {
+        "rules" : [
+          {
+            "action" : "resetToDefVal",
+            "defVal" : "Close",
+            "inputId" : "source",
+            "inputType" : "text",
+            "inputTypeFrom" : "source",
+            "type" : "inputChangedType"
+          }
+        ],
+        "studyId" : "BarSetRenko@tv-prostudies"
+      }
+    ],
+    "versFrom" : "36",
+    "versTo" : "37"
+  },
+  {
+    "pkgName" : "tv-prostudies",
+    "studyMigrations" : [
+      {
+        "rules" : [
+          {
+            "action" : "removeVal",
+            "inputId" : "source",
+            "type" : "inputRemoved"
+          }
+        ],
+        "studyId" : "BarSetRenko@tv-prostudies"
+      }
+    ],
+    "versFrom" : "37",
+    "versTo" : "38"
+  }
+]
